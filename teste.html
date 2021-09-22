@@ -1,0 +1,96 @@
+<style>
+  @font-face{
+  font-family:Agency FB;
+  src:url(https://dl.dropboxusercontent.com/s/9ekigg7o8j2iw3y/agency_fb.ttf);
+}
+body{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background:#050505;
+  padding:0;
+  margin:0;
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+body::-webkit-scrollbar{
+  width:8px;
+}
+#direita, #esquerda, #inferior{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+h1{
+  text-align:center;
+  color:#777;
+  font-family:'Agency FB';
+}
+.corpo{
+  width:99.5%;
+  height:100%;
+  border-top:double 3px #333;
+  border-bottom:double 3px #333;
+  margin:0;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+.corpo::-webkit-scrollbar{
+  width:8px;
+}
+.corpo::-webkit-scrollbar-thumb{
+  background-image:linear-gradient(0deg, rgba(0,0,0,0), rgba(50,10,100,1), rgba(0,0,0,0));
+  border-radius:100%;
+}
+
+#direita{
+  width:75%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+}
+#tPlayer{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+#esquerda{
+  width:25%;
+  height:100%;
+  float:right;
+}
+#tChat{
+  width:100%;
+  height:100%;
+  border:none;
+  box-shadow:0px -2px 10px #000;
+}
+
+#inferior{
+  width:100%;
+  height:100%;
+  float:left;
+  border:dotted 1px #222;
+}
+</style>
+
+<div class="corpo">
+  
+  <div id="direita">
+    <iframe id="tPlayer"
+    src="https://player.twitch.tv/?channel=rockeydoggy&parent=rockeydoggy.github.io"
+    allowfullscreen="<allowfullscreen>">
+</iframe>
+  </div>
+  
+  <div id="esquerda">
+    <iframe id="tChat" src="https://www.twitch.tv/embed/rockeydoggy/chat?darkpopout&parent=rockeydoggy.github.io">
+</iframe>
+  </div>
+  
+  <div id="inferior">
+    <h1>Tela Inferior</h1>
+  </div>
+  
+</div> 
