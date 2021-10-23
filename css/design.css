@@ -106,12 +106,28 @@ body{
 }
 
 /*  __Chars__  */
+.um{
+  border-bottom:2px groove #F88;
+  box-shadow:inset 0px -5px 4px -3px #F22, 0px 5px 4px -3px #F22;
+}
 .um:focus{
   box-shadow:0 8px 15px -5px #F00, inset 0px 0px 10px 0px #F00;
   border-bottom:2px solid #F99;
   filter:brightness(150%) contrast(150%);
   text-shadow:5px 5px 20px #F00, -5px -5px 20px #F00;
   color:#FAA;
+}
+.dois{
+  border-bottom:2px groove #FF8;
+  box-shadow:inset 0px -4px 4px -3px #FF2, 0px 4px 4px -3px #FF2;
+  text-shadow:2px 2px 7px #000;
+}
+.dois:focus{
+  box-shadow:0 8px 15px -5px #FF0, inset 0px 0px 10px 0px #FF0;
+  border-bottom:2px solid #FF9;
+  filter:brightness(150%) contrast(150%);
+  text-shadow:5px 5px 20px #FF0, -5px -5px 20px #FF0;
+  color:#FFA;
 }
 .tres:focus{
   box-shadow:0 8px 15px -5px #00F, inset 0px 0px 10px 0px #00F;
@@ -144,6 +160,12 @@ body{
 }
 #char6{
   background:url(https://i.imgur.com/xr4Jaeq.png);
+  background-size:100% 100%;
+}
+
+/* --Secret Char-- */
+#sbeeker{
+  background:url(https://i.imgur.com/gEqn6od.png);
   background-size:100% 100%;
 }
 
