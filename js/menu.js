@@ -7,8 +7,9 @@ var menuBtn = document.getElementById("menuOpn");
 var menuCent = document.getElementById("menuCentralize");
 var exitBtn = document.getElementById("mSair");
 var passScr = document.getElementById("passCentralizador");
+var box03 = document.getElementById("charS3");
 
-//Character Select
+//Character Select//
 function opnFools(){
   //Defaults Open
   tChar.style.display = "flex";
@@ -102,6 +103,23 @@ function opnGirl(){
   //Menu Button
   menuBtn.style.transform = "rotate(540deg) scale(0)";
   menuBtn.style.filter = "drop-shadow(0 0 10px #95F) hue-rotate(100deg) contrast(160%)";
+  
+  setTimeout (function(){
+    tChar.style.height = "99%";
+    tChar.style.width = "99%";
+    cCancel.style.opacity= "1";
+  }, 100)
+  //End Defaults Open
+}
+
+function opnSbeeker(){
+  //Defaults Open
+  tChar.style.display = "flex";
+  tCharPan.style.display = "none";
+  tChar.style.filter = "saturate(60%) hue-rotate(150deg) contrast(95%) brightness(170%)";
+  //Menu Button
+  menuBtn.style.transform = "rotate(540deg) scale(0)";
+  menuBtn.style.filter = "drop-shadow(0 0 10px #95F) hue-rotate(100deg) contrast(180%)";
   
   setTimeout (function(){
     tChar.style.height = "99%";
@@ -208,6 +226,12 @@ if(dftDesign.value.match(1)){
 if(sbkrUnl.value == 1){
   var seLine = document.getElementsByClassName('tCeSe')[0];
   seLine.setAttribute('class', 'toJump tCeUn');
+  
+  //Box Confirm
+  box03.setAttribute("class", "charbox dois sbeeker");
+  //box03.setAttribute("id", "sbeeker");
+  box03.setAttribute("onClick", "opnSbeeker()");
+  box03.innerHTML = "<p>Sbeeker</p>";
 }
 // FIM DE CRIAÇÃO DE ELEMENTO
 
@@ -336,14 +360,36 @@ function yinWeebo(){
   var ltrBox = document.getElementsByClassName("letterBox");
   var confBTN = document.getElementById("passCFM");
   var letters = document.getElementsByClassName("ltrs");
+  var box03 = document.getElementById("charS3");
+  var warnCentral = document.getElementsByClassName("warningCentralize")[0];
+  var warnText = document.getElementById("warningBox");
+  var ltrBox = document.getElementsByClassName("letterBox");
   seLine.setAttribute('class', 'toJump tCeUn');
   localStorage.setItem("sbkWho", sbkrUnl.value);
+  
+  //Se Ja tiver//
+  if(sbkrUnl.value == 1){
+  }
+  
+  //Box Confirm||<
+  box03.setAttribute("class", "charbox dois sbeeker");
+  //box03.setAttribute("id", "sbeeker");
+  box03.setAttribute("onClick", "opnSbeeker()");
+  box03.innerHTML = "<p>Sbeeker</p>";
   
   //Checks Design
   confBTN.style.color = "#7F7";
   confBTN.style.textShadow = "0 0 10px #0F0";
   confBTN.style.border = "2px #7F7 solid";
   confBTN.style.boxShadow = "inset 0 0 10px #0F0, 0 0 10px #0F0";
+  
+  //Waning
+  warnText.innerHTML = "<h4>Sbeeker Foi desbloqueado</h4>";
+  warnCentral.style.opacity = "1";
+  warnCentral.style.top = "0%";
+  setTimeout(function(){
+    warnCentral.style.opacity = "";
+  }, 2100)
   
   for(i = 0; i <ltrBox.length; i++){
     ltrBox[i].style.boxShadow = "inset 0 0 15px 0px #0F0, 0 0 15px #0F0";
@@ -361,4 +407,3 @@ function yinWeebo(){
       }
     },1100);
 }
-
