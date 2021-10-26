@@ -559,6 +559,8 @@ body{
   display:flex;
   align-items:flex-start;
   justify-content:center;
+  user-select:none;
+  pointer-events:none;
 }
 #endBTN{
   width:18%;
@@ -567,6 +569,8 @@ body{
   margin:-6.5% 0% 0 0;
   cursor:pointer;
   mix-blend-mode: color;
+  user-select:auto;
+  pointer-events:auto;
 }
 #endBTN video{
   width:100%;
