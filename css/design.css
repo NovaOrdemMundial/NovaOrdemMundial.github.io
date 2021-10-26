@@ -168,6 +168,10 @@ body{
   background:url(https://i.imgur.com/gEqn6od.png);
   background-size:100% 100%;
 }
+.sbeeker{
+  background:url(https://i.imgur.com/gEqn6od.png);
+  background-size:100% 100%;
+}
 
 /*  -- Pagina de personagens --   */
 #tabChar{
@@ -867,4 +871,63 @@ body{
   border:none;
   font-size:8vw;
   text-align:center;
+}
+
+/*   --Warning Box--     */
+.warningCentralize{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#FFF;
+  font-weight:lighter;
+  top:105%;
+  z-index:100;
+  transition:opacity 0.1s ease-in-out;
+  opacity:0;
+  user-select:none;
+  pointer-events: none;
+}
+
+#warningBox{
+  width:80%;
+  background:linear-gradient(-15deg, rgba(15,25,40,1), rgba(0,25,40,0.9));
+  box-shadow:inset 2px 2px 10px #000;
+  transition:opacity 0.3s 0.1s ease-in-out;
+}
+#warningBox h1{
+  text-align:center;
+  margin:0;
+  padding:0;
+  font-family:'Teko';
+  font-size:10vw;
+  font-weight:lighter;
+  text-align:-0.5px -0.5px 1px #000, 0.5px 0.5px 1px #48F;
+  border-bottom:groove 2px #333;
+}
+#warningBox h2{
+  margin:0 2%;
+  font-family:'EnterCommand';
+  font-size:6vw;
+  font-weight:lighter;
+}
+#warningBox h3{
+  text-align:right;
+  font-weight:lighter;
+  font-size:5vw;
+  font-family:'EnterCommand';
+  text-shadow:0px 0px 5px #999;
+  margin:0% 0%;
+  padding:2%;
+}
+#warningBox h4{
+  font-family:'EnterCommand';
+  font-size:6vw;
+  font-weight:lighter;
+  text-align:center;
+  margin:2% 1%;
+  text-shadow:1px 1px 5px #000;
 }
