@@ -812,10 +812,10 @@ body{
 }
 
 .letterBox{
-  width:10%;
-  padding-top:10%;
+  width:8.5%;
+  padding-top:8.5%;
   float:left;
-  margin:2% 1.25vw;
+  margin:2% 1.65vw;
   border:1px groove #87F;
   box-shadow:inset 0 0 15px 0px #63F, 0 0 15px #63F;
   transform:scale(1) rotate(45deg);
