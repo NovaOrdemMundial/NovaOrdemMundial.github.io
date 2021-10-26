@@ -412,7 +412,7 @@ setTimeout(function(){
   vidd2.play();
   vidd2.style.opacity = "1"
   endBTN.setAttribute("onclick", "closeAll()");
-}, 1340)
+}, 1440)
 
 function closeAll(){
   var screenS = screen.width;
