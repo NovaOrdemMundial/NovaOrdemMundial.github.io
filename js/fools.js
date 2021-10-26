@@ -410,14 +410,14 @@ setTimeout(function(){
   vidd1.style.opacity = "0";
   vidd2.load();
   vidd2.play();
-  vidd2.style.opacity = "1"
+  vidd2.style.opacity = "0.9"
   endBTN.setAttribute("onclick", "closeAll()");
 }, 1440)
 
 function closeAll(){
   var screenS = screen.width;
   vidd2.style.opacity = "0";
-  vidd3.style.opacity = "1";
+  vidd3.style.opacity = "0.9";
   vidd3.play();
   endBTN.removeAttribute("onclick");
   window.open("https://novaordemmundial.github.io", "_self")
