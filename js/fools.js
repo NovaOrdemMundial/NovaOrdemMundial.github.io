@@ -420,7 +420,6 @@ function closeAll(){
   vidd3.style.opacity = "0.9";
   vidd3.play();
   endBTN.removeAttribute("onclick");
-  window.open("https://novaordemmundial.github.io", "_self")
   if(screenS > 565){
     corpo.style.width = "0%";
     border.style.width = "0%";
@@ -429,5 +428,8 @@ function closeAll(){
     corpo.style.height = "0%";
     border.style.height = "0%";
   }
+  setTimeout(function(){
+    window.open("https://novaordemmundial.github.io", "_self");
+  }, 500)
 }
 ///
