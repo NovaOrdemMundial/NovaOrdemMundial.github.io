@@ -1028,7 +1028,7 @@ body::-webkit-scrollbar-thumb{
   width:5.5%;
   padding-top:5.5%;
   float:left;
-  margin:2.6%;
+  margin:2.0%;
   border:double 4px #333;
   transform:rotate(45deg);
   border-radius:8px;
