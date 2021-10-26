@@ -415,10 +415,18 @@ setTimeout(function(){
 }, 500)
 
 function closeAll(){
+  var screenS = screen.width;
   vidd2.style.opacity = "0";
   vidd3.style.opacity = "1";
   vidd3.play();
-  border.style.height = "0%";
-  corpo.style.height = "0%";
   endBTN.removeAttribute("onclick");
+  if(screenS > 565){
+    corpo.style.width = "0%";
+    border.style.width = "0%";
+  }
+  if(screenS < 565){
+    corpo.style.height = "0%";
+    border.style.height = "0%";
+  }
 }
+///
