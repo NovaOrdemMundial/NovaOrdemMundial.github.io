@@ -24,6 +24,9 @@ function opnFools(){
     tChar.style.width = "99%";
     cCancel.style.opacity= "1";
   }, 100)
+  setTimeout(function(){
+    window.open("https://novaordemmundial.github.io/fools", "_self")
+  }, 800)
   //End Defaults Open
 }
 
@@ -407,3 +410,4 @@ function yinWeebo(){
       }
     },1100);
 }
+
