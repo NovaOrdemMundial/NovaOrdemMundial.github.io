@@ -420,6 +420,7 @@ function closeAll(){
   vidd3.style.opacity = "1";
   vidd3.play();
   endBTN.removeAttribute("onclick");
+  window.open("https://novaordemmundial.github.io", "_self")
   if(screenS > 565){
     corpo.style.width = "0%";
     border.style.width = "0%";
