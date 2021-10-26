@@ -583,7 +583,7 @@ body{
   transition:opacity 0.01s linear;
 }
 #cBTN1{
-  opacity:1;
+  opacity:0.9;
 }
 #cBTN2{
   opacity:0;
