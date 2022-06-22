@@ -16,7 +16,7 @@ const linksFild   = document.getElementById('extraField');
 const bannerBoss  = document.getElementById('bannerUser');
 const storyField  = document.getElementById('storyContent');
 
-//    //   Barras E Limites   //    //
+//     //     Barras E Limites    //     //
   const lifeMax   = 3400;
   const resisMax  = 1000;
   const resilMax  = 760;
