@@ -1,6 +1,6 @@
 <head>
 	<title>Boss</title>
-	<link rel="stylesheet" href="/css/design.css">
+  	<link rel="stylesheet" href="style/primary.css">
 	<link rel="icon" href="https://i.imgur.com/pv8rDm5.png" type="image/png" sizes="16x16">
 	<meta name="author" content="RockeyDoggy">
 	<meta name="keywords" content="HTML5,CSS,JavaScript">
@@ -13,227 +13,99 @@
 	<meta property="og:url" content="https://novaordemmundial.github.io/">
 </head>
 
-<div class="centralizador">
-  <div class="selecao">
-    <p class="toJump tStart">
-      <button class="charbox um" id="char1" onClick="opnFools()"><p>Fools</p></button>
-      <button class="charbox um" id="char2" onClick="opnJunin()"><p>Juninho</p></button>
-    </p>
-    <p class="toJump tStart">
-      <button class="charbox tres" id="char3" onClick="opnSteve()"><p>Steve</p></button>
-      <button class="charbox tres" id="char4" onClick="opnRafa()"><p>Rafa</p></button>
-      <button class="charbox tres" id="char5" onClick="opnDrax()"><p>Mandrax</p></button>
-      <button class="charbox tres" id="char6" onClick="opnGirl()"><p>Girl</p></button>
-    </p>
-    <p class="toJump tCenter">
-      <button class="charbox deac" id="char7"><p></p></button>
-      <button class="charbox deac" id="char8"><p></p></button>
-      <button class="charbox deac" id="char9"><p></p></button>
-      <button class="charbox deac" id="char10"><p></p></button>
-      <button class="charbox deac" id="char11"><p></p></button>
-      <button class="charbox deac" id="char12"><p></p></button>
-    </p>
+<body>
+  <div id="backpaper"></div>
+  <div id="corpo">
+    <div id="wallpaper"></div>
+    <!--  //  ← Esquerda  //  -->
+    <div id="painelEsquedo">
+      <div id="conteudoEsquerdo">
+        <h1>Selecione um Boss</h1>
+        <div id="bossesRoxos"></div>
+      </div>
+    </div>
     
-      <!--To Center Se-->
-    <p class="toJump tCeSe" id="seDef">
-      <button class="charbox blockd" id="charS1"><p></p></button>
-      <button class="charbox deac" id="charS2"><p></p></button>
-      <button class="charbox deac" id="charS3"><p></p></button>
-      <button class="charbox deac" id="charS4"><p></p></button>
-      <button class="charbox deac" id="charS5"><p></p></button>
-      <button class="charbox blockd" id="charS6"><p></p></button>
-    </p>
+    <!--  //  ↨ Central  //  -->
+    <div id="painelCentral">Esquema de Centro</div>
+    
+    <!--  //   Direita →  //  -->
+    <div id="painelDireito">
+      <div id="conteudoDireito">
+        <h1></h1>
+        <div id="bossesEspeciais"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bossScreen">
+    <div id="bossWindow">
+      <div id="bannerUser">
+        <h1 id="userName">Nome Do Boss</h1>
+        <p id="extraField"></p>
+      </div>
+      <h2 id="nick">Twitch_Nick</h2>
+      <div class="leftBossInfos">
+        <div id="inventory">
+          <h3>Conquistas</h3>
+          <p id="collection">
+            <img src="https://i.imgur.com/VbAIghD.png"/>
+          </p>
+          <h3>Inventory</h3>
+          <p id="lootlable">
+            <img src="https://i.imgur.com/3lRtdml.png"/>
+            <img src="https://i.imgur.com/8cPSvAg.png"/>
+            <img src="https://i.imgur.com/pXQUwin.png"/>
+            <img src="https://i.imgur.com/VbAIghD.png"/>
+            <img src="https://i.imgur.com/y3aPgPs.png"/>
+            <img src="https://i.imgur.com/m4nXwas.png"/>
+          </p>
+        </div>
+      </div>
       
-      <!------------------------------>
-    <p class="toJump tCenter">
-      <button class="charbox deac" id="char13"><p></p></button>
-      <button class="charbox deac" id="char14"><p></p></button>
-      <button class="charbox deac" id="char15"><p></p></button>
-      <button class="charbox deac" id="char16"><p></p></button>
-      <button class="charbox deac" id="char17"><p></p></button>
-      <button class="charbox deac" id="char18"><p></p></button>
-    </p>
-    <p class="toJump tStart">
-      <button class="charbox deac" id="char19"><p></p></button>
-      <button class="charbox deac" id="char20"><p></p></button>
-      <button class="charbox deac" id="char21"><p></p></button>
-      <button class="charbox deac" id="char22"><p></p></button>
-    </p>
-    <p class="toJump tStart">
-      <button class="charbox deac" id="char23"><p></p></button>
-      <button class="charbox deac" id="char24"><p></p></button>
-    </p>
-  </div>
-  
-  <!-- Win Char  -->
-  <div id="tabChar">
-    <button id="charCancel" onClick="charClose()">Cancelar<img src="https://i.imgur.com/J5LNwhF.gif"/></button>
-  </div>
-  
-  <div id="tabCharPan">
-    <button id="charCancel" onClick="charClose()">Cancelar<img src="https://i.imgur.com/J5LNwhF.gif"/></button>
-  </div>
-</div>
-  
-  <!--     __(Menu)__    -->
-  <!--Botões-->
-<div class="menuBar">
-  <button id="menuOpn" onClick="menuOpen()"></button>
-</div>
-
-<div id="menuCentralize">
-  <div class="menu">
-    <p><button class="mOff" id="mScore">SCORE</button></p>
-    <p><button class="mOff" id="mLive">LIVE</button></p>
-    <p><button class="mOn" id="mCust" onclick="customOpn()">CUSTOMIZAÇÃO</button></p>
-    <p><button class="mOn" id="mPass" onclick="opnPass()">PASSWORD</button></p>
-    <button class="mOn" id="mDisc">DISCORD</button>
-    <button class="mOn" id="mYout">YOUTUBE</button>
-    <button class="mOn" id="mTwitt">TWITTER</button>
-    <p><button class="mOn" id="mSair" onClick="menuOff()">SAIR</button></p>
-  </div>
-</div>
-
-<div id="custCentralize" draggable="false">
-  
-  <div class="customizacoes">
-    <h1>Customizações:</h1>
-    <div class="custContent">
-      <h2>Backgrounds:</h2>
-      <div class="bgCust" id="bgCust">
-        <button id="dftDesign" class="itemBox bSel" title="Vazio" onclick="dft()"><p>Default</p></button>
+      <div class="rightBossInfos">
+        <h4>Status</h4>
+        <div id="statsField">
+          
+          <h5>Vida:</h5>
+          <div id="lifeBar" class="barSize">
+            <div id="lifeDynamic" class="dynamicBar"></div>
+          </div>
+          
+          <h5>Resistencia:</h5>
+          <div id="resisBar" class="barSize">
+            <div id="resisDynamic" class="dynamicBar"></div>
+          </div>
+          
+          <h5>Resiliência:</h5>
+          <div id="resilBar" class="barSize">
+            <div id="resilDynamic" class="dynamicBar"></div>
+          </div>
+          
+          <h5>Força:</h5>
+          <div id="forceBar" class="barSize">
+            <div id="forceDynamic" class="dynamicBar"></div>
+          </div>
+          
+          <h5>Foco:</h5>
+          <div id="focusBar" class="barSize">
+            <div id="focusDynamic" class="dynamicBar"></div>
+          </div>
+          
+          <h5>Agilidade:</h5>
+          <div id="agilyBar" class="barSize">
+            <div id="agilyDynamic" class="dynamicBar"></div>
+          </div>
+        </div>
+        <div id="bossStory">
+          <div id="storyContent">
+          </div>
+        </div>
       </div>
-      <!--<h2>Seleções:</h2>
-      <div class="selCust">
-      </div>
-      <h2>Bordas:</h2>
-      <div class="brodCust">
-      </div>-->
-      <h2>Desbloqueados:</h2>
-      <div class="unlCust">
-        <button class="itemBox" id="dSbeeker" title="Sbeeker"><p>Sbeeker</p></button>
-      </div>
-    </div>
-    <div class="endButtons">
-      <button id="savThat" onclick="saveThis()">Fechar</button>
+      
     </div>
   </div>
-  
-</div>
-
-<div class="allOcult">
-  
-  <div class="cmdItems">
-    <h1>WTF Is This?</h1>
-    <div class="qualUso">
-      <h2>O que to usando?</h2>
-      <h3>Background:<input id="qBg" type="number" value="0" disabled></h3>
-      <h3>Seleção:<input id="qSel" type="number" value="0" disabled></h3>
-      <h3>Bordas:<input id="qBor" type="number" value="0" disabled></h3>
-      <h3>Cores:<input id="qCor" type="number" value="0" disabled></h3>
-      <h3>Animado:<input id="qAn" type="number" value="0" disabled></h3>
-      <h3>Menus:<input id="qMen" type="number" value="0" disabled></h3>
-    </div>
-    <div class="qualTenho">
-      <h2>O que tenho?</h2>
-      <h3>Sbeeker:<input id="hSbkr" type="number" value="0" disabled></h3>
-      <h3>Design Padrão:<input id="hDftDes" type="number" value="0" disabled>
-      <h3>Design Difer...:<input id="hTstDes" type="number" value="0" disabled></h3>
-    </div>
-  </div>
-  
-</div>
-</div>
-
-<div id="passCentralizador">
-  <div class="password">
-    <h1>Password</h1>
-    <div id="passLatters">
-      <div id="PossLatters" class="PossLatters">
-        
-        <div class="letterBox">
-          <input maxlength="1" id="let01" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let02" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let03" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let04" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let05" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let06" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let07" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let08" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let09" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let10" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let11" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let12" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let13" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let14" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let15" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let16" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let17" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let18" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let19" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let20" class="ltrs" value="">
-        </div>
-        <div class="letterBox">
-          <input maxlength="1" id="let21" class="ltrs" value="">
-        </div>
-        
-      </div>
-    </div>
-    
-    <div id="passBTN">
-      <div id="btnOrder">
-        <button id="passCFM" onclick="getPass()">Confirmar</button>
-        <button id="passCCL" onclick="closePass()">Sair</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="testers">
-  <input id="inTest" disabled value="">
-</div>
-
-<div class="warningCentralize">
-  <div id="warningBox">
-  </div>
-</div>
+  <!-- Janela de exibição de Boss -->
+  <div id="closeTabs" onclick="venishTabs()"></div>
+</body>
 
 <script src="/js/menu.js"></script>
