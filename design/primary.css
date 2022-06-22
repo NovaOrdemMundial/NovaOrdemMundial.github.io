@@ -1,0 +1,608 @@
+@font-face{
+  font-family:Gumela;
+  src:url(https://dl.dropboxusercontent.com/s/k3l1b9ms8lb04uo/Gumela.ttf);
+}
+@font-face{
+  font-family:EndBoss;
+  src:url(https://dl.dropboxusercontent.com/s/hhetljjpv8fja58/Endless%20Boss%20Battle.ttf) ;
+}
+@font-face{
+  font-family:Gameplay;
+  src:url(https://dl.dropboxusercontent.com/s/6wtikagk9gy5m2i/GAMEPLAY-1987.ttf) ;
+}
+@font-face{
+  font-family:ModernDOS;
+  src:url(https://dl.dropboxusercontent.com/s/c3a2243dzjudssc/ModernDOS9x16.ttf) ;
+}
+@font-face{
+  font-family:SwitchOne;
+  src:url(https://dl.dropboxusercontent.com/s/5zxbtl9t3pzpnht/SwitchOneDemoRegular.ttf);
+  font-family:Pixel-7;
+  src:url(https://dl.dropboxusercontent.com/s/lbmwvyx0t65gqn7/pixel%20font-7.ttf);
+}
+@font-face{
+}
+
+:root{
+  --skewDirect:0, 0deg;
+  --rotateDirect:7deg;
+  --desRotate:-7deg;
+  --bossPurpleBackground:linear-gradient(-10deg, #100915, #090910);
+  --purpleLtCr: 0vw 0.8vw 0.8vw -0.7vw #62F;
+  --purpleLtCr2: 0vw -0.8vw 0.8vw -0.7vw #62F;
+  --bossTabBorder:double 0.5vw #986;
+  --bossTabBorderLight:inset 0vw 0.9vw 1vw -1.2vw #F93, inset 0vw -0.9vw 1vw -1.2vw #F93;
+  --widthBars:all ease-in-out 1s 1s;
+}
+body{
+  margin:0;
+  padding:0;
+  background:#050505;
+  color:#FFF;
+}
+
+#backpaper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#090909;
+}
+
+/*    -- Custom Background --    */
+#wallpaper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:center no-repeat;
+  background-image:url(https://i.imgur.com/w6tHpfS.png);
+  background-size:100%;
+  opacity:0.2;
+  z-index:1;
+}
+
+/*  -- --//Design De Fundo//-- --  */
+#corpo{
+  width:100%;
+  height:100%;
+  position:fixed;
+  margin:0;
+  top:0;
+  left:0;
+  background:no-repeat center;
+  background-image:radial-gradient(#1110 15%, #050505 65%);
+  background-size:auto 420%;
+  background-position:0% 50%;
+  background-blend-mode: screen;
+  float:left;
+  display:flex;
+  justify-content:center;
+  z-index:2;
+}
+
+/*    ///  Layout dos paineis  ///     */
+
+/*    //Painel A Esquerda//     */
+#painelEsquedo{
+  width:37%;
+  height:99%;
+  float:left;
+  text-align:center;
+  perspective: 400px;
+  display:flex;
+  align-items:flex-end;
+  position:relative;
+  z-index:2;
+  /*border:dashed 1px #FFF;*/
+}
+#conteudoEsquerdo{
+  width:100%;
+  height:50%;
+  margin:0 0vw 0 2vw;
+  perspective: 300px;
+  /*border:dotted 1px #FF0;*/
+}
+
+  /*  // Formatação //  */
+  #painelEsquedo h1{
+    width:100%;
+    position:relative;
+    bottom:2vw;
+    margin:0;
+    font-size:3.5vw;
+    font-weight:lighter;
+    font-family:EnterCommand;
+    line-height:0px;
+    transform-style: preserve-3d;
+    transform:rotateY(var(--rotateDirect)) rotateZ(-1deg) skew(var(--skewDirect));
+    float:left;
+  }
+  #bossesRoxos{
+    width:98%;
+    max-height:98%;
+    margin:0 0px 0 0.5vw;
+    /*border:dotted 1px #71F;*/
+    transform:rotateY(var(--rotateDirect)) rotateZ(-1deg) skew(var(--skewDirect));
+    text-align:center;
+    overflow-y:scroll;
+    overflow-x:hidden;
+  }
+/*------Scroll Config---------*/
+ #bossesRoxos::-webkit-scrollbar{
+    width:0.1vw;
+    background:transparent;
+}
+ #bossesRoxos::-webkit-scrollbar-thumb{
+    background:#FFF;
+}
+/**--------------------------**/
+  #bossesRoxos button{
+    margin:0.4vw 0.15vw;
+  }
+  #bossBox{
+    width:23%;
+    padding-top:23%;
+    background-size:100%;
+    cursor:pointer;
+    user-select:none;
+    white-space: nowrap;
+    border-radius:0.1vw;
+    border:solid 0px transparent;
+    opacity:0.5;
+    transition:all ease-in-out 0.1s;
+    font-size:1.7vw;
+    font-family:Agency FB;
+    font-weight:lighter;
+    color:#EEF;
+    text-shadow:0.1vw 0.1vw 0.2vw #000, 0 0 0.5vw #000;
+    line-height:1vw;
+    margin:0;
+    position:relative;
+    z-index:8;
+  }
+  #bossBox:hover{
+    opacity:1;
+  }
+  #bossBox:focus{
+    border:none !important;
+    filter:saturate(50%) contrast(100%) brightness(110%) sepia(70%) hue-rotate(200deg) blur(0.01vw);
+    box-shadow:-0.2vw 0.05vw 0.5vw 0.2vw #000;
+    opacity:1;
+    transform:scale(1.1);
+    z-index:9;
+    border-bottom:solid 0.05vw transparent;
+    border-top:solid 0.05vw transparent;
+  }
+  #bossBox span{
+}
+
+
+/*    --  //Painel Central//  --      */
+#painelCentral{
+  width:25%;
+  height:100%;
+  float:left;
+  text-align:center;
+  position:relative;
+  z-index:2;
+  /*border:dashed 1px #00F;*/
+}
+
+/*--    //  Paineis Da Direita  //    --*/
+#painelDireito{
+  width:37%;
+  height:99%;
+  float:right;
+  text-align:center;
+  position:relative;
+  perspective: 400px;
+  display:flex;
+  align-items:flex-end;
+  z-index:2;
+  /*border:dashed 1px #0F0;*/
+}
+#conteudoDireito{
+  width:100%;
+  height:50%;
+  margin:0 1vw 0 0vw;
+  perspective: 300px;
+  /*border:dotted 1px #FF0;*/
+}
+  #painelDireito h1{
+    width:100%;
+    position:relative;
+    bottom:2vw;
+    margin:0;
+    font-size:2.5vw;
+    font-weight:lighter;
+    line-height:0px;
+    transform-style: preserve-3d;
+    transform:rotateY(var(--desRotate)) skew(var(--skewDirect));
+    float:left;
+  }
+
+#bossesEspeciais{
+    width:98%;
+    max-height:98%;
+    margin:0 0px 0 -1vw;
+    /*border:dotted 1px #71F;*/
+    transform:rotateY(var(--desRotate)) rotate(1deg) skew(var(--skewDirect));
+    text-align:center;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#bossesEspeciais::-webkit-scrollbar{
+    width:0.1vw;
+    background:transparent;
+}
+#bossesEspeciais::-webkit-scrollbar-thumb{
+  background:#FFF;
+}
+  #bossesEspeciais button{
+    margin:0.4vw 0.15vw;
+  }
+
+
+/*    //Classes//   */
+.roxoLvl{
+  box-shadow:inset 0 -1vw 1vw -0.2vw #000 ,inset 0 0 1vw 0vw #70F;
+  border-bottom:solid 0.05vw #A9F !important;
+  border-top:solid 0.05vw #A9F !important;
+}
+.roxoLvl:hover{
+  box-shadow:inset 0 -0.6vw 1vw 0vw #000 ,inset 0 0 1vw 0vw #70F, 0 0.5vw 1vw -0.5vw #70F;
+}
+.amareloLvl{
+  box-shadow:inset 0 -0.9vw 1vw 0.2vw #000 ,inset 0 0 1vw 0.1vw #FF0;
+  border-bottom:solid 0.1vw #FF9 !important;
+  border-top:solid 0.1vw #FF9;
+}
+.amareloLvl:hover{
+  box-shadow:inset 0 -0.6vw 1vw 0vw #000 ,inset 0 0 1vw 0vw #FF0, 0 0.5vw 1vw -0.5vw #FF0;
+}
+.greyLvl{
+  box-shadow:inset 0 -0.9vw 1vw 0.2vw #000 ,inset 0 0 1vw 0.1vw #777;
+  border-bottom:solid 0.05vw #777 !important;
+  border-top:solid 0.05vw #777;
+}
+
+
+
+
+
+/*     //   Guia Do Boss   //        */
+/*Tela*/
+#bossScreen{
+  --bossScreenDisplay:none;
+  --bossScreenOpacity:0;
+  --bossSTransitionTime:1s;
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+  background:#0008;
+  z-index:20;
+  backdrop-filter:blur(0.5vw) contrast(130%) brightness(170%);
+  transition:all ease-in-out 0.2s;
+  display:var(--bossScreenDisplay);
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  opacity:var(--bossScreenOpacity);
+  transition:all ease-in-out var(--bossSTransitionTime);
+}
+
+/*Janela*/
+#bossWindow{
+  --bossWindowOpacity:0;
+  --bossTransitionTime:0.5s;
+  --bossWindowWidth:70%;
+  --bossWindowHeight:95%;
+  width:var(--bossWindowWidth);
+  max-height:var(--bossWindowHeight);
+  background-image:var(--bossPurpleBackground);
+  border-radius:0.3vw;
+  border:solid 0.5vw transparent;
+  border-top:var(--bossTabBorder);
+  border-bottom:var(--bossTabBorder);
+  background-clip:padding-box;
+  box-shadow:var(--bossTabBorderLight);
+  overflow-y:scroll;
+  overflow-x:hidden;
+  cursor:auto;
+  pointer-events:auto;
+  user-select:none;
+  opacity:var(--bossWindowOpacity);
+  transition:opacity ease-in-out var(--bossTransitionTime), width linear 0.2s 0.8s, max-height ease-in-out 0.3s 0.1s;
+}
+  #bossWindow::-webkit-scrollbar{
+    width:0.2vw;
+    background:transparent;
+  }
+  #bossWindow::-webkit-scrollbar-thumb{
+    border-radius:100%;
+    background-image:linear-gradient(0deg, #0000 10%, #FA8, #0000 90%);
+  }
+/*////    //  Banner e Textos Inseridos  //     ////*/
+#bannerUser{
+  --userBanner:url();
+  width:100%;
+  padding-top:35%;
+  /*border:dotted 1px #F44;*/
+  background-image:var(--userBanner);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100%;
+}
+  #bannerUser p{
+    text-align:right;
+    /*border:1px dotted #8F4;*/
+    line-height:-0vw;
+    margin:-1vw 1vw 0 0vw;
+    padding:0;
+    position:relative;
+    bottom:1vw;
+  }
+  #bannerUser h1{
+    margin:0;
+    line-height:0px;
+    position:relative;
+    bottom:16vw;
+    margin:0 2vw;
+    font-family:'Gumela';
+    font-weight:bold;
+    font-size:11vw;
+    text-shadow:/*-0.1vw -0.1vw 0.15vw #0009, 0.05vw 0.05vw 0.1vw #FFF8*/ 0vw 0vw 1vw #000;
+    opacity:0.7;
+    backdrop-filter:;
+    /*border:dashed 1px #84F;*/
+  }
+  #bannerUser span{
+    margin:0 0.3vw 0;
+    padding:0;
+    font-size:1.5vw;
+    cursor:pointer;
+  }
+    #bannerUser p img{
+      width:1.5vw;
+      vertical-align:text-bottom;
+      line-height:0;
+    }
+  
+  /*    //  Formatos de Texto da guia de Boss  //    */
+  #bossWindow h2{
+    text-align:center;
+    /*border:dashed 1px #4F9;*/
+    margin:0vw 0 2vw;
+    padding:0 0 0vw 20vw;
+    font-family:Trebuchet MS;
+    font-size:2.8vw;
+    font-weight:bold;
+  }
+
+/*           //   Tabs da guia de Boss   //          */
+/*////  Guia Da Direita  ////*/
+.leftBossInfos{
+  width:32%;
+  float:left;
+  /*border:dotted 2px #78F;*/
+}
+
+/*      ///    Inventario     ///      */
+#inventory{
+  width:100%;
+  height:46vw;
+  float:left;
+  border:4px double transparent;
+  border-top:4px double #76F;
+  border-bottom:4px double #76F;
+  background-image:linear-gradient(10deg, #111018, #090611);
+  background-clip:padding-box;
+  box-shadow:inset 0.1vw 0.1vw 0.5vw #000, var(--purpleLtCr2), var(--purpleLtCr),inset var(--purpleLtCr2), inset var(--purpleLtCr);
+  text-align:center;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+  #inventory::-webkit-scrollbar{
+    width:0.2vw;
+    background:transparent;
+  }
+  #inventory::-webkit-scrollbar-thumb{
+    border-radius:100%;
+    background-image:linear-gradient(0deg, #0000 20%, #86F, #0000 80%);
+  }
+  #inventory h3{
+    width:;
+    text-align:right;
+    padding:0 2vw 0.2vw 0vw;
+    margin:1vw 0 1.5vw;
+    position:relative;
+    left:-0%;
+    /*border-bottom:groove 0.15vw #327;*/
+    box-shadow:inset 0vw 0.45vw 0.5vw -0.4vw #000;
+    font-family:ModernDOS;
+    font-weight:lighter;
+    font-size:1.6vw;
+    color:#CAF;
+    text-shadow:0 0 1vw #75F;
+  }
+  #inventory img{
+    width:4.4vw;
+    margin:0.2vw 0.1vw;
+    cursor:pointer;
+    user-select:none;
+  }
+  #inventory p{
+    /*border:1px dashed #0F9;*/
+    margin:0 0.1vw;
+  }
+    #collection img{
+      width:6.5vw;
+    }
+
+/*      //    Painel Direito da guia de Boss      //      */
+.rightBossInfos{
+  width:65%;
+  float:right;
+  /*border:dotted 2px #78F;*/
+}
+  .rightBossInfos h4{
+    margin:2vw 0vw 0 0;
+    padding:0 0vw 0 2vw;
+    font-size:2.5vw;
+    font-family:ModernDOS;
+    font-weight:lighter;
+  }
+/* // Area De Status // */
+#statsField{
+  /*border:1px dashed #4F8;*/
+}
+  #statsField h5{
+    margin:0.5vw 0;
+    padding:0 1vw;
+    font-family:ModernDOS;
+    font-weight:lighter;
+    font-size:1.4vw;
+  }
+  /*  ///  Formato das barras  /// */
+  .barSize{
+    width:20.8vw;
+    height:1.5vw;
+    margin:0.8vw 3vw;
+    background:url(https://i.imgur.com/6SbVAeO.png) left center repeat-x;
+    background-size:auto 100%;
+    /*filter:drop-shadow(-0.07vw -0.07vw 0.01vw #0008) drop-shadow(0.074vw 0.074vw 0.01vw #FFF2);*/
+    transform:skew(20deg, 0deg);
+  }
+  
+  .dynamicBar{
+    width:0%;
+    height:100%;
+    background:#F81;
+    background:url(https://i.imgur.com/PXry5AH.png) left center repeat-x;
+    background-size:auto 100%;
+    filter:drop-shadow(0 0 0.25vw #71C);
+    transition:var(--widthBars);
+  }
+
+
+/*  // Area De Historico //  */
+#bossStory{
+  width:99.8%;
+  height:13.5vw;
+  /*border:1px groove #F47;*/
+  float:right;
+  margin:1vw 0 2vw;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform:rotateY(180deg);
+  box-shadow:inset -0.2vw 0.2vw 1vw #000;
+}
+  #bossStory::-webkit-scrollbar{
+    width:0.25vw;
+    background:transparent;
+  }
+  #bossStory::-webkit-scrollbar-thumb{
+    border-radius:100%;
+    background-image:linear-gradient(0deg, #0000 10%, #73F, #0000 90%);
+  }
+  
+  #storyContent{
+    transform:rotateY(180deg);
+  }
+    /*    ///   Story Format    ///     */
+    #storyContent p{
+      width:99%;
+      height:1.4vw;
+      box-shadow:0.1vw 0.2vw 0.4vw #000;
+      margin:0.15vw 0;
+      background-image:linear-gradient(10deg, #52526020, #45426520);
+      padding:0.8vw 0.1vw;
+      text-align:center;
+      font-family:Pixel-7;
+      font-size:1.50vw;
+      font-weight:lighter;
+      /*font-variant:small-caps;*/
+      text-shadow:-0.1vw -0.1vw 0.02vw #0005;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    #storyContent .leftInf{
+      width:33%;
+      float:left;
+      display:inline;
+      margin:0 0.2vw;
+      text-shadow:0 0 0.9vw #049;
+      text-align:left;
+    }
+
+    #storyContent .centerInf{
+      width:;
+      display:inline;
+      text-shadow:0.1vw 0.1vw 0.7vw #971, -0.1vw -0.1vw 0.7vw #709;
+      text-align:center;
+    }
+
+    #storyContent .rightInfo{
+      width:33%;
+      float:right;
+      display:inline;
+      margin:0 0.2vw;
+      text-shadow:0 0 0.8vw #920, -0.12vw -0.1vw 0.05vw #000;
+      text-align:right;
+    }
+
+    #closeTabs{
+      --closeTabDisplay:none;
+      width:100%;
+      height:100%;
+      display:var(--closeTabDisplay);
+      position:fixed;
+      top:0;
+      left:0;
+      cursor:pointer;
+      z-index:10;
+    }
+
+/*    //  Identificação das Barras  //      */
+#lifeDynamic{
+  --lifeStatus:0%;
+  width:var(--lifeStatus);
+}
+#resisDynamic{
+  --resistenceStatus:0%;
+  width:var(--resistenceStatus);
+  background-image:url(https://i.imgur.com/Afq9kte.png);
+    filter:drop-shadow(0 0 0.25vw #15C);
+}
+#resilDynamic{
+  --resilienceStatus:0%;
+  width:var(--resilienceStatus);
+  background-image:url(https://i.imgur.com/QUvrEgE.png);
+    filter:drop-shadow(0 0 0.25vw #1F3);
+}
+#forceDynamic{
+  --forceStatus:0%;
+  width:var(--forceStatus);
+  background-image:url(https://i.imgur.com/nQpJ5OQ.png);
+    filter:drop-shadow(0 0 0.25vw #F71);
+}
+#focusDynamic{
+  --focusStatus:0%;
+  width:var(--focusStatus);
+  background-image:url(https://i.imgur.com/NDHp8zn.png);
+    filter:drop-shadow(0 0 0.25vw #F39);
+}
+#agilyDynamic{
+  --agilityStatus:0%;
+  width:var(--agilityStatus);
+  background-image:url(https://i.imgur.com/VrtQhlE.png);
+    filter:drop-shadow(0 0 0.25vw #15F);
+}
