@@ -34,9 +34,9 @@
   19% {content:'☂';}
   20% {content:'✘';}
   21% {content:'👁';}
-  22% {content:'♞'; text-shadow:0 0 0vw #2F20; color:#999;}
-  24% {content:'✔'; text-shadow:0 0 1vw #2F2; color:#9F9;}
-  95% {content:'✔'; opacity:1; text-shadow:0 0 1vw #2F2; color:#9F9;}
+  22% {content:'♞'; text-shadow:0 0 0vw #0F00; color:#7F7;}
+  24% {content:'✔'; text-shadow:0 0 1.5vw #0F0; color:#7F7;}
+  95% {content:'✔'; opacity:1; text-shadow:0 0 1.5vw #0F0; color:#7F7;}
   100%{content:'✔';}
 }
 
@@ -63,8 +63,8 @@
   19% {content:'☂';}
   20% {content:'✘';}
   21% {content:'👁';}
-  22% {content:'♞'; text-shadow:0 0 0vw #F220; color:#999;}
-  24% {content:'✘'; text-shadow:0 0 1vw #F22; color:#F99;}
-  95% {content:'✘'; opacity:1; text-shadow:0 0 1vw #F22; color:#F99;}
+  22% {content:'♞'; text-shadow:0 0 0vw #F000; color:#999;}
+  24% {content:'✘'; text-shadow:0 0 1.5vw #F00; color:#F88;}
+  95% {content:'✘'; opacity:1; text-shadow:0 0 1.5vw #F00; color:#F88;}
   100%{content:'✘';}
 }
