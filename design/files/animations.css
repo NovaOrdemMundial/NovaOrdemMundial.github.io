@@ -6,7 +6,6 @@
   animation-duration:8s;
   animation-timing-function:ease-in-out;
   animation-play-state:var(--animationStateIs, paused);
-  text-align:center;
 }
 #checkStatus:hover{
   opacity:1;
