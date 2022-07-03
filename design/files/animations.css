@@ -72,3 +72,23 @@
   95% {content:'✘'; opacity:1; text-shadow:0 0 1vw #F22; color:#F99;}
   100%{content:'✘';}
 }
+
+/*Botão Sacrificar Tudo*/
+
+#SacrificeALL::before{
+  animation-name:var(--sacrificeAnimation, none);
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes sacrificeRotate{
+  10%{content:'✦';}
+  20%{content:'☢';}
+  30%{content:'♦';}
+  40%{content:'☑';}
+  50%{content:'🎖';}
+  60%{content:'✳';}
+  70%{content:'✉';}
+  80%{content:'☼';}
+  90%{content:'☦';}
+}
