@@ -16,3 +16,11 @@ function ifNotMatch(){
     checkStatus.style.setProperty('--animationStateIs', 'paused');
   }, 8000)
 }
+
+//Botão Sacrificar Tudo
+SacrificeALL.addEventListener('mouseover', () => {
+  SacrificeALL.style.setProperty('--sacrificeAnimation', 'sacrificeRotate');
+});
+SacrificeALL.addEventListener('mouseout', () => {
+  SacrificeALL.style.setProperty('--sacrificeAnimation', 'none');
+});
