@@ -16,61 +16,61 @@
 
 @keyframes correct{
   0%  {content:'✔';}
-  1% {content:'✘';}
-  2% {content:'♚';}
-  3% {content:'Φ'; opacity:1 !important;}
-  4% {content:'♔';}
-  5% {content:'✿';}
-  6% {content:'✧';}
-  7% {content:'✔';}
-  8% {content:'✈';}
-  9% {content:'👁';}
-  10% {content:'✖';}
-  11% {content:'ꕥ';}
-  12% {content:'✚';}
-  13% {content:'⚇';}
-  14% {content:'👁';}
-  15% {content:'☀';}
-  16% {content:'✘';}
-  17% {content:'✿';}
-  18% {content:'✧';}
-  19% {content:'☂';}
-  20% {content:'✘';}
-  21% {content:'👁';}
-  22% {content:'⚇';}
-  23% {content:'♞'; text-shadow:0 0 0vw #2F20; color:#999;}
-  24% {content:'✔'; text-shadow:0 0 1vw #2F2; color:#9F9;}
-  95% {content:'✔'; opacity:1 !important; text-shadow:0 0 1vw #2F2; color:#9F9;}
-  100%{content:'✔';}
+  1% {content:'C';}
+  2% {content:'o';}
+  3% {content:'R'; opacity:1 !important;}
+  4% {content:'r';}
+  5% {content:'E';}
+  6% {content:'c';}
+  7% {content:'T';}
+  8% {content:'p';}
+  9% {content:'A';}
+  10% {content:'s';}
+  11% {content:'S';}
+  12% {content:'P';}
+  13% {content:'e';}
+  14% {content:'A';}
+  15% {content:'X';}
+  16% {content:'L';}
+  17% {content:'U';}
+  18% {content:'Q';}
+  19% {content:'a';}
+  20% {content:'L';}
+  21% {content:'A';}
+  22% {content:'e';}
+  23% {content:'w'; text-shadow:0 0 0vw #2F20; color:#999;}
+  24% {content:'K'; text-shadow:0 0 1vw #2F2; color:#9F9;}
+  95% {content:'K'; opacity:1 !important; text-shadow:0 0 1vw #2F2; color:#9F9;}
+  100%{content:'K';}
 }
 
 @keyframes wrong{
-  0%  {content:'✔';}
-  1% {content:'✘';}
-  2% {content:'♚';}
-  3% {content:'♦'; opacity:1;}
-  4% {content:'♔';}
-  5% {content:'✿';}
-  6% {content:'✧';}
-  7% {content:'✔';}
-  8% {content:'♡';}
-  9% {content:'👁';}
-  10% {content:'✖';}
-  11% {content:'ꕥ';}
-  12% {content:'✚';}
-  13% {content:'♣';}
-  14% {content:'👁';}
-  15% {content:'☀';}
-  16% {content:'✘';}
-  17% {content:'♠';}
-  18% {content:'✧';}
-  19% {content:'☂';}
-  20% {content:'✘';}
-  21% {content:'👁';}
-  22% {content:'♞'; text-shadow:0 0 0vw #F220; color:#999;}
-  24% {content:'✘'; text-shadow:0 0 1vw #F22; color:#F99;}
-  95% {content:'✘'; opacity:1; text-shadow:0 0 1vw #F22; color:#F99;}
-  100%{content:'✘';}
+  0%  {content:'L';}
+  1% {content:'K';}
+  2% {content:'M';}
+  3% {content:'N'; opacity:1;}
+  4% {content:'O';}
+  5% {content:'P';}
+  6% {content:'Q';}
+  7% {content:'R';}
+  8% {content:'S';}
+  9% {content:'A';}
+  10% {content:'T';}
+  11% {content:'U';}
+  12% {content:'V';}
+  13% {content:'W';}
+  14% {content:'A';}
+  15% {content:'X';}
+  16% {content:'K';}
+  17% {content:'Y';}
+  18% {content:'Q';}
+  19% {content:'a';}
+  20% {content:'L';}
+  21% {content:'A';}
+  22% {content:'b'; text-shadow:0 0 0vw #F220; color:#999;}
+  24% {content:'L'; text-shadow:0 0 1vw #F22; color:#F99;}
+  95% {content:'L'; opacity:1; text-shadow:0 0 1vw #F22; color:#F99;}
+  100%{content:'L';}
 }
 
 /*Botão Sacrificar Tudo*/
@@ -82,13 +82,13 @@
 }
 
 @keyframes sacrificeRotate{
-  10%{content:'✦';}
-  20%{content:'☢';}
-  30%{content:'♢';}
-  40%{content:'☑';}
-  50%{content:'🎖';}
-  60%{content:'✳';}
-  70%{content:'✉';}
-  80%{content:'☼';}
-  90%{content:'☦';}
+  10%{content:'B';}
+  20%{content:'C';}
+  30%{content:'D';}
+  40%{content:'E';}
+  50%{content:'F';}
+  60%{content:'G';}
+  70%{content:'H';}
+  80%{content:'I';}
+  90%{content:'J';}
 }
