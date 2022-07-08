@@ -1,6 +1,6 @@
 /*****|||||Pass de Usuario Animação||||||********/
 #checkStatus:before{
-  content:'👁';
+  content:'A';
   color:#999;
   animation-name:var(--passCheckIs, none);
   animation-duration:8s;
