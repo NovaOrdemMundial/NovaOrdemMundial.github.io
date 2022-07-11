@@ -95,11 +95,39 @@
 
 
 /*==========Tela de Secret============*/
-.secretTextVisible{
+.secretText1{
   animation-play-state:1s;
   animation-name:textFade;
   animation-duration:1s;
   animation-delay:0s;
+  animation-timing-function:ease-in-out;
+}
+.secretText2{
+  animation-play-state:1s;
+  animation-name:textFade;
+  animation-duration:1s;
+  animation-delay:0.3s;
+  animation-timing-function:ease-in-out;
+}
+.secretText3{
+  animation-play-state:1s;
+  animation-name:textFade;
+  animation-duration:1s;
+  animation-delay:0.6s;
+  animation-timing-function:ease-in-out;
+}
+.secretText4{
+  animation-play-state:1s;
+  animation-name:textFade;
+  animation-duration:1s;
+  animation-delay:0.9s;
+  animation-timing-function:ease-in-out;
+}
+.secretText4{
+  animation-play-state:1s;
+  animation-name:textFade;
+  animation-duration:1s;
+  animation-delay:1.2s;
   animation-timing-function:ease-in-out;
 }
 
