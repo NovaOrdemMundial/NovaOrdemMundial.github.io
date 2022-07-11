@@ -95,9 +95,9 @@
 
 
 /*==========Tela de Secret============*/
-#secretTextVisible{
-  animation-play-state:var(--secretTextAnimationStatus);
-  animation-name:var(--secretTextAnimation);
+.secretTextVisible{
+  animation-play-state:1s;
+  animation-name:textFade;
   animation-duration:1s;
   animation-delay:0s;
   animation-timing-function:ease-in-out;
