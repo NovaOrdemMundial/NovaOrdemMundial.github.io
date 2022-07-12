@@ -136,3 +136,44 @@
   10%{opacity:0;}
   100%{opacity:1;}
 }
+
+
+/*GiveYouUp BUtton*/
+body{
+  background:black;
+}
+.GiveYouUp{
+  animation:giveyouup 0.5s step-end infinite;
+  animation-direction: reverse;
+  overflow:hidden;
+}
+.GiveYouUp:before{
+    content: "";
+    position:absolute;
+    width: 50%;
+    height: 150%;
+    top: -30%;
+    left: 25%;
+    z-index:-1;
+    border-radius:100%;
+    background: none;
+    background-image:conic-gradient( #F155, #1F55, #51F5, #F715);
+    transform: rotate(0deg) scale(2);
+    animation:tester linear 1s infinite;
+    filter:blur(0.2vw) ;
+    opacity: 0.4;
+}
+
+@keyframes giveyouup{
+  0%{color:#F99; text-shadow:0 0 1vw #F33;}
+  20%{color:#9F9; text-shadow:0 0 1vw #3F3;}
+  40%{color:#FF9; text-shadow:0 0 1vw #FF3;}
+  60%{color:#99F; text-shadow:0 0 1vw #33F;}
+  80%{color:#F98; text-shadow:0 0 1vw #F83;}
+  100%{color:#98F; text-shadow:0 0 1vw #63F;}
+}
+
+@keyframes tester{
+  0%{transform: rotate(0deg) scale(2);}
+  100%{transform: rotate(360deg) scale(2);}
+}
