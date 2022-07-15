@@ -7,4 +7,4 @@ const cer       = 'Axv0bcjSq';
 const game      = 'tTfY38Q4bHZu_1nZPJ8cKniC22qZBLkXtQXg0oC';
 const play      = '_vLzlpDmgt7DJa16gUi0';
 const botName   = 'The Eye in One Mind';
-const botAvatar = '';
+const botAvatar = 'https://i.imgur.com/a0Z5fJh.png';
