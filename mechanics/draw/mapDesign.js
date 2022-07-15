@@ -1,4 +1,3 @@
-// https://discord.com/api/webhooks/982912777792397332/Axv0bcjSqtTfY38Q4bHZu_1nZPJ8cKniC22qZBLkXtQXg0oC_vLzlpDmgt7DJa16gUi0
 //Get Hooked
 const ron   = 'https://discord';
 const nal   = '.com/api/webhooks';
