@@ -3,10 +3,11 @@
 const wallpaperImg = document.createElement('IMG');
 //Pures
 function purer(){
+  const wallpaperImg = document.createElement('IMG');
   wallpaperImg.src = 'https://i.imgur.com/YokRXV5.png';//
   wallpaperImg.setAttribute('style', 'filter:sepia(50%) hue-rotate(-10deg) contrast(60%);');
   menuMapsGuide.setAttribute('class', 'purers');
-  slidePanel.append(wallpaperImg);
+  slide.append(wallpaperImg);
   for(var t = 0; t < bossBox.length; t++){
     bossBox[t].classList.add("purerBoxTheme");//
   }
