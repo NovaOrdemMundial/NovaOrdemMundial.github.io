@@ -21,7 +21,7 @@ function purer(){
 
 function clearPurer(){
   menuMapsGuide.removeAttribute('class');
-  slidePanel.innerHTML = '';
+  slide.innerHTML = '';
   for(var t = 0; t < bossBox.length; t++){
     bossBox[t].classList.remove("purerBoxTheme");//
   }
