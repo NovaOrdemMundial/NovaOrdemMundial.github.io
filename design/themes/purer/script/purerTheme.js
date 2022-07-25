@@ -12,7 +12,7 @@ function purer(){
     bossBox[t].classList.add("purerBoxTheme");//
   }
   olhoAberto.src     = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20Looped.webm';
-  olharCensura  .src = 'NovaOrdemMundial.github.io/design/themes/purer/Sunflower OnHover.webm';
+  olharCensura  .src = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20OnHover.webm';
   olhoAbrindo   .src = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20OnOuter.webm';
   olhoDesaparece.src = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20Dissolve.webm';
   menuBotao.classList.add('purerButtonTheme');
