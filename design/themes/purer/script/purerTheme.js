@@ -31,6 +31,7 @@ function clearPurer(){
   olhoAbrindo   .src = abrirOlhoLink;
   olhoDesaparece.src = olhoDesapareceLink;
   menuBotao.classList.remove('purerButtonTheme');
+  selectBossText.classList.remove('bossTextPurerStyle');
   wallpaperVignetta.style.backgroundImage = '';
   
 }
