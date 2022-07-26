@@ -16,6 +16,7 @@ function purer(){
   olhoAbrindo   .src = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20OnOuter.webm';
   olhoDesaparece.src = 'https://novaordemmundial.github.io/design/themes/purer/Sunflower%20Dissolve.webm';
   menuBotao.classList.add('purerButtonTheme');
+  selectBossText.classList.add('bossTextPurerStyle');
   wallpaperVignetta.style.backgroundImage = 'radial-gradient(#1110 15%, rgba(15,9,5,0.95) 65%)';
 }
 
