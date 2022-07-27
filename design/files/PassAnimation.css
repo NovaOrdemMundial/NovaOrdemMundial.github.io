@@ -1,0 +1,31 @@
+
+#passSymbolCicle span::before{
+  content:attr(data-quem);
+  animation-name:flickpick;
+  animation-duration:3s;
+  animation-timing-function:linear;
+  animation-iteration-count: 2;
+}
+
+
+@keyframes flickpick{
+  5%{content:'R';}
+  10%{content:'f';}
+  15%{content:'U';}
+  20%{content:'h';}
+  25%{content:'l';}
+  30%{content:'m';}
+  35%{content:'x';}
+  40%{content:'W';}
+  45%{content:'U';}
+  50%{content:'h';}
+  55%{content:'f';}
+  60%{content:'a';}
+  65%{content:'R';}
+  70%{content:'X';}
+  75%{content:'o';}
+  80%{content:'h';}
+  85%{content:'I';}
+  90%{content:'j';}
+  95%{content:'P';}
+}
