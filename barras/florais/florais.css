@@ -168,3 +168,24 @@ body{
   font-family:EnterCommand;
   font-size:22px;
 }
+
+@media only screen and (max-width: 860px) {
+  #todo{
+    transform:scale(70%) translatey(-50px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #todo{
+    transform:scale(50%) translatey(-120px);
+  }
+}
+@media only screen and (max-width: 430px) {
+  #todo{
+    transform:scale(40%) translatey(-170px);
+  }
+}
+@media only screen and (max-width: 345px) {
+  #todo{
+    transform:scale(20%) translatey(-470px);
+  }
+}
