@@ -173,19 +173,35 @@ body{
   #todo{
     transform:scale(70%) translatey(-7vw);
   }
+  
+  #botoes button{
+    font-size:30px;
+  }
 }
 @media only screen and (max-width: 600px) {
   #todo{
     transform:scale(50%) translatey(-20vw);
+  }
+  
+  #botoes button{
+    font-size:25px;
   }
 }
 @media only screen and (max-width: 430px) {
   #todo{
     transform:scale(40%);
   }
+  
+  #botoes button{
+    font-size:20px;
+  }
 }
 @media only screen and (max-width: 345px) {
   #todo{
     transform:scale(20%);
+  }
+  
+  #botoes button{
+    font-size:15px;
   }
 }
