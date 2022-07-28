@@ -1,0 +1,208 @@
+@font-face{
+  font-family:EnterCommand;
+  src:url(https://novaordemmundial.github.io/design/fonts/EnterCommand.ttf);
+}
+@font-face{
+  font-family:My Ugly Handwriting;
+  src:url(https://dl.dropboxusercontent.com/s/8dby5oyntiizlwg/MyUglyHandwriting-Regular.otf);
+}
+@font-face{
+  font-family:Riscada Doodle;
+  src:url(https://dl.dropboxusercontent.com/s/r4vo38jpy7mzcab/Riscada%20Doodle.ttf?dl=0);
+}
+@font-face{
+  font-family:Doodle;
+  src:url(https://dl.dropboxusercontent.com/s/jon5kp89dp0mxbq/Doodles.ttf);
+}
+@font-face{
+  font-family:Doodle Head;
+  src:url(https://dl.dropboxusercontent.com/s/p9kgz5t6rqmra5k/Doodle_Head.ttf);
+}
+@font-face{
+  font-family:Doodle Of Fun;
+  src:url(https://dl.dropboxusercontent.com/s/3mzvnw1qn7584w5/DoodlesOfFun.ttf);
+}
+
+:root{
+  --VidaAtual:100%;
+}
+body{
+  background:#080808;
+  display:flex;
+  justify-content:center;
+  color:#FFF;
+}
+#todo{
+  width:856px;
+/*   transform:scale(60%); */
+}
+#corpo{
+  width:856px;
+  height:220px;
+  background:url(https://i.imgur.com/JJAo9vq.png) no-repeat center;
+  background-size:100%;
+}
+#border{
+  width:856px;
+  height:220px;
+  background:url(https://i.imgur.com/iA7hOiO.png);
+  background-size:100%;
+  position:absolute;
+  z-index:5;
+}
+#barras{
+  width:675px;
+  height:220px;
+  margin:0 0 0 140px;
+  position:absolute;
+  z-index:0;
+}
+
+#barras img{
+  margin:0 0 0 -140px;
+}
+
+#vazia{
+  width:;
+}
+#vazia img{
+  position:absolute;
+}
+
+#vermelha{
+  width:var(--VidaAtual);
+/*   width:80%; */
+  height:220px;
+  overflow:hidden;
+  transform:skewx(30deg);
+  transition:all ease-in-out 1s 2s;
+  position:absolute;
+}
+
+#vermelha img{
+  position:absolute;
+  filter:invert() contrast(250%);
+  transform:skewx(-30deg);
+}
+#cheia{
+  width:var(--VidaAtual);
+  height:220px;
+  overflow:hidden;
+  transform:skewx(30deg);
+  transition:all ease-in-out 1s;
+  position:absolute;
+}
+#cheia img{
+  position:absolute;
+  transform:skewx(-30deg);
+}
+
+#subtitulo{
+  width:856px;
+  height:220px;
+  position:absolute;
+  z-index:1;
+}
+
+
+
+#lights{
+  width:856px;
+  height:220px;
+  background:url(https://i.imgur.com/e9nLYZ8.png);
+  position:absolute;
+  z-index:2;
+}
+
+
+#barras h2{
+  position:absolute;
+  z-index:30;
+  top:30px;
+  font-size:38px;
+  text-shadow:1px 1px 5px #000;
+  font-family:Doodle Of Fun;
+  color:#222;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+
+#health{
+  position:absolute;
+  top:35px;
+  right:60px;
+  font-size:25px;
+  font-family:'Riscada Doodle';
+  font-weight:lighter;
+  text-shadow:0px 0px 7px #0F0;
+  opacity:0.9;
+}
+
+#botoes{
+  bottom:0;
+  left:45vw;
+  position:fixed;
+  z-index:50;
+}
+#botoes button{
+  margin:0 0.5vw;
+  font-family:EnterCommand;
+  font-size:36px;
+  font-weight:400;
+  background:#111;
+  border:none;
+  cursor:pointer;
+  transition:all ease-in-out 0.2s;
+}
+
+#botoes button:nth-child(1){
+  color:#F89;
+  text-shadow:0 0 8px #F01;
+}
+
+#botoes button:nth-child(2){
+  color:#5F9;
+  text-shadow:0 0 8px #0F1;
+}
+
+#botoes button:hover{
+  background:#FFF;
+  color:#000;
+  text-shadow:1px 1px 5px #000;
+}
+
+#leftTab{
+  width:20vw;
+  background:#222;
+  box-shadow:inset 1px 1px 6px #000;
+  display:none;
+}
+#leftTab input{
+  background:#000;
+  border:none;
+  margin:2px 0;
+  color:#FFF;
+  font-family:EnterCommand;
+  font-size:22px;
+}
+
+@media only screen and (max-width: 860px) {
+  #todo{
+    transform:scale(70%) translatey(-7vw);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #todo{
+    transform:scale(50%) translatey(-20vw);
+  }
+}
+@media only screen and (max-width: 430px) {
+  #todo{
+    transform:scale(40%);
+  }
+}
+@media only screen and (max-width: 345px) {
+  #todo{
+    transform:scale(20%);
+  }
+}
