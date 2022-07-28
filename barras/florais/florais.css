@@ -2,139 +2,123 @@
   font-family:EnterCommand;
   src:url(https://novaordemmundial.github.io/design/fonts/EnterCommand.ttf);
 }
+
 :root{
   --VidaAtual:100%;
 }
 body{
-  background:#0000;
-}
-.corpo{
-  width:100%;
-  height:100%;
-  position:fixed;
-  top:0;
-  left:0;
+  background:#080808;
   display:flex;
-/*   align-items:flex-end; */
   justify-content:center;
-/*   border:dashed 3px #F58; */
+  color:#FFF;
 }
-
-#fundo{
+#todo{
+  width:856px;
+/*   transform:scale(60%); */
+}
+#corpo{
   width:856px;
   height:220px;
-  background:url(https://i.imgur.com/z95zJ1e.png);
+/*   border:dashed 1px #FFF; */
+  background:url(https://i.imgur.com/z95zJ1e.png) no-repeat center;
   background-size:100%;
-/*   border:dotted 1px #157; */
-  z-index:5;
 }
-
-#borda{
+#border{
   width:856px;
   height:220px;
-  position:absolute;
   background:url(https://i.imgur.com/US7RdKj.png);
   background-size:100%;
-  z-index:15;
+  position:absolute;
+  z-index:5;
 }
-
 #barras{
-  width:78.5%;
-  position:relative;
-  left:12%;
-/*   border:solid 1px #08F; */
-  z-index:1;
-}
-#barras h2{
-  color:#FFF;
+  width:675px;
+  height:220px;
+  margin:0 0 0 140px;
   position:absolute;
-  z-index:85;
-  margin:65px 0px 0 45px;
-  font-family:'Doppio One';
-  font-weight:lighter;
-  font-size:36px;
-  text-shadow:1px 1px 5px #000;
-}
-#barras h4{
-  position:absolute;
-  right:10px;
-  top:15px;
-  color:#FFF;
-  font-size:42px;
-  text-shadow:1px 1px 5px #000;
-  font-family:EnterCommand;
-  font-weight:lighter;
-  z-index:35;
-}
-
-#barras div{
-  left:20px !important;
-/*   border:dashed 1px #182; */
-  position:absolute;
+/*   border:dashed 1px #049; */
+  z-index:0;
 }
 
 #barras img{
-  width:856px;
-  position:relative;
-  left:-105px;
-  top:0;
-  
+  margin:0 0 0 -140px;
 }
 
+#vazia{
+  width:;
+/*   border:dotted 1px #91F; */
+}
 #vazia img{
-  filter:invert() saturate(10%) contrast(120%) brightness(20%) hue-rotate(260deg);
-  left:-120px;
+  position:absolute;
+  filter:invert() saturate(5%) hue-rotate(-40deg) contrast(160%) brightness(30%);
 }
 
-#cheia{
-  width:var(--VidaAtual);
-  height:66px;
-  overflow:hidden;
-/*   border:dotted 1px #F00; */
-  transform:skewX(30deg);
-  top:49px;
-  transition:all ease-in-out 1s;
-  box-shadow:1px 1px 5px #000;
-}
-#cheia img{
-  transform:skewX(-30deg);
-  left:-140px;
-  top:-49px;
-}
 #vermelha{
   width:var(--VidaAtual);
-  height:66px;
+  height:220px;
   overflow:hidden;
-  transform:skewX(30deg);
-  top:49px;
-  transition:all ease-in-out 1s 3s;
-  filter:invert() hue-rotate(-90deg) contrast(190%) brightness(80%);
-  box-shadow:25px 0px 15px -5px #95F8, 1px 1px 5px #FFF;
-}
-#vermelha img{
-  transform:skewX(-30deg);
-  left:-140px;
-  top:-49px;
-/*   filter:blur(2px); */
-}
-#subtitle{
-  width:100%;
-  height:100%;
-  background:url(https://i.imgur.com/dhzHf17.png);
-/*   border:dashed 1px #F28; */
+  transform:skewx(30deg);
+  transition:all ease-in-out 1s 2s;
+  position:absolute;
 }
 
-#subtitle div{
-  width:100%;
-  height:100%;
+#vermelha img{
+  position:absolute;
+  filter:invert() saturate(65%) hue-rotate(-90deg) contrast(200%) brightness(80%) blur(2px);
+  transform:skewx(-30deg);
 }
-#lifecount{
-/*   border:dashed 1px #9F1; */
-  background:url(https://i.imgur.com/ORL9u93.png);
+#cheia{
+  width:var(--VidaAtual);
+  height:220px;
+  overflow:hidden;
+/*   border:dashed 1px #F01; */
+  transform:skewx(30deg);
+  transition:all ease-in-out 1s;
+  position:absolute;
 }
-#lifecount1{
-/*   border:dashed 1px #12F; */
+#cheia img{
+  position:absolute;
+  transform:skewx(-30deg);
+}
+
+#subtitulo{
+  width:856px;
+  height:220px;
+  background:url(https://i.imgur.com/dhzHf17.png);
+  position:absolute;
+  z-index:1;
+}
+
+
+
+#lights{
+  width:856px;
+  height:220px;
   background:url(https://i.imgur.com/ORL9u93.png);
+  position:absolute;
+  z-index:2;
+}
+
+
+#barras h2{
+  position:absolute;
+  z-index:30;
+  top:30px;
+  font-size:38px;
+  text-shadow:1px 1px 5px #000;
+  font-family:Doppio One;
+  font-weight:lighter;
+  letter-spacing:3px;
+}
+
+#health{
+  position:absolute;
+  top:25px;
+  right:60px;
+  font-size:36px;
+  font-family:EnterCommand;
+  font-weight:lighter;
+  text-shadow:1px 1px 5px #000;
 }
 
 #botoes{
