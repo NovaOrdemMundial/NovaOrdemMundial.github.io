@@ -181,11 +181,11 @@ body{
 }
 @media only screen and (max-width: 430px) {
   #todo{
-    transform:scale(40%) translatey(-40vw);
+    transform:scale(40%);
   }
 }
 @media only screen and (max-width: 345px) {
   #todo{
-    transform:scale(20%) translatey(-120vw);
+    transform:scale(20%);
   }
 }
