@@ -14,7 +14,7 @@ body{
 }
 #todo{
   width:856px;
-/*   transform:scale(60%); */
+  transform:scale(60%);
 }
 #corpo{
   width:856px;
@@ -125,6 +125,7 @@ body{
   bottom:0;
   left:45vw;
   position:fixed;
+  z-index:50;
 }
 #botoes button{
   margin:0 0.5vw;
