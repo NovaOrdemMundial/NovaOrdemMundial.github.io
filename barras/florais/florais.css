@@ -171,21 +171,21 @@ body{
 
 @media only screen and (max-width: 860px) {
   #todo{
-    transform:scale(70%) translatey(-50px);
+    transform:scale(70%) translatey(-7vw);
   }
 }
 @media only screen and (max-width: 600px) {
   #todo{
-    transform:scale(50%) translatey(-120px);
+    transform:scale(50%) translatey(-20vw);
   }
 }
 @media only screen and (max-width: 430px) {
   #todo{
-    transform:scale(40%) translatey(-170px);
+    transform:scale(40%) translatey(-40vw);
   }
 }
 @media only screen and (max-width: 345px) {
   #todo{
-    transform:scale(20%) translatey(-470px);
+    transform:scale(20%) translatey(-120vw);
   }
 }
