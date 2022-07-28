@@ -1,9 +1,12 @@
-vaziaImg.src = 'https://i.imgur.com/gEVSAwQ.gif';
-redBar.src   = 'https://i.imgur.com/92tDKRl.gif';
-fullBar.src  = 'https://i.imgur.com/92tDKRl.gif';
-const subtitulo = 'url(https://i.imgur.com/dhzHf17.png)';
-const border    = 'url(https://i.imgur.com/US7RdKj.png);';
-subtitle.style.background = subtitulo;
+const empty = document.createElement('IMG');
+const red   = document.createElement('IMG');
+const full = document.createElement('IMG');
+empty.src = 'https://i.imgur.com/gEVSAwQ.gif';
+red.src   = 'https://i.imgur.com/92tDKRl.gif';
+full.src = 'https://i.imgur.com/92tDKRl.gif';
+vazia.append(empty);
+vermelha.append(red);
+cheia.append(full);
 
 const vidaAtual = document.createElement('input');  vidaAtual.value = '0';
 const vidaDano  = document.createElement('input');  vidaDano .value = '0';
