@@ -57,3 +57,6 @@ const whoeIs    = localStorage.getItem('LoggedHas');
 const pathIs    = localStorage.getItem('LoggedPath');
 const typeIs    = localStorage.getItem('UserType');
 //const aiddIs     = localStorage.getItem('identification');
+
+// 		//Leitor Instantaneo//			//
+const getBossName = localStorage.getItem('bossName');
