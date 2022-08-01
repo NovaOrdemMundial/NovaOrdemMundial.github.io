@@ -46,3 +46,46 @@ function bossTabOpen(){
     bossTabWindow.style.setProperty('--bossWindowHeight', '95%');
   }, 100);
 }
+
+////////////MENUS TABS/////////////////
+function onMenusTabsClose(){
+  passScreen.style.opacity = '0'
+  menusVenishTrap.style.pointerEvents = 'none';
+  setTimeout(() => {
+    passBackScreen.style.opacity = '0';
+    setTimeout(() =>{
+      menusVenishTrap.style.setProperty('--menusVenishDisplay', 'none');
+      passBackScreen.style.setProperty('--PassScreenDisplay', 'none');
+      warningWindows.innerHTML = '';
+    }, 300);
+  }, 300);
+}
+
+////////////Custom Closes/////////
+//Ao Fechar o Menu De Customizações//
+function customColse(){
+  document.documentElement.style.setProperty('--customDisplayView', '120%');
+  setTimeout(() =>{
+    document.documentElement.style.setProperty('--customScreenView', '0');
+    setTimeout(() =>{
+      document.documentElement.style.setProperty('--customScreenStatus', 'none');
+      themeField.innerHTML = '';
+      soundField.innerHTML = '';
+      secretField.innerHTML = '';
+      collectionField.innerHTML = '';
+      outraField.innerHTML = '';
+    }, 300)
+  }, 200)
+}
+
+///////////CLOSE OTHER DEX/////////
+function closeAvisoSuperior(){
+  document.documentElement.style.setProperty('--AvisoMSGOpacity', '0');
+  setTimeout(()=>{
+    document.documentElement.style.setProperty('--AvisoOpacity', '0');
+    setTimeout(()=>{
+      document.documentElement.style.setProperty('--AvisoDisplay', 'none');
+      avisosSuperior.innerHTML = '';
+    }, 200)
+  },300)
+}
