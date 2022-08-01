@@ -93,6 +93,15 @@ function itemCheckToClaim(){
     win2.append(titleTextW1, imageThumb, countText, descText, footerText, inputDescript, cancelButton);
   }
   else if(itemID == 'voidItem_6'){
+    descText.innerHTML = 'Olá {NOME}, você possui {COUNT} {ITEM}. {ITEM} Se trata de uma skin para sua barra de vida quando você se torna <i>Boss</i>, a baixo você pode escolher quem deseja presentear com {ITEM}';
+    footerText.innerHTML = 'Se você esta nessa janela isso significa que você ja possui sua propria {ITEM} e pode oferecer essa a outro viewer do chat.';
+    inputDescript.setAttribute('placeholder', 'Digite o Nick de quem você deseja presentear com {ITEMTITLE}');
+    confirmButton.innerHTML = 'RESGATAR';
+    confirmButton.setAttribute('title', 'Resgatar 1 {ITEMTITLE}');
+    cancelButton.innerHTML = 'VOLTAR';
+    win2.append(titleTextW1, imageThumb, countText, descText, footerText, inputDescript, cancelButton, confirmButton);
+  }
+  else if(itemID == 'voidItem_7'){
     descText.innerHTML = 'Olá {NOME}, o item que você clicou esta indiponivel por enquanto :(.';
     footerText.innerHTML = 'Espero que o item ja esteja disponivel quando você voltar {NOME}';
     inputDescript.setAttribute('placeholder', 'Me Desculpa :c');
@@ -218,13 +227,20 @@ function itemInfoCheckUser(){
   }
   
   else if(itemID == 'item_06'){
+    descText.innerHTML = '{NOME} possui {COUNT} {ITEM}. <br />{ITEM} é uma skin de barra de vida quando {NOME} se tornar boss a barra de vida dele pode ter o design {ITEM}';
+    footerText.innerHTML = 'Se você insistir muito o(a) {NOME} pode te presentear com a {ITEM}';
+    cancelButton.innerHTML = 'VOLTAR';
+    win2.append(titleTextW1, imageThumb, descText, footerText, cancelButton);
+  }
+  
+  else if(itemID == 'item_07'){
     descText.innerHTML = 'Esse Item ainda não esta disponivel =/';
     footerText.innerHTML = 'Acho Melhor Voltar...';
     cancelButton.innerHTML = 'VOLTAR';
     win2.append(descText, footerText, cancelButton);
   }
   
-  else if(itemID == 'item_07'){
+  else if(itemID == 'item_08'){
     descText.innerHTML = 'Acho que vc esta indo longe demais.';
     footerText.innerHTML = 'Melhor voltar pra guia anterior, não tem nada aqui.';
     cancelButton.innerHTML = 'VOLTAR';
