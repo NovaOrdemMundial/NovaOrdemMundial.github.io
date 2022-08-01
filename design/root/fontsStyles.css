@@ -1,0 +1,111 @@
+﻿@font-face{
+  font-family:Gumela;
+  src:url(https://dl.dropboxusercontent.com/s/k3l1b9ms8lb04uo/Gumela.ttf);
+}
+@font-face{
+  font-family:EndBoss;
+  src:url(https://dl.dropboxusercontent.com/s/hhetljjpv8fja58/Endless%20Boss%20Battle.ttf) ;
+}
+@font-face{
+  font-family:Gameplay;
+  src:url(https://dl.dropboxusercontent.com/s/6wtikagk9gy5m2i/GAMEPLAY-1987.ttf) ;
+}
+@font-face{
+  font-family:ModernDOS;
+  src:url(https://dl.dropboxusercontent.com/s/c3a2243dzjudssc/ModernDOS9x16.ttf) ;
+}
+@font-face{
+  font-family:Pixel-7;
+  src:url(https://dl.dropboxusercontent.com/s/lbmwvyx0t65gqn7/pixel%20font-7.ttf);
+}
+@font-face{
+  font-family:SwitchOne;
+  src:url(https://dl.dropboxusercontent.com/s/5zxbtl9t3pzpnht/SwitchOneDemoRegular.ttf);
+}
+@font-face{
+  font-family:Pixellari;
+  src:url(https://novaordemmundial.github.io/design/fonts/Pixellari.ttf);
+}
+@font-face{
+  font-family:Pixel;
+  src:url(https://novaordemmundial.github.io/design/fonts/Pixel12x10.ttf);
+}
+@font-face{
+  font-family:PixelIntv;
+  src:url(https://novaordemmundial.github.io/design/fonts/Pixel%20Intv.otf);
+}
+@font-face{
+  font-family:PixelLife;
+  src:url(https://novaordemmundial.github.io/design/fonts/Pixel-Life.ttf);
+}
+@font-face{
+  font-family:EnterCommand;
+  src:url(https://novaordemmundial.github.io/design/fonts/EnterCommand.ttf);
+}
+@font-face{
+  font-family:NOMSymbols;
+  src:url(https://novaordemmundial.github.io/design/fonts/custom/NomSymbolFont.ttf);
+}
+@font-face{
+  font-family:SymbolsOfEyes;
+  src:url(https://novaordemmundial.github.io/design/fonts/symbols/SymbolsOfEyes.ttf);
+}
+@font-face{
+  font-family:ModernText;
+  src:url(https://novaordemmundial.github.io/design/fonts/modern/ModernSans-Light.otf);
+}
+@font-face{
+  font-family:ModernText2;
+  src:url(https://novaordemmundial.github.io/design/fonts/modern/modern%20M.ttf);
+}
+@font-face{
+  font-family:ScriptText1;
+  src:url(https://novaordemmundial.github.io/design/fonts/script/Scripty_Demo.ttf);
+}
+@font-face{
+  font-family:ScriptText2;
+  src:url(https://novaordemmundial.github.io/design/fonts/script/Ellie-Script.otf);
+}
+/*Pure Themes*/
+@font-face{
+  font-family:purer;
+  src:url(https://novaordemmundial.github.io/design/fonts/pureTheme/Flowing%20Flowers.ttf);
+}
+@font-face{
+  font-family:purer2;
+  src:url(https://novaordemmundial.github.io/design/fonts/pureTheme/SUNFLOWE.TTF);
+}
+@font-face{
+  font-family:purer3;
+  src:url(https://novaordemmundial.github.io/design/fonts/pureTheme/Flower%20Powers.ttf);
+}
+@font-face{
+  font-family:purer4;
+  src:url(https://novaordemmundial.github.io/design/fonts/pureTheme/Sunflower%20Garden.ttf);
+}
+
+:root{
+  --skewDirect:0, 0deg;
+  --rotateDirect:7deg;
+  --desRotate:-7deg;
+  --bossPurpleBackground:linear-gradient(-10deg, #100915, #090910);
+  --purpleLtCr: 0vw 0.8vw 0.8vw -0.7vw #62F;
+  --purpleLtCr2: 0vw -0.8vw 0.8vw -0.7vw #62F;
+  --bossTabBorder:double 0.5vw #986;
+  --bossTabBorderLight:inset 0vw 0.9vw 1vw -1.2vw #F93, inset 0vw -0.9vw 1vw -1.2vw #F93;
+  --widthBars:all ease-in-out 1s 1s;
+  --menuButtonShow:0, 140%;
+  --warningWin1Opacity:0;
+  --warningWin2Opacity:0;
+  --debuggViewer:none;
+  --customScreenStatus:none;
+  --customScreenView:0;
+  --customDisplayView:120%;
+  --secretScreenOpacity:0;
+  --secretScreenDisplay:none;
+  --AvisoDisplay:none;
+  --AvisoOpacity:0;
+  --AvisoMSGOpacity:0;
+  --SymbolCiclesDisplay:none;
+  --SymbolCiclesOpacity:0;
+}

@@ -1,0 +1,165 @@
+﻿/*Adaptador de Tela*/
+@media (max-aspect-ratio: 15/10){
+  #slide img{
+    width:auto;
+    height:100%;
+    opacity:0.2;
+    position:;
+    left:0;
+    top:0;
+  }
+  #slide video{
+    width:100%;
+    opacity:0.2;
+    position:absolute;
+    left:0;
+    top:0;
+  }
+  #slide h1{
+    position:absolute;
+    margin:0 0 0;
+    left:3vw;
+    top:9vw;
+    font-size:6.5vw;
+  }
+  #slide h2{
+    position:absolute;
+    margin:1vw 0;
+    left:6vw;
+    top:15vw;
+    font-size:5vw;
+  }
+  #slide h3{
+    position:absolute;
+    margin:0;
+    right:4vw;
+    top:40vh;
+    font-size:3vw;
+  }
+  #slide h4{
+    position:absolute;
+    margin:1vw 0;
+    right:4vw;
+    top:42vh;
+    font-size:3.2vw;
+  }
+  #slide h5{
+    position:absolute;
+    margin:0vw 0;
+    right:10vw;
+    bottom:1vh;
+    font-size:4vw;
+  }
+  #slide h6{
+    position:absolute;
+    margin:0vw 0;
+    right:0;
+    bottom:1vw;
+    left:0;
+    font-size:3vw;
+  }
+  
+  #wallpaper video{
+    position:relative;
+    right:55vw;
+  }
+}
+
+/*Adaptadores de Resolução >Arquivos Separados<*/
+/*Ultra Landscape*/
+@media (min-aspect-ratio: 15/5){
+  #wallpaper video{
+    width:100% ;
+    height:auto;
+  }
+  
+  #bossBox{
+    width:15%;
+    padding-top:14%;
+    font-size:1.6vw;
+  }
+}
+
+/*Portrait*/
+
+@media (max-aspect-ratio: 15/12){   
+  #painelEsquedo{
+    width:50%;
+    perspective:1000px;
+  } 
+  #painelDireito{
+    width:50%;
+    perspective:1000px;
+  }
+  #conteudoEsquerdo{
+    perspective:1000px;
+  }
+  #conteudoDireito{
+    perspective:1000px;
+  }
+  
+  #painelCentral{
+    width:10%;
+  }
+  
+  #painelEsquedo h1{
+    font-size:5vw;
+    font-weight:lighter;
+  }
+  #bossBox{
+    width:30%;
+    padding-top:29%;
+    font-size:3.8vw;
+    line-height:1.5vw;
+    text-shadow:0 0 1vw #000, 0 0 1vw #000;
+    color:#EEF;
+  }
+  #bossesRoxos button{
+    margin:0.4vw 0.3vw;
+  }
+  
+  #statsField h5{
+    font-size:2vw;
+  }
+  
+  #inventory h3{
+    font-size:2vw;
+  }
+  
+  #storyContent p{
+    font-size:1.9vw;
+    font-weight:lighter;
+  }
+  
+  
+  #backArrows{
+    width:70vw;
+    padding-bottom:5.5vw;
+    margin:0.5vw 0;
+  }
+  
+  #menuButton{
+    width:6vw;
+  }
+  
+  #menuMaps{
+    margin:1.1vw 0;
+    font-size:2.2vw;
+  }
+  
+  #leftMenuButtons ul, #rightMenuButtons ul{
+  }
+  
+  #muteAll{
+    width:4.5vw;
+    padding-bottom:4.5vw;
+  }
+  .GiveYouUp{
+    font-size:2.5vw;
+  }
+  
+  /*Themes*/
+  .purers{
+    font-size:3.2vw !important;
+  }
+}
