@@ -1,4 +1,73 @@
-﻿/////////////{VER ITEMS DE OUTROS USUARIOS}/////////////////
+//////////////////Items Looteaveis Do Boss////////////////
+function itemCheck(){
+  const bossDocField    = document.getElementById('bossSelDocs');
+  const bossCollection  = path.collection('bosses');
+  const InventoryLoot   = document.getElementById('lootlable');
+  const aiddIs          = localStorage.getItem('identification');
+  path.collection('Bosses').doc(bossSelDoc.value).collection('items').get().then((getItems) =>{
+    getItems.docs.forEach((getted) =>{
+      const items  = getted.data();
+      const itemSpawn = document.createElement('img');
+      itemSpawn.src = items.item_icon;
+      //itemSpawn.setAttribute('value', items.item_value);
+      itemSpawn.value = items.item_value;
+      itemSpawn.setAttribute('title', items.item_title);
+      itemSpawn.setAttribute('class', items.item_rarity);
+      itemSpawn.setAttribute('id',    'voidItem_'+items.item_id);
+      itemSpawn.dataset.type    = items.item_map;
+      itemSpawn.dataset.quanto  = items.item_tag;
+      //Contador
+      const iCount = document.createElement('span');
+      iCount.setAttribute('id', items.item_tag);
+      iCount.innerHTML = items.item_value;
+      InventoryLoot.append(itemSpawn, iCount);
+      
+      //Condições de Resgate de Itens
+      if(itemSpawn.value < 1){
+        itemSpawn.removeAttribute('id');
+        itemSpawn.setAttribute('style', 'display:none;');
+      }
+      else if(bossSelID.value == aiddIs){
+        itemSpawn.setAttribute('id',    'voidItem_'+items.item_id);
+        itemSpawn.addEventListener('click', () => {
+          itemClickedCheck();
+        })
+      }
+      else{
+        itemSpawn.setAttribute('id',    'item_0'+items.item_id);
+        itemSpawn.addEventListener('click', () =>{
+          itemUserInfos();
+        });
+      }
+      if(iCount.innerHTML < 1 || isNaN(iCount.innerHTML)){
+        iCount.setAttribute('style', 'display:none;');
+      }
+    })
+  })
+}
+
+///////Checkar qual item foi clicado/////
+function itemClickedCheck(){
+  const itemIs = event.target.getAttribute('id');
+  if(itemIs == 'voidItem_1'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_2'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_3'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_4'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_5'){
+  }
+  else if(itemIs == 'voidItem_6'){
+    itemCheckToClaim()
+  }
+}
+/////////////{VER ITEMS DE OUTROS USUARIOS}/////////////////
 function itemUserInfos(){
   const itemIs = event.target.getAttribute('id');
   if(itemIs == 'item_01'){
@@ -61,3 +130,5 @@ function algumascoisinhas(){
     userNowDoc.style.opacity = '';//
   }
 }
+
+
