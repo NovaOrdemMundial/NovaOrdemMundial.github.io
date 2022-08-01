@@ -1,4 +1,5 @@
-﻿function itemUserInfos(){
+﻿/////////////{VER ITEMS DE OUTROS USUARIOS}/////////////////
+function itemUserInfos(){
   const itemIs = event.target.getAttribute('id');
   if(itemIs == 'item_01'){
     itemInfoCheckUser();
@@ -15,6 +16,7 @@
   else if(itemIs == 'item_05'){
   }
   else if(itemIs == 'item_06'){
+    itemInfoCheckUser();
   }
   else if(itemIs == 'item_07'){
   }
