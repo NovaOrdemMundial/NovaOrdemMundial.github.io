@@ -1,4 +1,4 @@
-﻿const passwordCascad = [
+const passwordCascad = [
   padrao = {
     possui:     'true',
     unlock_id:  -1,
