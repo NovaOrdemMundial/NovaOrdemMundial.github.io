@@ -1,4 +1,4 @@
-﻿//////            //      Historico de boss      //          ////////////
+//////            //      Historico de boss      //          ////////////
 
 const FoolsStory = [
   combat081 = {
