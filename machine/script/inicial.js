@@ -175,7 +175,7 @@ extraBossInfos.forEach((bossList) =>{
   criarBoss.setAttribute('title', bossList.nome);
   criarBoss.setAttribute('style', 'background-image: url('+bossList.avatar_url+');');
   criarBoss.setAttribute('id', 'bossBox');
-  criarBoss.setAttribute('class', bossList.classe + `mButton ${bossList.nick}`);
+  criarBoss.setAttribute('class', bossList.classe + ` mButton ${bossList.nick}`);
   criarBoss.setAttribute('value', bossList.index);
   criarBoss.setAttribute('onclick', 'bonusIs()');
   criarBoss.innerHTML = bossList.nome;
