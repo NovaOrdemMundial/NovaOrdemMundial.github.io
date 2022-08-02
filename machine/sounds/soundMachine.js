@@ -1,11 +1,4 @@
-﻿//////////////Mapeamento////////////////
-function audioConfig(){
-  hoverSFX.src   = sfx.button_hover;
-  clickSFX.src   = sfx.button_click;
-  backSFX.src    = sfx.button_back;
-  closeSFX.src   = sfx.button_close;
-  confirmSFX.src = sfx.button_confirm;
-}
+﻿const menuButtonsArr  = document.querySelectorAll('.btnsfx');
 
 ////////////////////////////////////////////////////////////////////
 
@@ -47,7 +40,6 @@ muteAll.addEventListener('click', ()=>{
 //////////////////////////////////////////////////////////////////////
 
 /////////////Função Fade in e Fade out para o botão sacrifice///////////////
-
 function fadeIn(){
   window.volumeTimeIn   = setTimeout(fadeIn, 60);//
   const volumeFramesUp  = parseInt(musicVolume.value) + 1;

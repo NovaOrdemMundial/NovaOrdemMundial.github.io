@@ -1,5 +1,4 @@
 ﻿////////////Sistemas De Som////////////////
-const menuButtonsArr  = document.querySelectorAll('.btnsfx');
 const maxVolume       = document.getElementById('VolumeMax');
 const audioVolume     = document.createElement('INPUT'); audioVolume.value = maxVolume.value;
 const audioLimiter    = ('000'+audioVolume.value);
