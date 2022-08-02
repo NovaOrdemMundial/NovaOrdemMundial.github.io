@@ -54,6 +54,25 @@ function onMenusTabsClose(){
   }, 300);
 }
 
+
+function onItemViewerClose(){
+  document.documentElement.style.setProperty('--warningWin2Opacity', '0');
+  win1.setAttribute('style', 'opacity:0;');
+  setTimeout(() =>{
+    warningWindow.style.opacity = '0';
+    setTimeout(() =>{
+      win2.innerHTML= '';
+      warningWindow.innerHTML = '';
+      warningWindow.style.setProperty('--warningView', 'none');
+      win2.removeAttribute('style');
+      win1.removeAttribute('style');
+      warningWindow.style.opacity = '';
+      menusVenishTrap.style.setProperty('--menusVenishDisplay', 'none');
+      menusVenishTrap.style.pointerEvents = 'none';
+    }, 500)
+  }, 400)
+}
+
 /////////////////////////////////////////////////////////////////////////
 
 ////////////Fecha Avisos/////////////
