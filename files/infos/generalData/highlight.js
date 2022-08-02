@@ -10,6 +10,3 @@
     video:        '',
   },
 ]
-
-///Sistema de Highlights///
-const slidePanel = document.getElementById('slide');
