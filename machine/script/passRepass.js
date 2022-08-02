@@ -1,4 +1,12 @@
-﻿
+﻿//////////////Mapeamento De Audio////////////////
+function audioConfig(){
+  hoverSFX.src   = sfx.button_hover;
+  clickSFX.src   = sfx.button_click;
+  backSFX.src    = sfx.button_back;
+  closeSFX.src   = sfx.button_close;
+  confirmSFX.src = sfx.button_confirm;
+}
+
       ////{Funções da Tela de Password}////
 ///////////////Comportamento das Input na tela de Password///////////////////
 function boxNext(insert, index, list){
