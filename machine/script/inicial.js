@@ -186,44 +186,6 @@ extraBossInfos.forEach((bossList) =>{
   bossDireita.append(criarBoss);
 });
 
-/////////////////////////////////////////////
-
-//Como tudo vai se comportar ao clicar no botão "Customizações"
-customButton.addEventListener('click', () => {
-  document.documentElement.style.setProperty('--customScreenStatus', 'flex');
-  menusVenishTrap.style.setProperty('--menusVenishDisplay', 'block');
-  menusVenishTrap.style.pointerEvents = 'auto';
-  customItemsSpawn();
-  setTimeout(() =>{
-    document.documentElement.style.setProperty('--customScreenView', '1');
-    setTimeout(() => {
-      document.documentElement.style.setProperty('--customDisplayView', '0%');
-    }, 300);
-  },100)
-  
-  doneCustom.addEventListener('click', ()=>{
-    onMenusTabsClose();
-    onItemViewerClose();
-    customColse();
-  });
-})
-
-//Ao Fechar o Menu De Customizações//
-function customColse(){
-  document.documentElement.style.setProperty('--customDisplayView', '120%');
-  setTimeout(() =>{
-    document.documentElement.style.setProperty('--customScreenView', '0');
-    setTimeout(() =>{
-      document.documentElement.style.setProperty('--customScreenStatus', 'none');
-      themeField.innerHTML = '';
-      soundField.innerHTML = '';
-      secretField.innerHTML = '';
-      collectionField.innerHTML = '';
-      outraField.innerHTML = '';
-    }, 300)
-  }, 200)
-}
-
 ///////////////////////////////////////////
 
 ////////Botão Password do Menu////////
