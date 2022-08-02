@@ -298,6 +298,9 @@ function secretsDo(){
   
   //Arcade Fight Games SFX
   if(classicFightSFX.ativado === 'selectedItem'){
+    //Buttons With Sound
+    const allowSFX = document.querySelectorAll('.mButton');
+    //Sounds
     sfx.button_hover    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Ouver.mp3';
     sfx.button_click    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Clicked.mp3';
     sfx.button_back     = '';
