@@ -300,6 +300,14 @@ function secretsDo(){
   if(classicFightSFX.ativado === 'selectedItem'){
     //Buttons With Sound
     const allowSFX = document.querySelectorAll('.mButton');
+    const backSFX  = document.querySelectorAll('.voltar').
+    for(var b = 0; b<allowSFX.length; b++){
+      allowSFX[b].classList.add('btnsfx');
+    }
+    
+    for(var v = 0; v<backSFX.length; v++){
+      backSFX[v].classList.add('bacsfx');
+    }
     //Sounds
     sfx.button_hover    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Ouver.mp3';
     sfx.button_click    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Clicked.mp3';
