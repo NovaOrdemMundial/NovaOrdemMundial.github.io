@@ -159,7 +159,7 @@ bossInfos.forEach((bossList) =>{
   criarBoss.setAttribute('title', bossList.nome);
   criarBoss.setAttribute('style', 'background-image: url('+bossList.avatar_url+');');
   criarBoss.setAttribute('id', 'bossBox')
-  criarBoss.setAttribute('class', bossList.classe + ' btnsfx');
+  criarBoss.setAttribute('class', bossList.classe);
   criarBoss.setAttribute('value', bossList.index);
   criarBoss.setAttribute('onclick', 'bossIs()');
   criarBoss.innerHTML = bossList.nome;
@@ -175,7 +175,7 @@ extraBossInfos.forEach((bossList) =>{
   criarBoss.setAttribute('title', bossList.nome);
   criarBoss.setAttribute('style', 'background-image: url('+bossList.avatar_url+');');
   criarBoss.setAttribute('id', 'bossBox');
-  criarBoss.setAttribute('class', bossList.classe + ` btnsfx ${bossList.nick}`);
+  criarBoss.setAttribute('class', bossList.classe + ` ${bossList.nick}`);
   criarBoss.setAttribute('value', bossList.index);
   criarBoss.setAttribute('onclick', 'bonusIs()');
   criarBoss.innerHTML = bossList.nome;
