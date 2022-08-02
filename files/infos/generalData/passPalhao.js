@@ -90,3 +90,9 @@ const passwordCascad = [
     password:   'THORNSUNFLOWERS',
   },
 ];
+
+
+///////////////////
+
+///////Notifications//////////
+const acgsfxNotify = new Audio(classicFightSFX.notification);
