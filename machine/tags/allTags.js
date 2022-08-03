@@ -123,7 +123,7 @@ const footerText    = document.createElement('H5');
 const countText     = document.createElement('SPAN');
 const confirmButton = document.createElement('BUTTON');   confirmButton.setAttribute('class', 'mButton');
 const cancelButton  = document.createElement('BUTTON');   cancelButton.setAttribute('id', 'cancelClaim');
-cancelButton.setAttribute('onclick', 'onItemViewerClose(), onMenusTabsClose()');
+cancelButton.setAttribute('onclick', 'onItemViewerClose(), onMenusTabsClose(), justBack()');
 const sacrifyButton = document.createElement('BUTTON');   sacrifyButton.setAttribute('id', 'SacrificeALL');
 sacrifyButton.setAttribute('onmouseover', 'sacriOver()'); sacrifyButton.setAttribute('onmouseout', 'sacriOuter()');
 const inputDescript = document.createElement('INPUT');  inputDescript.setAttribute('id', 'InputDesc');
