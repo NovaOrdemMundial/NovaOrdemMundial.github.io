@@ -42,6 +42,16 @@ function justDeny(){
           deniedSFX.currentTime = 0;
           deniedSFX.play();
 }
+
+function justClick(){
+          clickSFX.currentTime = 0;
+          clickSFX.play();
+}
+
+function justBack(){
+          backSFX.currentTime = 0;
+          backSFX.play();
+}
                                   
 ////////////////////////////////////////////////////
 
