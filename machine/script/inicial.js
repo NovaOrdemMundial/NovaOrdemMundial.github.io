@@ -477,7 +477,7 @@ function customItemsSpawn(){
     secretCard.setAttribute('style', `background-image:url(${secret.icon_url});`);
     secretCard.setAttribute('data-description', secret.descrição);
     secretCard.setAttribute('data-image', secret.icon_url);
-    secretCard.setAttribute('class', secret.ativado);
+    secretCard.setAttribute('class', secret.ativado + ' btnconf');
     secretCard.setAttribute('value', secret.unlock_id);
     secretCard.innerHTML = secret.nome_item;
     secretCard.value = secret.unlock_id;
