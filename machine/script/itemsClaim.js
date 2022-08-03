@@ -188,7 +188,7 @@ function sendNudes(){
       "title": "**__" + bossSelNick.value + "__**" + " *Resgatou Item* " + "**__"+itemNameTarget.value+"__**",
       //"url": "https://google.com/",
       "description": "",
-      "color": '—',
+      "color": "",
       "fields": [
         {
           "name": " **"+itemNameTarget.value +"** " + itemDescount.value + "x",
