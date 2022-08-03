@@ -203,6 +203,7 @@ function openPassScreen(){
       passScreen.style.opacity = '1'
     }, 400);
   },100);
+  audioPlace();
 }
 
 //////////////////////////////////////
@@ -227,6 +228,7 @@ ytBtn.addEventListener('click', () =>{
   socialFunctions();
   linkVideo.load();
   
+  audioPlace();
 })
 
 twBtn.addEventListener('click', () =>{
@@ -242,6 +244,7 @@ twBtn.addEventListener('click', () =>{
   win1.innerHTML = win1.innerHTML.replace(/{SOCIAL}/g, esse.innerHTML).replace(/{SOCIALIMAGE}/g, ttImage).replace(/{MESSAGE}/g, twitterMSG).replace(/{LINKDISPLAY}/g, linkDisp).replace(/{LINKTO}/g, socialLink);
   
   socialFunctions();
+  audioPlace();
 })
 
 dsBtn.addEventListener('click', () => {
@@ -257,6 +260,7 @@ dsBtn.addEventListener('click', () => {
   win1.innerHTML = win1.innerHTML.replace(/{SOCIAL}/g, esse.innerHTML).replace(/{SOCIALIMAGE}/g, ttImage).replace(/{MESSAGE}/g, twitterMSG).replace(/{LINKDISPLAY}/g, linkDisp).replace(/{LINKTO}/g, socialLink);
   
   socialFunctions();
+  audioPlace();
 })
 
 function warningRedirect(){
@@ -355,6 +359,7 @@ ytBtn.addEventListener('click', () =>{
   socialFunctions();
   linkVideo.load();
   
+  audioPlace();
 })
 
 twBtn.addEventListener('click', () =>{
@@ -452,6 +457,7 @@ customButton.addEventListener('click', () => {
     onItemViewerClose();
     customColse();
   });
+  audioPlace();
 })
 
 //Ao Fechar o Menu De Customizações//
