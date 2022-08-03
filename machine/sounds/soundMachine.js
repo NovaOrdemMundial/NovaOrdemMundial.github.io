@@ -5,30 +5,32 @@ const backButton       = document.querySelectorAll('.bacsfx');
 
 //////Botões listado em SFX//////////////
       ///// Botões Afetados por SFX /////
-
-for(var a = 0; a < menuButtonsArr.length; a++){
-  menuButtonsArr[a].addEventListener('mouseover', () => {
-    hoverSFX.currentTime = 0;
-    hoverSFX.play();
-  })
-  menuButtonsArr[a].addEventListener('click', () => {
-    clickSFX.currentTime = 0;
-    clickSFX.play();
-  })
-}
-
-for(var c = 0; c < justConfirm.length; c++){
-  justConfirm[c].addEventListener('click', () =>{
-    clickSFX.currentTime = 0;
-    clickSFX.play();
-  })
-}
-
-for(var b = 0; b < backButton.length; b++){
-  backButton[b].addEventListener('click', () =>{
-    backSFX.currentTime = 0;
-    backSFX.play();
-  });
+audioPlace();
+function audioPlace(){
+      for(var a = 0; a < menuButtonsArr.length; a++){
+        menuButtonsArr[a].addEventListener('mouseover', () => {
+          hoverSFX.currentTime = 0;
+          hoverSFX.play();
+        })
+        menuButtonsArr[a].addEventListener('click', () => {
+          clickSFX.currentTime = 0;
+          clickSFX.play();
+        })
+      }
+      
+      for(var c = 0; c < justConfirm.length; c++){
+        justConfirm[c].addEventListener('click', () =>{
+          clickSFX.currentTime = 0;
+          clickSFX.play();
+        })
+      }
+      
+      for(var b = 0; b < backButton.length; b++){
+        backButton[b].addEventListener('click', () =>{
+          backSFX.currentTime = 0;
+          backSFX.play();
+        });
+      }
 }
                                   
 ////////////////////////////////////////////////////
