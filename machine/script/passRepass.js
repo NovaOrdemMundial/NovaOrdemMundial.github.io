@@ -357,7 +357,7 @@ function passConfirmAnim(){
     }
     passKeysClear();
   }, 4000);
-  setTimeout(() ={
+  setTimeout(() => {
     justAllow();
   }, 200);
 }
@@ -375,7 +375,7 @@ function passDenyAnim(){
       passScanCheck.removeAttribute('class');
     }
   }, 4000);
-  setTimeout(() ={
+  setTimeout(() => {
     justDeny();
   }, 200);
 }
@@ -400,7 +400,7 @@ function hurtsSearch(){
       symbolsOfVoice.innerHTML = '';
     }, 1000)
   }, 9000);
-  setTimeout(() ={
+  setTimeout(() => {
     justAllow();
   }, 200);
 }
