@@ -5,6 +5,7 @@ function audioConfig(){
   backSFX.src    = sfx.button_back;
   closeSFX.src   = sfx.button_close;
   confirmSFX.src = sfx.button_confirm;
+  deniedSFX.src  = sfx.button_deny;
 }
 
       ////{Funções da Tela de Password}////
@@ -356,6 +357,8 @@ function passConfirmAnim(){
     }
     passKeysClear();
   }, 4000);
+  confirmSFX.currentTime = 0;
+  confirmSFX.play();
 }
 
 function passDenyAnim(){
@@ -371,6 +374,8 @@ function passDenyAnim(){
       passScanCheck.removeAttribute('class');
     }
   }, 4000);
+  deniedSFX.currentTime = 0;
+  deniedSFX.play();
 }
 
 //////////////////////////////////////////////////////////////////
@@ -393,4 +398,6 @@ function hurtsSearch(){
       symbolsOfVoice.innerHTML = '';
     }, 1000)
   }, 9000);
+  confirmSFX.currentTime = 0;
+  confirmSFX.play();
 }
