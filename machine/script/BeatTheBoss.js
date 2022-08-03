@@ -426,7 +426,7 @@ function itemCheckToClaim(){
     
     descText.innerHTML = 'Olá {NOME}, você possui {COUNT} {ITEM} e pode resgata-lo agora mesmo, o {ITEM} pode ser resgatado 1x clickando no botão "Resgatar" e os moderadores irão te devolver uma recompensa que você tenha gasto usando <i>Pontos De Canal</i> começando das recompensas de 10.000 pontos. <br />Você também pode clicar no botão "Sacrificar Tudo", isso ira consumir 5x do {ITEM} e os moderadores irão lhe devolver uma recompensa de canal maior que 10.000 e menor que 350.000, começando pelas recompensas de 350.000.';
     footerText.innerHTML = 'O {ITEM} só ira devolver pontos de canal de recompensas que você ja tenha resgatado, só use depois de resgatar recompensas de canal, do contrario nada sera devolvido.';
-    inputDescript.setAttribute('placeholder', 'Caso seja uma recompensa expecifica');
+    inputDescript.setAttribute('placeholder', 'Caso seja uma recompensa especifica');
     confirmButton.innerHTML = 'RESGATAR';
     confirmButton.setAttribute('title', 'Resgatar 1 {ITEMTITLE}');
     cancelButton.innerHTML = 'VOLTAR';
