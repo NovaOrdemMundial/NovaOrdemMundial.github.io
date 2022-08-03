@@ -57,11 +57,15 @@ muteAll.addEventListener('click', ()=>{
     muteAll.setAttribute('class', 'unsondded');
   }
  const volumeFilter   = '0.'+maxVolume.value;
- hoverSFX.volume   = volumeFilter;
- clickSFX.volume   = volumeFilter;
- rolledStart.volume = volumeFilter;
- rolledLoop.volume = volumeFilter;
- rolledComplete.volume = volumeFilter;
+ hoverSFX        .volume   = volumeFilter;
+ clickSFX        .volume   = volumeFilter;
+ confirmSFX      .volume = volumeFilter;
+ deniedSFX       .volume = volumeFilter;
+ backSFX         .volume = volumeFilter;
+ closeSFX        .volume = volumeFilter;
+ rolledStart     .volume = volumeFilter;
+ rolledLoop      .volume = volumeFilter;
+ rolledComplete  .volume = volumeFilter;
 });
 
 //////////////////////////////////////////////////////////////////////
