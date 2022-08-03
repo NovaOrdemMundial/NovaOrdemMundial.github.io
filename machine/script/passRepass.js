@@ -362,8 +362,8 @@ function passConfirmAnim(){
 }
 
 function passDenyAnim(){
-  deniedSFX.currentTime = 0;
-  deniedSFX.play();
+  backSFX.currentTime = 0;
+  backSFX.play();
   for(var o = 0; o <passTextField.length; o++){
     passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
     passTextField[o].style.textShadow= '0 0 1vw #F00';
