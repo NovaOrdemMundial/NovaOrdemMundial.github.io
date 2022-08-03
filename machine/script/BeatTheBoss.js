@@ -10,7 +10,7 @@
   bannerBoss.style.setProperty('--userBanner', 'url('+boss.boss_banner+')');
   bossLevel.value = boss.classe;
   twitchLink.value = boss.twitch_link;
-  
+   
   bossNick.addEventListener('click', () =>{
     window.open(twitchLink.value , '_blank');
   });
@@ -126,6 +126,7 @@ function bonusIs(){//Lista de Visitantes
 function bossTabOpen(){
   bossTabScreen.style.setProperty('--bossScreenDisplay', 'flex');
   trapTabClose .style.setProperty('--closeTabDisplay', 'block');
+  audioPlace();
   setTimeout(() => {
     bossTabWindow.style.setProperty('--bossWindowOpacity', '1');
     bossTabScreen.style.setProperty('--bossScreenOpacity', '1');
@@ -201,6 +202,7 @@ function itemCheck(){
       }
     })
   })
+  audioPlace();
 }
 
 ///////////////////////////////////////////
@@ -370,6 +372,7 @@ function itemCheckToClaim(){
   imageThumb.setAttribute('class', itemType);
   countText.innerHTML = itemCount+'x';
   inputDescript.removeAttribute('disabled');
+  audioPlace();
   
   //Checar se o Item pode ser coletado
   if(itemCount < 1 ){
@@ -545,6 +548,7 @@ function itemInfoCheckUser(){
   //Projetar Tudo
   warningWindow.style.setProperty('--warningView', 'flex');
   warningWindow.append(win2);
+  audioPlace();
   
   //Descrição pra cada Item
   if(itemID == 'item_01'){
