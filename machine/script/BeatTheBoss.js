@@ -30,7 +30,7 @@
     florais.stock = boss.florais;
     papercutout.stock = boss.papercut;
     itemSpawn.src = item.icon;
-    itemSpawn.setAttribute('class', item.rarity);
+    itemSpawn.setAttribute('class', item.rarity + ' btnconf');
     itemSpawn.setAttribute('id', item.name_id);
     itemSpawn.setAttribute('title', item.nome);
     itemSpawn.setAttribute('value', item.stock);
@@ -92,7 +92,7 @@ function bonusIs(){//Lista de Visitantes
     florais.stock = visit.florais;
     papercutout.stock = visit.papercut;
     itemSpawn.src = item.icon;
-    itemSpawn.setAttribute('class', item.rarity);
+    itemSpawn.setAttribute('class', item.rarity + ' btnconf');
     itemSpawn.setAttribute('id', item.name_id);
     itemSpawn.setAttribute('value', item.stock);
     itemSpawn.setAttribute('title', item.nome);
@@ -169,7 +169,7 @@ function itemCheck(){
       //itemSpawn.setAttribute('value', items.item_value);
       itemSpawn.value = items.item_value;
       itemSpawn.setAttribute('title', items.item_title);
-      itemSpawn.setAttribute('class', items.item_rarity);
+      itemSpawn.setAttribute('class', items.item_rarity + ' btnconf');
       itemSpawn.setAttribute('id',    'voidItem_'+items.item_id);
       itemSpawn.dataset.type    = items.item_map;
       itemSpawn.dataset.quanto  = items.item_tag;
