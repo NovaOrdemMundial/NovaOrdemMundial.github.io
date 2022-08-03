@@ -34,8 +34,8 @@ function audioPlace(){
 }
 
 function justPlayAllow(){
-      confirmSFX.currentTime = 0;;
-      confirmSFX.play();
+          clickSFX.currentTime = 0;
+          clickSFX.play();
 }
                                   
 ////////////////////////////////////////////////////
