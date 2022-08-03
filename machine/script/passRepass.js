@@ -364,16 +364,15 @@ function passDenyAnim(){
     passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
     passTextField[o].style.textShadow= '0 0 1vw #F00';
     passScanCheck.setAttribute('class', 'dennyPass');
-    justPlayAllow();
   }
   setTimeout(() => {
+  justPlayAllow();
     for(var o = 0; o <passTextField.length; o++){
       passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
       passTextField[o].style.textShadow= '';
       passScanCheck.removeAttribute('class');
     }
   }, 4000);
-  justPlayAllow();
 }
 
 //////////////////////////////////////////////////////////////////
