@@ -340,8 +340,6 @@ function secretsDo(){
 //////////Design para senha certa e errada////////////////////////
 ////////Correct Pass//////////
 function passConfirmAnim(){
-  confirmSFX.currentTime = 0;
-  confirmSFX.play();
   for(var o = 0; o <passTextField.length; o++){
     passTextField[o].style.textShadow = '0 0 1vw #0F0'
     passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
@@ -362,11 +360,11 @@ function passConfirmAnim(){
 }
 
 function passDenyAnim(){
-  justPlayAllow();
   for(var o = 0; o <passTextField.length; o++){
     passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
     passTextField[o].style.textShadow= '0 0 1vw #F00';
     passScanCheck.setAttribute('class', 'dennyPass');
+    justPlayAllow();
   }
   setTimeout(() => {
     for(var o = 0; o <passTextField.length; o++){
@@ -375,14 +373,13 @@ function passDenyAnim(){
       passScanCheck.removeAttribute('class');
     }
   }, 4000);
+  justPlayAllow();
 }
 
 //////////////////////////////////////////////////////////////////
 
 /////////Password dos secretões//////////////
 function hurtsSearch(){
-  confirmSFX.currentTime = 0;
-  confirmSFX.play();
   document.documentElement.style.setProperty('--SymbolCiclesDisplay', 'flex');
   document.documentElement.style.setProperty('--rollTheGod', 'flickpick');
   setTimeout(()=> {
