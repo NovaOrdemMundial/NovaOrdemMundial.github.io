@@ -159,10 +159,20 @@ function bdModifyOnClaim(){
   });
 }
 
+/////RANDOM COLOR///////////
+var postColor = '';
+function randomColorPost(){
+  const embedColors = [1752220, 1146986, 3066993, 2067276, 3447003, 2123412, 10181046, 7419530, 15277667, 11342935, 15844367, 12745742, 15105570, 11027200, 15158332, 10038562, 9807270, 9936031, 8359053, 12370112, 3426654, 2899536, 16776960, 16777215, 5793266, 10070709, 2895667, 2303786, 5763719, 16705372, 15418782, 15548997, 16777215, 2303786]
+  const randomizeCo = Math.floor(Math.random() * embedColors.length);
+  const colorIs     = embedColors[randomizeCo];
+  postColor = colorIs;
+}
+
 //////////////////////////////////////////////////
 
 /////Avise Aos Mod///////
 function sendNudes(){
+  randomColorPost();
     //Relogio
   var data = new Date(),
       time = data.toLocaleTimeString();
@@ -188,7 +198,7 @@ function sendNudes(){
       "title": "**__" + bossSelNick.value + "__**" + " *Resgatou Item* " + "**__"+itemNameTarget.value+"__**",
       //"url": "https://google.com/",
       "description": "",
-      "color": "",
+      "color": postColor,
       "fields": [
         {
           "name": " **"+itemNameTarget.value +"** " + itemDescount.value + "x",
