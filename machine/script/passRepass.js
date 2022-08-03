@@ -312,15 +312,17 @@ function secretsDo(){
     //Sounds
     sfx.button_hover    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Ouver.mp3';
     sfx.button_click    = 'https://novaordemmundial.github.io/audio/sfx/Button%20Clicked.mp3';
-    sfx.button_back     = '';
-    sfx.button_close    = '';
-    sfx.button_confirm  = '';
+    sfx.button_back     = 'https://novaordemmundial.github.io/audio/sfx/ClassicFightGameSFX/Back.ogg';
+    sfx.button_close    = 'https://novaordemmundial.github.io/audio/sfx/ClassicFightGameSFX/Back.ogg';
+    sfx.button_confirm  = 'https://novaordemmundial.github.io/audio/sfx/ClassicFightGameSFX/Cofirmed.ogg';
+    sfx.button_deny     = 'https://novaordemmundial.github.io/audio/sfx/ClassicFightGameSFX/Deny.ogg';
   }else{
     sfx.button_hover    = '/audio/sfx/Silence.mp3';
     sfx.button_click    = '/audio/sfx/Silence.mp3';
     sfx.button_back     = '/audio/sfx/Silence.mp3';
     sfx.button_close    = '/audio/sfx/Silence.mp3';
     sfx.button_confirm  = '/audio/sfx/Silence.mp3';
+    sfx.button_deny     = '/audio/sfx/Silence.mp3';
   }
   audioConfig();
   
