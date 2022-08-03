@@ -362,7 +362,6 @@ function passConfirmAnim(){
 }
 
 function passDenyAnim(){
-  audioConfig();
   deniedSFX.currentTime = 0;
   deniedSFX.play();
   for(var o = 0; o <passTextField.length; o++){
@@ -383,7 +382,6 @@ function passDenyAnim(){
 
 /////////Password dos secretões//////////////
 function hurtsSearch(){
-  audioConfig();
   confirmSFX.currentTime = 0;
   confirmSFX.play();
   document.documentElement.style.setProperty('--SymbolCiclesDisplay', 'flex');
