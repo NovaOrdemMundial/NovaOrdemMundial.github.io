@@ -8,6 +8,7 @@ const clickSFX        = new Audio(sfx.button_click);   clickSFX.volume = 0.3;
 const backSFX         = new Audio(sfx.button_back);
 const closeSFX        = new Audio(sfx.button_close);
 const confirmSFX      = new Audio(sfx.button_confirm);
+const deniedSFX       = new Audio(sfx.button_deny);    deniedSFX.volume = 0.3;
 
 
 
