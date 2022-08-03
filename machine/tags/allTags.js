@@ -124,7 +124,7 @@ const countText     = document.createElement('SPAN');
 const confirmButton = document.createElement('BUTTON');   confirmButton.setAttribute('class', 'mButton');
 const cancelButton  = document.createElement('BUTTON');   cancelButton.setAttribute('id', 'cancelClaim');   cancelButton.classList.add('class', 'bacsfx');
 cancelButton.setAttribute('onclick', 'onItemViewerClose(), onMenusTabsClose()');
-const sacrifyButton = document.createElement('BUTTON');   sacrifyButton.setAttribute('id', 'SacrificeALL'); sacrifyButton.setAttribute('class', 'btnsfx');
+const sacrifyButton = document.createElement('BUTTON');   sacrifyButton.setAttribute('id', 'SacrificeALL'); sacrifyButton.classList.add('class', 'btnconf');
 sacrifyButton.setAttribute('onmouseover', 'sacriOver()'); sacrifyButton.setAttribute('onmouseout', 'sacriOuter()');
 const inputDescript = document.createElement('INPUT');  inputDescript.setAttribute('id', 'InputDesc');
 
@@ -163,7 +163,7 @@ const linkSubTitle  = document.createElement('H2');
 const linkAsk       = document.createElement('H5');
 const linkImage     = document.createElement('IMG');
 const linkVideo     = document.createElement('VIDEO');
-const linkSim       = document.createElement('BUTTON'); linkSim.classList.add('class', 'btnsfx');
+const linkSim       = document.createElement('BUTTON'); linkSim.classList.add('class', 'btnconf');
 const linkNao       = document.createElement('BUTTON'); linkNao.classList.add('class', 'bacsfx');
 
 var socialLink = '';
