@@ -32,6 +32,11 @@ function audioPlace(){
         });
       }
 }
+
+function justPlayAllow(){
+      confirmSFX.currentTime = 0;;
+      confirmSFX.play();
+}
                                   
 ////////////////////////////////////////////////////
 
