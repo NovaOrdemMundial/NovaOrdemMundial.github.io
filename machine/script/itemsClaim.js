@@ -60,6 +60,7 @@ function claimItemNow(){
   onItemViewerClose();
   bdModifyOnClaim();
   sendNudes();
+  justClick();
   
   //Tela De Confirmação
   const divisaoSup= document.createElement('DIV');
@@ -105,6 +106,7 @@ function sacrifyItemNow(){
   onItemViewerClose();
   bdModifyOnClaim();
   sendNudes();
+  justClick();
   
   //Tela De Confirmação
   const divisaoSup= document.createElement('DIV');
