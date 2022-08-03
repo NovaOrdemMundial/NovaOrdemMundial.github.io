@@ -357,6 +357,9 @@ function passConfirmAnim(){
     }
     passKeysClear();
   }, 4000);
+  setTimeout(() ={
+    justAllow();
+  }, 200);
 }
 
 function passDenyAnim(){
@@ -366,13 +369,15 @@ function passDenyAnim(){
     passScanCheck.setAttribute('class', 'dennyPass');
   }
   setTimeout(() => {
-  justPlayAllow();
     for(var o = 0; o <passTextField.length; o++){
       passTextField[o].style.transitionDelay = `${parseInt(o+'00') / 2}ms`;
       passTextField[o].style.textShadow= '';
       passScanCheck.removeAttribute('class');
     }
   }, 4000);
+  setTimeout(() ={
+    justDeny();
+  }, 200);
 }
 
 //////////////////////////////////////////////////////////////////
@@ -395,4 +400,7 @@ function hurtsSearch(){
       symbolsOfVoice.innerHTML = '';
     }, 1000)
   }, 9000);
+  setTimeout(() ={
+    justAllow();
+  }, 200);
 }
