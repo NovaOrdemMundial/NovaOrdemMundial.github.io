@@ -1,6 +1,9 @@
 #rollIt{
   animation:lights 2s linear infinite;
 }
+#rollIt:hover{
+  animation:none;
+}
 
 
 @keyframes lights{
