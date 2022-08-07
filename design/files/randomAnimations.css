@@ -1,0 +1,10 @@
+#rollIt{
+  animation:lights 1s linear;
+}
+
+@keyframes lights{
+  20%{0 0 0.7vw #0F0, 0vw 0.2vw 0.4vw #F00, 0.1vw 0.1vw 0.4vw #00F, -0.1vw -0.1vw 0.4vw #82F, 0.2vw 0vw 0.4vw #38F, -0.2vw 0vw 0.4vw #F90, 0vw -0.2vw 0.4vw #0FF}
+  40%{0 0 0.7vw #0F0, 0vw -0.2vw 0.4vw #F00, 0vw 0.2vw 0.4vw #00F, 0.1vw 0.1vw 0.4vw #82F, -0.1vw -0.1vw 0.4vw #38F, 0.2vw 0vw 0.4vw #F90, -0.2vw 0vw 0.4vw #0FF}
+  60%{0 0 0.7vw #0F0, -0.2vw 0vw 0.4vw #F00, 0vw -0.2vw 0.4vw #00F, 0vw 0.2vw 0.4vw #82F, 0.1vw 0.1vw 0.4vw #38F, -0.1vw -0.1vw 0.4vw #F90, 0.2vw 0vw 0.4vw #0FF}
+  80%{0 0 0.7vw #0F0, 0.2vw 0vw 0.4vw #F00, -0.2vw 0vw 0.4vw #00F, 0vw -0.2vw 0.4vw #82F, 0vw 0.2vw 0.4vw #38F, 0.1vw 0.1vw 0.4vw #F90, -0.1vw -0.1vw 0.4vw #0FF}
+}
