@@ -1,14 +1,1 @@
-////SoundPacks
-const soudpack = [
-  sfx = {
-    button_hover:   '/audio/sfx/Silence.mp3',
-    button_click:   '/audio/sfx/Silence.mp3',
-    button_back:    '/audio/sfx/Silence.mp3',
-    button_close:   '/audio/sfx/Silence.mp3',
-    button_confirm: '/audio/sfx/Silence.mp3',
-    button_deny:    '/audio/sfx/Silence.mp3',
-  },
-  soundtracks = {
-    sacrifice_button: 'https://novaordemmundial.github.io/audio/musics/Looped%20Instrumental%20Run%20Boy%20Run.mp3',
-  }
-];
+const _0x27a8c3=_0x433e;function _0x1fca(){const _0x22e6b8=['121005qZqpsz','2540715OwNqSO','2247228hRmMmv','1RtjVTM','3214DRRTPf','855afDsWu','6PmUPnz','52440OPORfJ','22jUvMGZ','947009sNyiXd','36BrVxku','8788730MGicNK','/audio/sfx/Silence.mp3'];_0x1fca=function(){return _0x22e6b8;};return _0x1fca();}(function(_0x126165,_0x568d2b){const _0x9b29e7=_0x433e,_0x3a9bfd=_0x126165();while(!![]){try{const _0x33e894=-parseInt(_0x9b29e7(0x16d))/0x1*(parseInt(_0x9b29e7(0x16e))/0x2)+parseInt(_0x9b29e7(0x16a))/0x3*(parseInt(_0x9b29e7(0x167))/0x4)+parseInt(_0x9b29e7(0x16b))/0x5+-parseInt(_0x9b29e7(0x170))/0x6*(parseInt(_0x9b29e7(0x173))/0x7)+-parseInt(_0x9b29e7(0x171))/0x8*(parseInt(_0x9b29e7(0x16f))/0x9)+parseInt(_0x9b29e7(0x168))/0xa+parseInt(_0x9b29e7(0x172))/0xb*(-parseInt(_0x9b29e7(0x16c))/0xc);if(_0x33e894===_0x568d2b)break;else _0x3a9bfd['push'](_0x3a9bfd['shift']());}catch(_0x33497e){_0x3a9bfd['push'](_0x3a9bfd['shift']());}}}(_0x1fca,0x965c2));function _0x433e(_0x3ac102,_0x231523){const _0x1fcae4=_0x1fca();return _0x433e=function(_0x433e39,_0x362924){_0x433e39=_0x433e39-0x167;let _0x1f6e92=_0x1fcae4[_0x433e39];return _0x1f6e92;},_0x433e(_0x3ac102,_0x231523);}const soudpack=[sfx={'button_hover':_0x27a8c3(0x169),'button_click':_0x27a8c3(0x169),'button_back':_0x27a8c3(0x169),'button_close':_0x27a8c3(0x169),'button_confirm':_0x27a8c3(0x169),'button_deny':_0x27a8c3(0x169)},soundtracks={'sacrifice_button':'https://novaordemmundial.github.io/audio/musics/Looped%20Instrumental%20Run%20Boy%20Run.mp3'}];
