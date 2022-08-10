@@ -1,13 +1,1 @@
-//DataBase
-const firebaseConfig = {
-  apiKey: "AIzaSyCK-Hh9WOIjhNzQYtnAg-veYQaHmsN5nvQ",
-  authDomain: "projeto-de-teste-3b179.firebaseapp.com",
-  projectId: "projeto-de-teste-3b179",
-  storageBucket: "projeto-de-teste-3b179.appspot.com",
-  messagingSenderId: "1020870468830",
-  appId: "1:1020870468830:web:36313c872dc8a7a2c10e4f",
-  measurementId: "G-ZFEK85WY4H"
-};
-firebase.initializeApp(firebaseConfig);
-
-const path = firebase.firestore();
+const _0x42f37a=_0x21f0;function _0x21f0(_0x408d85,_0x599f70){const _0x1c0d03=_0x1c0d();return _0x21f0=function(_0x21f067,_0x5c3f0b){_0x21f067=_0x21f067-0x187;let _0x32e947=_0x1c0d03[_0x21f067];return _0x32e947;},_0x21f0(_0x408d85,_0x599f70);}(function(_0x375781,_0x3ccbbc){const _0x2867c8=_0x21f0,_0x3fb09e=_0x375781();while(!![]){try{const _0x3d0a64=parseInt(_0x2867c8(0x18a))/0x1*(parseInt(_0x2867c8(0x199))/0x2)+parseInt(_0x2867c8(0x196))/0x3*(parseInt(_0x2867c8(0x18e))/0x4)+parseInt(_0x2867c8(0x188))/0x5+-parseInt(_0x2867c8(0x18b))/0x6*(parseInt(_0x2867c8(0x18f))/0x7)+parseInt(_0x2867c8(0x18c))/0x8*(-parseInt(_0x2867c8(0x187))/0x9)+-parseInt(_0x2867c8(0x18d))/0xa+-parseInt(_0x2867c8(0x197))/0xb*(-parseInt(_0x2867c8(0x194))/0xc);if(_0x3d0a64===_0x3ccbbc)break;else _0x3fb09e['push'](_0x3fb09e['shift']());}catch(_0x380cbd){_0x3fb09e['push'](_0x3fb09e['shift']());}}}(_0x1c0d,0x29445));const firebaseConfig={'apiKey':_0x42f37a(0x190),'authDomain':'projeto-de-teste-3b179.firebaseapp.com','projectId':_0x42f37a(0x193),'storageBucket':_0x42f37a(0x195),'messagingSenderId':_0x42f37a(0x198),'appId':_0x42f37a(0x191),'measurementId':'G-ZFEK85WY4H'};firebase[_0x42f37a(0x192)](firebaseConfig);function _0x1c0d(){const _0x5aad3e=['1216310XzEtzj','20yGaneH','3493sHJYzy','AIzaSyCK-Hh9WOIjhNzQYtnAg-veYQaHmsN5nvQ','1:1020870468830:web:36313c872dc8a7a2c10e4f','initializeApp','projeto-de-teste-3b179','3416856hwfmPG','projeto-de-teste-3b179.appspot.com','186783Lrsika','11cQJlYd','1020870468830','35446xXrxTy','711IVnpaW','318120uYWrRk','firestore','8vDZvcR','3066rLxAzu','25904OTHNRK'];_0x1c0d=function(){return _0x5aad3e;};return _0x1c0d();}const path=firebase[_0x42f37a(0x189)]();
