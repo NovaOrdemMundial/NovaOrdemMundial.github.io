@@ -39,6 +39,7 @@ body{
   padding:0;
   background:#050505;
   color:#FFF;
+  transition:filter ease-in-out 0.3s;
 }
 #extraPaper{
   width:100%;
@@ -658,4 +659,11 @@ body{
   width:var(--agilityStatus);
   background-image:url(https://i.imgur.com/VrtQhlE.png);
     filter:drop-shadow(0 0 0.25vw #15F);
+}
+
+#liveBtn:hover{
+  text-shadow:0 0 1vw #92F, 0 0 0.5vw #92F;
+  color:#ECF;
+  border-bottom:#ECF;
+  box-shadow:inset 0vw -0.6vw 0.5vw -0.5vw #92F, 0vw 0.4vw 0.3vw -0.3vw #92F;
 }
