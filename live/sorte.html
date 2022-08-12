@@ -1,0 +1,63 @@
+<head>
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/files/randomAnimations.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/live/design/fortuneWheel.css">
+	<title>Teste sua sorte</title>
+</head>
+
+<body id="bodi">
+  <div id="corpo">
+  <button id="rollIt" disabled>t</button>
+  <div id="tabsClose" title="Fechar tudo"></div>
+  <div id="simpleClose" title="Fechar tudo"></div>
+    <div id="ItemListScreen">
+      <div id="ItemListTab">
+        <button id="EditFixedTitle">✎</button>
+              <h1 id="fixedTitle">Lista de Items</h1>
+        <div id="itemList">
+        </div>
+        <div id="editField">
+          <div>
+            <input id="itemInput" placeholder="Adicionar Item">
+            <textarea id="descriptField" placeholder="Descrição"></textarea>
+            <input id="itemThumb" placeholder="Cole a URL de uma Image (Não Obrigatorio)">
+          </div>
+          <div class="buttonsField">
+            <button id="addBtn">ADD</button>
+            <button id="clearBtn">CLEAR</button>
+            <span id="listLength"></span>
+          </div>
+        </div>
+      </div>
+      <div id="backScreen">
+        <div id="itemInfos">
+        </div>
+      </div>
+    </div>
+    <div id="buttonsShow"></div>
+    
+    <div id="OpenMenu">
+      <button id="OpenItemList">☷</button>
+      <button id="OpenActualRandom" title="Ver oque caiu" disabled>t</button>
+      <input id="backColor" type="color" value="#879777">
+    </div>
+    
+    <div id="randomEventScreen">
+      <div id="rollBox">
+      </div>
+    </div>
+    
+    <div id="storyBox">
+      <button id="openStory"></button>
+      <button id="clearStory" title="Limpar Historico">B</button>
+      <h1>Historico</h1>
+<!--       <div id="storyLine"> -->
+<!--       </div> -->
+      <div id="storys"></div>
+    </div>
+  </div>
+  <div id="backEditables">
+    <div id="editableItens">
+    </div>
+  </div>
+</body>
+<script src="https://novaordemmundial.github.io/live/script/fortuneWheel.js"></script>
