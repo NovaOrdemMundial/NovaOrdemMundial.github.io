@@ -1,34 +1,50 @@
 <head>
-	<title>Boss</title>
-  	<link rel="stylesheet" href="design/primary.css">
-	<link rel="icon" href="https://i.imgur.com/pv8rDm5.png" type="image/png" sizes="16x16">
-	<meta name="author" content="RockeyDoggy">
-	<meta name="keywords" content="HTML5,CSS,JavaScript">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Conheça Os Bosses Da Live">
-	<meta property="og:title" content="Bosses" />
-	<meta property="og:description" content="Conheça Os Bosses Da Live" />
-	<meta property="og:site_name" content="Bosses" />
-	<meta property="og:image" content="https://i.imgur.com/gEqn6od.png" />
-	<meta property="og:url" content="https://novaordemmundial.github.io/">
-	<script src="watchers/bossInfos.js"></script>
-	<script src="watchers/bossStory.js"></script>
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/root/fontsStyles.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/root/defaultsDesign.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/themes/purerDesign.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/files/animations.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/files/PassAnimation.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/Responsive/sizesAdaptative.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="RockeyDoggy">
+  <meta name="keywords" content="RockeyDoggy, Boss, Twitch Boss System, Sistema De Chefes, Twitch, Lives, Mini Game, Boss">
+  <meta property='og:image' content='https://i.imgur.com/gEqn6od.png'/>
+  <meta property="og:title" content="Bosses" />
+  <meta property="og:site_name" content="Bosses da Live" />
+  <meta property="og:description" content="Conheça Os Bosses Da Live" />
+  <meta property="og:url" content="https://novaordemmundial.github.io">
+  <title>Nova Ordem Mundial</title>
 </head>
 
 <body>
+  <!-- //O Olho//  -->
+  <div id="extraPaper"></div>
+  
+  <div id="eyeBall">
+    <div id="eyeIris"></div>
+  </div>
+  <!--  //  //  -->
   <div id="backpaper"></div>
+  <!---->
   <div id="corpo">
-    <div id="wallpaper"></div>
+    <div id="wallpaper">
+      <div id="slide">
+      </div>
+    </div>
+    <div id="wallpaperVignetta"></div>
     <!--  //  ← Esquerda  //  -->
     <div id="painelEsquedo">
       <div id="conteudoEsquerdo">
-        <h1>Selecione um Boss</h1>
+        <h1 id="-sub">Selecione um Boss</h1>
         <div id="bossesRoxos"></div>
       </div>
     </div>
     
     <!--  //  ↨ Central  //  -->
-    <div id="painelCentral">Esquema de Centro</div>
+    <div id="painelCentral"></div>
     
     <!--  //   Direita →  //  -->
     <div id="painelDireito">
@@ -48,18 +64,11 @@
       <h2 id="nick">Twitch_Nick</h2>
       <div class="leftBossInfos">
         <div id="inventory">
-          <h3>Conquistas</h3>
+          <h3>Coleção</h3>
           <p id="collection">
-            <img src="https://i.imgur.com/VbAIghD.png"/>
           </p>
           <h3>Inventory</h3>
           <p id="lootlable">
-            <img src="https://i.imgur.com/3lRtdml.png"/>
-            <img src="https://i.imgur.com/8cPSvAg.png"/>
-            <img src="https://i.imgur.com/pXQUwin.png"/>
-            <img src="https://i.imgur.com/VbAIghD.png"/>
-            <img src="https://i.imgur.com/y3aPgPs.png"/>
-            <img src="https://i.imgur.com/m4nXwas.png"/>
           </p>
         </div>
       </div>
@@ -104,13 +113,164 @@
         </div>
       </div>
       
+      <div id="bossSecrets"></div>
+      
     </div>
   </div>
   <!-- Janela de exibição de Boss -->
-  <div id="closeTabs" onclick="venishTabs()"></div>
+  
+  <!--      //   Menu De Seleção   //       -->
+  <div id="menuGuide">
+    <div id="backArrows"></div>
+    <div id="menuButton" onMouseOver="censuredEye()" onMouseOut="openEye()" onClick="eyeDespawn()">
+      <video loop autoplay muted id="openLooped">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedCensured">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedReopen">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedDespawn">
+        <source src="">
+      </video>
+    </div>
+    <div id="menuMaps">
+      <div id="leftMenuButtons">
+        <ul id="liveBtn" class="activBtn mButton" tabindex="1">LIVE</ul>
+        <!--<ul id="scorBtn" class="deactBtn" tabindex="2">SCORE</ul>-->
+        <ul id="custBtn" class="activBtn mButton" tabindex="3">CUSTOMIZAÇÃO</ul>
+        <ul id="passBtn" class="activBtn mButton" tabindex="4">PASSWORD</ul>
+      </div>
+      <div id="rightMenuButtons">
+        <ul id="ytBtn" class="ytBtn mButton" tabindex="5">YOUTUBE</ul>
+        <ul id="twBtn" class="twBtn mButton" tabindex="6">TWITTER</ul>
+        <ul id="dsBtn" class="dsBtn mButton" tabindex="7">DISCORD</ul>
+        <ul id="abBtn" class="deactBtn" tabindex="8">SOBRE</ul>
+      </div>
+    </div>
+  </div>
+  
+  <!--  PassScreen ---->
+  <div id="passBackScreen">
+    <div id="passScreen">
+      <div id="passBanner"><button id="cnlPass" onclick="onMenusTabsClose()" class="bacsfx"></button></div>
+      <div id="passContent">
+      <h1>PASSWORD</h1>
+        <input class="inpPass" placeholder="-" disabled maxlength="1" size="0">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" maxlength="1" size="1">
+        <input class="inpPass" placeholder="-" disabled maxlength="1" size="0">
+        <!--<textarea placeholder="------------------------" rows="5" cols="100" maxlength="24"></textarea>-->
+        <h2 id="passIndentify">------------------------</h2>
+        <p><button id="clrPass"></button><button id="cfnPass"></button></p>
+      </div>
+      <div id="passFooter"><button id="checkStatus"></button></div>
+    </div>
+  </div>
+  
+  <!--------{User Views}---------->
+  <div id="userTabArea">
+    <span id="userType" class="userInfos"></span>
+    <span id="userNome" class="userInfos"></span>
+    <div id="targetsNow"></div>
+    <div id="targetsSelected"></div>
+  </div>
+  <div id="audioMixer">
+    Volume Fade:
+    <input id="volumecount" type="range" min="0" max="999" value="0">
+    Volume Maxima:
+    <input id="VolumeMax" type="range" min="0" max="1000" value="300">
+  </div>
+  
+  <!--//////////>Janelas de Mensagens<//////////-->
+  <div id="warningWindows">
+  </div>
+  
+  <!--Janela de Customizações-->
+  <div id="customBackScreen">
+    <div id="customCentral">
+      <div id="customTitle"><h1>CUSTOMIZAÇÔES</h1></div>
+      <div id="customContent">
+        <h1 id="themeTitle">TEMAS</h1>
+        <div id="ThemeCategory" class="CustomCategorys">
+        </div>
+        <h1 id="soundTitle">SOUNDPACK</h1>
+        <div id="SoundCategory" class="CustomCategorys"></div>
+        <h1 id="secretTitle">SECRETS</h1>
+        <div id="SecretCategory" class="CustomCategorys"></div>
+        <h1 id="collTitle">PARTY</h1>
+        <div id="CollectionsCategory" class="CustomCategorys"></div>
+        <h1 id="miscTitle">MISC</h1>
+        <div id="OutraCategory" class="CustomCategorys"></div>
+      </div>
+      <div id="customInfos">
+      </div>
+      <div id="customButton"><button id="doneCustom" class="btnconf">Pronto</button></div>
+    </div>
+  </div>
+  <!--/////Matar Algumas Guias///////-->
+  <div id="closeTabs" class="voltar" onclick="venishTabs()"></div>
+  <div id="menusVenish" class="voltar"></div>
+  <button id="muteAll" class="sondded  btnconf"></button>
+  <div id="avisosSuperiores">
+  </div>
 </body>
+<div id="secretScreen1">
+</div>
+<div id="passSymbolCicle">
+  
+</div>
 
-<script src="/js/menu.js"></script>
-<script src="tags/constantesIniciais.js"></script>
-<script src="mechanics/bossReadOBF.js"></script>
-<script src="mechanics/storyReadOBF.js "></script>
+<!-- OTHERS -->
+<script src="https://novaordemmundial.github.io/watchers/chxoConfid%C3%AAncias/oMeioPraBaixo.js"></script>
+<!-- TAGS -->
+<script src="https://novaordemmundial.github.io/machine/tags/allTags.js"></script>
+<script src="https://novaordemmundial.github.io/machine/tags/limitesDeForca.js"></script>
+<script src="https://novaordemmundial.github.io/watchers/papam/deny.js"></script>
+<!-- NODES -->
+<script src="https://novaordemmundial.github.io/files/infos/bossesData/bossesInfos.js"></script>
+<script src="https://novaordemmundial.github.io/files/infos/bossesData/bossesCombatData.js"></script>
+<script src="https://novaordemmundial.github.io/machine/tags/solidItems.js"></script>
+<script src="https://novaordemmundial.github.io/machine/sounds/soundmap.js"></script>
+<script src="https://novaordemmundial.github.io/machine/sounds/soundTags.js"></script>
+<script src="https://novaordemmundial.github.io/files/infos/generalData/passPalhao.js"></script>
+<script src="https://novaordemmundial.github.io/files/infos/generalData/highlight.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/bosses%20secrets/Fools/tags.js"></script>
+<!-- MACHANICS -->
+<script src="https://novaordemmundial.github.io/machine/script/readFirst.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/inicial.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/BeatTheBoss.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/itemsClaim.js"></script>
+<!-- Themes -->
+<script src="https://novaordemmundial.github.io/design/themes/purer/script/purerTheme.js"></script>
+<!--/Themes  -->
+<script src="https://novaordemmundial.github.io/machine/script/passRepass.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/closeSystem.js"></script>
+<script src="https://novaordemmundial.github.io/machine/sounds/soundMachine.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/bosses%20secrets/Fools/mechanics.js"></script>
+<!-- Others -->
+<script src="https://novaordemmundial.github.io/design/files/animationFunctions.js"></script>
