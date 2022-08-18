@@ -136,7 +136,7 @@ const bossInfos = [
       resistencia:  1499,
       resiliencia:  741,
       força:        1499,
-      foco:         26,
+      foco:         44, //26
       agilidade:    2,
     },
     florais:  0,
