@@ -157,6 +157,11 @@ const JuninhoStory = [
 ]
 
 const KingStory = [
+  combat96 = {
+    player: 'S1rKing_',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
   combat97 = {
     player: 'S1rKing_',
     action: 'Derrotou',
@@ -206,6 +211,11 @@ const GuiStory = [
 ]
 
 const EdneyStory = [
+  combat83 = {
+    player: 'S1rKing_',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
   combat084 = {
     player: 'LittleBunBunny',
     action: '-8HP',
