@@ -13,7 +13,7 @@ const bossInfos = [
     id:         '19751j572p18010110',
     extra1:     '',
     status: {
-      vida:         4263,
+      vida:         4344,
       resistencia:  1000,
       resiliencia:  500,
       força:        1000,
@@ -60,7 +60,7 @@ const bossInfos = [
     id:         '15m872185021cm1018',
     extra1: '',
     status: {
-      vida:         73,
+      vida:         97,
       resistencia:  10,
       resiliencia:  10,
       força:        70,
@@ -132,11 +132,11 @@ const bossInfos = [
     extra1: '',
     id:         '1128486t4120186e10',
     status: {
-      vida:         3352,
+      vida:         3419,
       resistencia:  1499,
       resiliencia:  741,
       força:        1499,
-      foco:         44, //26
+      foco:         55, //37
       agilidade:    2,
     },
     florais:  0,
@@ -274,7 +274,7 @@ const extraBossInfos = [
     classe:     'greyLvl',
     extra1: '',
     status: {
-      vida:         438,
+      vida:         446,
       resistencia:  10,
       resiliencia:  0,
       força:        10,
