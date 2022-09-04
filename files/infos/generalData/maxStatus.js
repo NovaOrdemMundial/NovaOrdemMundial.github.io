@@ -1,5 +1,5 @@
 ﻿//    //   Barras E Limites   //    //
-const lifeMax   = 4263;
+const lifeMax   = 4344;
 const resisMax  = 1499;
 const resilMax  = 760;
 const forceMax  = 1499;
