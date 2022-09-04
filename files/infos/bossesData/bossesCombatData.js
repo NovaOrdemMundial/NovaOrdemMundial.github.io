@@ -1,6 +1,36 @@
 //////            //      Historico de boss      //          ////////////
 
 const FoolsStory = [
+  combat075 = {
+    player: 'ManoFools',
+    action: '-21HP',
+    victim: 'edney_de_pijama'
+  },
+  combat076 = {
+    player: 'ManoFools',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
+  combat077 = {
+    player: 'ManoFools',
+    action: '-19HP',
+    victim: 'edney_de_pijama'
+  },
+  combat078 = {
+    player: 'ManoFools',
+    action: '-6HP',
+    victim: 'edney_de_pijama'
+  },
+  combat079 = {
+    player: 'ManoFools',
+    action: '-3HP',
+    victim: 'edney_de_pijama'
+  },
+  combat080 = {
+    player: 'ManoFools',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
   combat081 = {
     player: 'ManoFools',
     action: '-11HP',
@@ -176,7 +206,57 @@ const GuiStory = [
 ]
 
 const EdneyStory = [
-  combat093 = {
+  combat084 = {
+    player: 'LittleBunBunny',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
+  combat085 = {
+    player: 'ManoFools',
+    action: '-21HP',
+    victim: 'edney_de_pijama'
+  },
+  combat084 = {
+    player: 'edney_de_pijama',
+    action: '+10HP',
+    victim: 'Se Curou'
+  },
+  combat085 = {
+    player: 'ManoFools',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
+  combat086 = {
+    player: 'edney_de_pijama',
+    action: '+15HP',
+    victim: 'Se Curou'
+  },
+  combat087 = {
+    player: 'ManoFools',
+    action: '-19HP',
+    victim: 'edney_de_pijama'
+  },
+  combat088 = {
+    player: 'edney_de_pijama',
+    action: '+16HP',
+    victim: 'Se Curou'
+  },
+  combat089 = {
+    player: 'ManoFools',
+    action: '-6HP',
+    victim: 'edney_de_pijama'
+  },
+  combat090 = {
+    player: 'edney_de_pijama',
+    action: '+11HP',
+    victim: 'Se Curou'
+  },
+  combat091 = {
+    player: 'ManoFools',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
+  combat092 = {
     player: 'edney_de_pijama',
     action: '-1500HP',
     victim: 'ManoFools'
@@ -287,6 +367,11 @@ const MandraxStory = [
 ]
 
 const GirlStory = [
+  combat099 = {
+    player: 'LittleBunBunny',
+    action: '-8HP',
+    victim: 'edney_de_pijama'
+  },
   combat100 = {
     player: 'GirlStrangerFear',
     action: '-1.5HP',
