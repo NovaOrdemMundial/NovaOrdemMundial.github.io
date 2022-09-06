@@ -37,6 +37,7 @@
   --IndexSticked:' ';
   --EditableContentView:none;
   --EditableContentOpac:0;
+  --rollAnimation:none;
 }
 body{
   background:#879777;
@@ -522,7 +523,6 @@ body{
   cursor:grab;
   pointer-events:auto;
   user-select:none;
-  transition:all ease-in-out 0.2s;
 }
 #rollBox:active{
   cursor:grabbing;
@@ -555,6 +555,7 @@ body{
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space:pre-line;
+  animation-name:var(--rollAnimation);
 }
 #rollBox h2{
 /*   height:var(--RandomH1Height); */
@@ -575,6 +576,7 @@ body{
   font-family:ModernDos;
   font-weight:lighter;
   color:#AAA;
+  animation-name:var(--rollAnimation);
 }
 
 
