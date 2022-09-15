@@ -1,7 +1,7 @@
 const theLink = document.createElement('INPUT');
 theLink.value = window.location.hash;
 
-const Pandos = ['#pandas', '#Pandas', '#Panda', '#panda', '#Pandoca', '#pandoca', '#Pandas_S2', '#pandas_s2'];
+const Pandos = ['#pandas', '#Pandas', '#Panda', '#panda', '#Pandoca', '#pandoca', '#Pandas_S2', '#pandas_s2', '#75Legendery', '#75legendery'];
 const Eddie  = ['#Eddy', '#eddy', '#Eddie', '#eddie', '#Edney', '#edney', '#edney_de_pijama', '#Edney_De_Pijama', '#Eddytor', '#eddytor'];
 const Fooly  = ['#Fools', '#fools', '#Fooly', '#fooly', '#ManoFools', '#manofools', '#Fulls', '#fulls', '#Foolie', '#foolie', '#Fools113', '#fools113'];
 const Jusnin = ['#Junin', '#junin', '#juninho', '#Juninho', '#Junesco', '#junesco', '#greque', '#Greque', '#7greque', '#7Greque', 'Junelson', 'junelson'];
