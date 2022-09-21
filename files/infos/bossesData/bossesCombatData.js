@@ -390,6 +390,11 @@ const GirlStory = [
 ]
 
 const WhityStory = [
+  combat098 = {
+    player: 'WhityKun_',
+    action: '-4200HP',
+    victim: 'edney_de_pijama'
+  },
   combat099 = {
     player: 'WhityKun_',
     action: '-5.61HP',
