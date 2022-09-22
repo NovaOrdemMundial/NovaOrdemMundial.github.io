@@ -183,51 +183,6 @@ function sendNudes(){
   request.open("POST", ron+nal+dinho+soc+cer+game+play); //Função Post E Qual Servidor
   request.setRequestHeader('Content-type', 'application/json'); //Não sei bem
 
-  //Formato Da Mensagem do Discord
-  const params = {
-    username: botName,     //Nick do Bot Opcional
-    avatar_url: botAvatar,   //Opcional Avatar do Bot
-    "embeds": [       //Mensagem que o bot vai mandar em Embed
-    {
-      "author": {
-        "name": bossSelNome.value,
-        "url": bossSelLink.value,
-        "icon_url": bossSelAvatar.value
-      },
-      "title": "**__" + bossSelNick.value + "__**" + " *Resgatou Item* " + "**__"+itemNameTarget.value+"__**",
-      //"url": "https://google.com/",
-      "description": "",
-      "color": 15105570,
-      "fields": [
-        {
-          "name": " **"+itemNameTarget.value +"** " + itemDescount.value + "x",
-          "value": "**"+bossSelNome.value+"**" + " *Resgatou:* " + "**" + itemDescount.value+ " " +itemNameTarget.value+"**",
-          "inline": true
-        },
-        {
-          "name": "**(" +itemUseResult.value+ "x)** *Restantes*",
-          "value": "**"+checkSelBoss.value+"**",
-          "inline": true
-        },
-        {
-          "name": "**"+inputDescript.value+" **",
-          "value": "*"+time+"*"
-        }
-      ],
-      "thumbnail": {
-        "url": itemIconTarget.value
-      },
-      "footer":
-        {
-          "text": "Site NOM",
-          "icon_url": "https://i.imgur.com/pv8rDm5.png",
-        }
-      }
-    ],
-  }
-  request.send(JSON.stringify(params));
-}
-
 //////////////////////////////////////////////////////////////
 
 ////Musica do botão Sacrificar tudo////
