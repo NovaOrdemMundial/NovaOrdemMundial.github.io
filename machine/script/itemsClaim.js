@@ -221,10 +221,7 @@ function sendNudes(){
         {
           "text": "Site NOM",
           "icon_url": "https://i.imgur.com/pv8rDm5.png",
-        },
-     // "image": {
-     //   "url": "https://i.imgur.com/SefZShA.png" //Embed Image
-     //   }
+        }
       }
     ],
   }
