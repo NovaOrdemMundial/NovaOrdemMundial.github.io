@@ -179,13 +179,13 @@ function sendNudes(){
   // confirmItemSend();
     //Comunicação com O Serve Do Discord
   randomColorPost();
-  const request = new XMLHttpRequest();
+  const request 	= new XMLHttpRequest();
   const request2= new XMLHttpRequest();
-  request.open("POST", ron+nal+dinho+soc+cer+game+play"); //Função Post E Qual Servidor
+  request.open("POST", ron+nal+dinho+soc+cer+game+play); //Função Post E Qual Servidor
   request.setRequestHeader('Content-type', 'application/json'); //Não sei bem
 
   
-  request2.open("POST", celta+lazule+rebaixado"); //Função Post E Qual Servidor
+  request2.open("POST", celta+lazule+rebaixado); //Função Post E Qual Servidor
   request2.setRequestHeader('Content-type', 'application/json'); //Não sei bem
   
   //Formato Da Mensagem do Discord
@@ -250,4 +250,3 @@ function sacriOuter(){
   SacrificeALL.style.setProperty('--sacrificeAnimation', 'none');
   fadeOut();
 }
-
