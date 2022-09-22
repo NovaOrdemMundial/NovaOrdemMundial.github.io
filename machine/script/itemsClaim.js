@@ -1,1 +1,247 @@
-(function(_0x1c6ec0,_0x5ed9cc){const _0xa2a502=_0xbad2,_0x277853=_0x1c6ec0();while(!![]){try{const _0x709b40=-parseInt(_0xa2a502(0x1f7))/0x1*(-parseInt(_0xa2a502(0x1c6))/0x2)+-parseInt(_0xa2a502(0x1c2))/0x3*(parseInt(_0xa2a502(0x1af))/0x4)+parseInt(_0xa2a502(0x1dc))/0x5*(-parseInt(_0xa2a502(0x1ef))/0x6)+-parseInt(_0xa2a502(0x1bb))/0x7*(parseInt(_0xa2a502(0x1ad))/0x8)+parseInt(_0xa2a502(0x1b5))/0x9*(-parseInt(_0xa2a502(0x1bd))/0xa)+parseInt(_0xa2a502(0x1ec))/0xb*(parseInt(_0xa2a502(0x1c8))/0xc)+-parseInt(_0xa2a502(0x1e9))/0xd*(-parseInt(_0xa2a502(0x1e0))/0xe);if(_0x709b40===_0x5ed9cc)break;else _0x277853['push'](_0x277853['shift']());}catch(_0x4332c7){_0x277853['push'](_0x277853['shift']());}}}(_0x32fd,0x8638e));function itemClickedCheck(){const _0x446820=_0xbad2,_0x42dc14=event[_0x446820(0x1b6)][_0x446820(0x1ed)]('id');if(_0x42dc14==_0x446820(0x1bc))itemCheckToClaim();else{if(_0x42dc14==_0x446820(0x1f4))itemCheckToClaim();else{if(_0x42dc14==_0x446820(0x1dd))itemCheckToClaim();else{if(_0x42dc14==_0x446820(0x1ce))itemCheckToClaim();else{if(_0x42dc14==_0x446820(0x1b1)){}else _0x42dc14==_0x446820(0x1b0)&&itemCheckToClaim();}}}}}function _0xbad2(_0x53f51f,_0x3d9268){const _0x32fd81=_0x32fd();return _0xbad2=function(_0xbad28e,_0x4996df){_0xbad28e=_0xbad28e-0x1ab;let _0x46782a=_0x32fd81[_0xbad28e];return _0x46782a;},_0xbad2(_0x53f51f,_0x3d9268);}function itemUserInfos(){const _0x2440b8=_0xbad2,_0x27969c=event[_0x2440b8(0x1b6)][_0x2440b8(0x1ed)]('id');if(_0x27969c==_0x2440b8(0x1c0))itemInfoCheckUser();else{if(_0x27969c==_0x2440b8(0x1c4))itemInfoCheckUser();else{if(_0x27969c==_0x2440b8(0x1ac))itemInfoCheckUser();else{if(_0x27969c==_0x2440b8(0x1d5))itemInfoCheckUser();else{if(_0x27969c==_0x2440b8(0x1cc)){}else{if(_0x27969c==_0x2440b8(0x1b4))itemInfoCheckUser();else{if(_0x27969c==_0x2440b8(0x1cb)){}}}}}}}}function claimItemNow(){const _0x4a0899=_0xbad2,_0x5e9be9=document[_0x4a0899(0x1ea)](itemIDTarget[_0x4a0899(0x1d9)]),_0x5bfc75=document[_0x4a0899(0x1ea)](itemCountLocal[_0x4a0899(0x1d9)]);itemDescount[_0x4a0899(0x1d9)]=itemClaimed,itemUseResult[_0x4a0899(0x1d9)]=itemCountTarget[_0x4a0899(0x1d9)]-itemClaimed,_0x5bfc75['innerHTML']=itemUseResult['value'],_0x5e9be9[_0x4a0899(0x1d9)]=itemUseResult[_0x4a0899(0x1d9)],targetSelField[_0x4a0899(0x1ba)](itemDescount,itemUseResult),onItemViewerClose(),bdModifyOnClaim(),sendNudes(),justClick();const _0x194b22=document['createElement']('DIV'),_0x180e53=document[_0x4a0899(0x1be)]('H1'),_0x54cc2b=document[_0x4a0899(0x1be)](_0x4a0899(0x1da)),_0x34a6e3=document[_0x4a0899(0x1be)]('H2'),_0x5d4926=document[_0x4a0899(0x1be)]('H3'),_0x5dee65=document[_0x4a0899(0x1be)]('H4');avisosSuperior[_0x4a0899(0x1f0)](_0x4a0899(0x1ee),closeAvisoSuperior),document['documentElement'][_0x4a0899(0x1d3)]['setProperty'](_0x4a0899(0x1f9),_0x4a0899(0x1e5)),setTimeout(()=>{const _0x35d9ba=_0x4a0899;document[_0x35d9ba(0x1cf)][_0x35d9ba(0x1d3)]['setProperty'](_0x35d9ba(0x1f2),'1'),setTimeout(()=>{const _0x106ecc=_0x35d9ba;document['documentElement'][_0x106ecc(0x1d3)][_0x106ecc(0x1f3)](_0x106ecc(0x1d0),'1');},0x12c);},0x64),_0x180e53['innerHTML']=_0x4a0899(0x1d2),_0x54cc2b[_0x4a0899(0x1ae)]=itemIconTarget[_0x4a0899(0x1d9)],_0x54cc2b[_0x4a0899(0x1e7)](_0x4a0899(0x1eb),'false'),_0x54cc2b[_0x4a0899(0x1e7)](_0x4a0899(0x1ca),itemTypeTarget[_0x4a0899(0x1d9)]),_0x5d4926[_0x4a0899(0x1de)]=_0x4a0899(0x1cd),_0x5dee65[_0x4a0899(0x1de)]=_0x4a0899(0x1df),avisosSuperior['append'](_0x194b22),_0x194b22['append'](_0x180e53,_0x54cc2b,_0x5d4926,_0x5dee65),avisosSuperior['innerHTML']=avisosSuperior[_0x4a0899(0x1de)][_0x4a0899(0x1b7)](/{NOME}/g,whoeIs)[_0x4a0899(0x1b7)](/{COUNT}/g,itemDescount[_0x4a0899(0x1d9)])[_0x4a0899(0x1b7)](/{ITEM}/g,itemNameTarget[_0x4a0899(0x1d9)])['replace'](/{RESUME}/g,itemUseResult[_0x4a0899(0x1d9)]);}function sacrifyItemNow(){const _0x511ef9=_0xbad2,_0x502ece=document['getElementById'](itemIDTarget['value']),_0x559a5e=document[_0x511ef9(0x1ea)](itemCountLocal[_0x511ef9(0x1d9)]);itemDescount[_0x511ef9(0x1d9)]=itemSacrified,itemUseResult[_0x511ef9(0x1d9)]=itemCountTarget[_0x511ef9(0x1d9)]-itemSacrified,_0x559a5e[_0x511ef9(0x1de)]=itemUseResult['value'],_0x502ece['value']=itemUseResult[_0x511ef9(0x1d9)],targetSelField[_0x511ef9(0x1ba)](itemDescount,itemUseResult),onItemViewerClose(),bdModifyOnClaim(),sendNudes(),justClick();const _0x493ad7=document[_0x511ef9(0x1be)](_0x511ef9(0x1e8)),_0x36b138=document['createElement']('H1'),_0x247747=document['createElement']('IMG'),_0x171fc6=document[_0x511ef9(0x1be)]('H2'),_0x47b4b2=document[_0x511ef9(0x1be)]('H3'),_0x6a4a25=document[_0x511ef9(0x1be)]('H4');avisosSuperior[_0x511ef9(0x1f0)]('click',closeAvisoSuperior),document[_0x511ef9(0x1cf)][_0x511ef9(0x1d3)]['setProperty']('--AvisoDisplay','flex'),setTimeout(()=>{const _0x2431cc=_0x511ef9;document[_0x2431cc(0x1cf)]['style']['setProperty'](_0x2431cc(0x1f2),'1'),setTimeout(()=>{const _0x41c198=_0x2431cc;document['documentElement'][_0x41c198(0x1d3)][_0x41c198(0x1f3)]('--AvisoMSGOpacity','1');},0x12c);},0x64),_0x36b138[_0x511ef9(0x1de)]=_0x511ef9(0x1d2),_0x247747[_0x511ef9(0x1ae)]=itemIconTarget[_0x511ef9(0x1d9)],_0x247747['setAttribute'](_0x511ef9(0x1eb),_0x511ef9(0x1f8)),_0x247747[_0x511ef9(0x1e7)](_0x511ef9(0x1ca),itemTypeTarget['value']),_0x47b4b2[_0x511ef9(0x1de)]=_0x511ef9(0x1cd),_0x6a4a25[_0x511ef9(0x1de)]='Assim\x20que\x20possivel\x20sua\x20recompensa\x20sera\x20aplicada.',avisosSuperior[_0x511ef9(0x1ba)](_0x493ad7),_0x493ad7[_0x511ef9(0x1ba)](_0x36b138,_0x247747,_0x47b4b2,_0x6a4a25),avisosSuperior[_0x511ef9(0x1de)]=avisosSuperior[_0x511ef9(0x1de)][_0x511ef9(0x1b7)](/{NOME}/g,whoeIs)[_0x511ef9(0x1b7)](/{COUNT}/g,itemDescount[_0x511ef9(0x1d9)])[_0x511ef9(0x1b7)](/{ITEM}/g,itemNameTarget['value'])['replace'](/{RESUME}/g,itemUseResult[_0x511ef9(0x1d9)]);}function checkBossAuth(){const _0x165dca=_0xbad2;bossSelNome[_0x165dca(0x1d9)]===whoeIs?checkSelBoss[_0x165dca(0x1d9)]=_0x165dca(0x1e6)+whoeIs:checkSelBoss['value']=':x:'+whoeIs;}function bdModifyOnClaim(){const _0x29e64e=_0xbad2;path[_0x29e64e(0x1c5)](_0x29e64e(0x1c3))[_0x29e64e(0x1d6)](userNowDoc[_0x29e64e(0x1d9)])[_0x29e64e(0x1c5)](_0x29e64e(0x1e2))[_0x29e64e(0x1d6)](itemPathTarget[_0x29e64e(0x1d9)])[_0x29e64e(0x1f5)]({'item_value':itemUseResult['value']});}var postColor='';function randomColorPost(){const _0xc81e56=_0xbad2,_0x57e12d=[0x1abc9c,0x11806a,0x2ecc71,0x1f8b4c,0x3498db,0x206694,0x9b59b6,0x71368a,0xe91e63,0xad1457,0xf1c40f,0xc27c0e,0xe67e22,0xa84300,0xe74c3c,0x992d22,0x95a5a6,0x979c9f,0x7f8c8d,0xbcc0c0,0x34495e,0x2c3e50,0xffff00,0xffffff,0x5865f2,0x99aab5,0x2c2f33,0x23272a,0x57f287,0xfee75c,0xeb459e,0xed4245,0xffffff,0x23272a],_0x263bf6=Math[_0xc81e56(0x1ab)](Math[_0xc81e56(0x1e3)]()*_0x57e12d[_0xc81e56(0x1d4)]),_0xb46020=_0x57e12d[_0x263bf6];postColor=_0xb46020;}function sendNudes(){const _0x50781d=_0xbad2;var _0x80c68b=new Date(),_0x4fcb3f=_0x80c68b[_0x50781d(0x1e1)]();randomColorPost();const _0x211282=new XMLHttpRequest();_0x211282[_0x50781d(0x1bf)]('POST',ron+nal+dinho+soc+cer+game+play,celta+laazule+rebaixado),_0x211282['setRequestHeader'](_0x50781d(0x1d1),_0x50781d(0x1c9));const _0x44b4d9={'username':botName,'avatar_url':botAvatar,'embeds':[{'author':{'name':bossSelNome[_0x50781d(0x1d9)],'url':_0x50781d(0x1db)+bossSelLink['value'],'icon_url':bossSelAvatar[_0x50781d(0x1d9)]},'title':_0x50781d(0x1f1)+bossSelNick[_0x50781d(0x1d9)]+_0x50781d(0x1c1)+'\x20*Resgatou\x20Item*\x20'+'**__'+itemNameTarget[_0x50781d(0x1d9)]+_0x50781d(0x1c1),'description':'','color':postColor,'fields':[{'name':_0x50781d(0x1f6)+itemNameTarget['value']+_0x50781d(0x1b8)+itemDescount[_0x50781d(0x1d9)]+'x','value':'**'+bossSelNome[_0x50781d(0x1d9)]+'**'+'\x20*Resgatou:*\x20'+'**'+itemDescount[_0x50781d(0x1d9)]+'\x20'+itemNameTarget[_0x50781d(0x1d9)]+'**','inline':!![]},{'name':_0x50781d(0x1b9)+itemUseResult[_0x50781d(0x1d9)]+'x)**\x20*Restantes*','value':'**'+checkSelBoss[_0x50781d(0x1d9)]+'**','inline':!![]},{'name':'**'+inputDescript[_0x50781d(0x1d9)]+_0x50781d(0x1f6),'value':'*'+_0x4fcb3f+'*'}],'thumbnail':{'url':itemIconTarget[_0x50781d(0x1d9)]},'footer':{'text':_0x50781d(0x1c7),'icon_url':_0x50781d(0x1b3)}}]};_0x211282['send'](JSON[_0x50781d(0x1b2)](_0x44b4d9));}function nonAct(){}function _0x32fd(){const _0x52b0a8=['\x20**','109902XmkUaA','false','--AvisoDisplay','floor','item_03','8YlZWgQ','src','8sDfrwL','voidItem_6','voidItem_5','stringify','https://i.imgur.com/pv8rDm5.png','item_06','9qIOTwf','target','replace','**\x20','**(','append','7431991YQcdTy','voidItem_1','3190310ZgEABw','createElement','open','item_01','__**','963327PqKzaU','Bosses','item_02','collection','14HOqhnA','Site\x20NOM','108APsvvR','application/json','class','item_07','item_05','Parabéns\x20{NOME},\x20você\x20resgatou\x20{COUNT}x\x20{ITEM}.\x20Agora\x20te\x20restaram\x20{RESUME}x\x20{ITEM}','voidItem_4','documentElement','--AvisoMSGOpacity','Content-type','Fomos\x20Avisados\x20{NOME}','style','length','item_04','doc','sacrificeRotate','none','value','IMG','https://novaordemmundial.github.io/','3750490oazAGl','voidItem_3','innerHTML','Assim\x20que\x20possivel\x20sua\x20recompensa\x20sera\x20aplicada.','1593214gDrIsM','toLocaleTimeString','items','random','--sacrificeAnimation','flex',':white_check_mark:','setAttribute','DIV','221teeXOU','getElementById','draggable','756437DgoaAV','getAttribute','click','6jMkjIq','addEventListener','**__','--AvisoOpacity','setProperty','voidItem_2','update'];_0x32fd=function(){return _0x52b0a8;};return _0x32fd();}function sacriOver(){const _0xb39979=_0xbad2;SacrificeALL[_0xb39979(0x1d3)][_0xb39979(0x1f3)](_0xb39979(0x1e4),_0xb39979(0x1d7)),runMusic['play'](),fadeIn();}function sacriOuter(){const _0x43a96f=_0xbad2;SacrificeALL[_0x43a96f(0x1d3)][_0x43a96f(0x1f3)](_0x43a96f(0x1e4),_0x43a96f(0x1d8)),fadeOut();}
+///////Checkar qual item foi clicado/////
+function itemClickedCheck(){
+  const itemIs = event.target.getAttribute('id');
+  if(itemIs == 'voidItem_1'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_2'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_3'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_4'){
+    itemCheckToClaim();
+  }
+  else if(itemIs == 'voidItem_5'){
+  }
+  else if(itemIs == 'voidItem_6'){
+    itemCheckToClaim()
+  }
+}
+
+/////////////{VER ITEMS DE OUTROS USUARIOS}/////////////////
+function itemUserInfos(){
+  const itemIs = event.target.getAttribute('id');
+  if(itemIs == 'item_01'){
+    itemInfoCheckUser();
+  }
+  else if(itemIs == 'item_02'){
+    itemInfoCheckUser();
+  }
+  else if(itemIs == 'item_03'){
+    itemInfoCheckUser();
+  }
+  else if(itemIs == 'item_04'){
+    itemInfoCheckUser();
+  }
+  else if(itemIs == 'item_05'){
+  }
+  else if(itemIs == 'item_06'){
+    itemInfoCheckUser();
+  }
+  else if(itemIs == 'item_07'){
+  }
+}
+
+//////////////////////////////////////////
+
+//////////Claim Calculator//////////////
+function claimItemNow(){
+  const setItemDataCount = document.getElementById(itemIDTarget.value);
+  const setItemCount     = document.getElementById(itemCountLocal.value);
+  itemDescount.value = itemClaimed;
+  itemUseResult.value = itemCountTarget.value - itemClaimed;
+  
+  setItemCount.innerHTML = itemUseResult.value;
+  setItemDataCount.value = itemUseResult.value;
+ 
+  targetSelField.append(itemDescount, itemUseResult);
+  onItemViewerClose();
+  bdModifyOnClaim();
+  sendNudes();
+  justClick();
+  
+  //Tela De Confirmação
+  const divisaoSup= document.createElement('DIV');
+  const tituloSup = document.createElement('H1');
+  const itemIcon  = document.createElement('IMG');
+  const subTitulo = document.createElement('H2');
+  const msgAviso  = document.createElement('H3');
+  const footerMsg = document.createElement('H4');
+  
+  //Aparencia
+  avisosSuperior.addEventListener('click', closeAvisoSuperior);
+  document.documentElement.style.setProperty('--AvisoDisplay', 'flex');
+  setTimeout(()=>{
+    document.documentElement.style.setProperty('--AvisoOpacity', '1');
+    setTimeout(()=>{
+      document.documentElement.style.setProperty('--AvisoMSGOpacity', '1');
+    },300)
+  },100);
+  
+  //Informações
+  tituloSup.innerHTML   = 'Fomos Avisados {NOME}';
+  itemIcon.src          = itemIconTarget.value;
+  itemIcon.setAttribute('draggable', 'false');
+  itemIcon.setAttribute('class', itemTypeTarget.value);
+  msgAviso.innerHTML    = 'Parabéns {NOME}, você resgatou {COUNT}x {ITEM}. Agora te restaram {RESUME}x {ITEM}';
+  footerMsg.innerHTML   = 'Assim que possivel sua recompensa sera aplicada.'
+  avisosSuperior.append(divisaoSup);
+  divisaoSup.append(tituloSup, itemIcon, msgAviso, footerMsg);
+  avisosSuperior.innerHTML = avisosSuperior.innerHTML.replace(/{NOME}/g, whoeIs).replace(/{COUNT}/g, itemDescount.value).replace(/{ITEM}/g, itemNameTarget.value).replace(/{RESUME}/g, itemUseResult.value);
+  
+}
+
+function sacrifyItemNow(){
+  const setItemDataCount = document.getElementById(itemIDTarget.value);
+  const setItemCount     = document.getElementById(itemCountLocal.value);
+  itemDescount.value = itemSacrified;
+  itemUseResult.value = itemCountTarget.value - itemSacrified;
+  
+  setItemCount.innerHTML = itemUseResult.value;
+  setItemDataCount.value = itemUseResult.value;
+  
+  targetSelField.append(itemDescount, itemUseResult);
+  onItemViewerClose();
+  bdModifyOnClaim();
+  sendNudes();
+  justClick();
+  
+  //Tela De Confirmação
+  const divisaoSup= document.createElement('DIV');
+  const tituloSup = document.createElement('H1');
+  const itemIcon  = document.createElement('IMG');
+  const subTitulo = document.createElement('H2');
+  const msgAviso  = document.createElement('H3');
+  const footerMsg = document.createElement('H4');
+  
+  //Aparencia
+  avisosSuperior.addEventListener('click', closeAvisoSuperior);
+  document.documentElement.style.setProperty('--AvisoDisplay', 'flex');
+  setTimeout(()=>{
+    document.documentElement.style.setProperty('--AvisoOpacity', '1');
+    setTimeout(()=>{
+      document.documentElement.style.setProperty('--AvisoMSGOpacity', '1');
+    },300)
+  },100);
+  
+  //Informações
+  tituloSup.innerHTML   = 'Fomos Avisados {NOME}';
+  itemIcon.src          = itemIconTarget.value;
+  itemIcon.setAttribute('draggable', 'false');
+  itemIcon.setAttribute('class', itemTypeTarget.value);
+  msgAviso.innerHTML    = 'Parabéns {NOME}, você resgatou {COUNT}x {ITEM}. Agora te restaram {RESUME}x {ITEM}';
+  footerMsg.innerHTML   = 'Assim que possivel sua recompensa sera aplicada.'
+  avisosSuperior.append(divisaoSup);
+  divisaoSup.append(tituloSup, itemIcon, msgAviso, footerMsg);
+  avisosSuperior.innerHTML = avisosSuperior.innerHTML.replace(/{NOME}/g, whoeIs).replace(/{COUNT}/g, itemDescount.value).replace(/{ITEM}/g, itemNameTarget.value).replace(/{RESUME}/g, itemUseResult.value);
+  
+}
+
+///////////////////////////////////////////////////
+
+//Checagem De Boss De Resgate para Boss Selecionado//
+function checkBossAuth(){//checkSelBoss.value
+  if(bossSelNome.value === whoeIs){
+    checkSelBoss.value = ':white_check_mark:'+whoeIs;
+  }else{
+    checkSelBoss.value = ':x:'+whoeIs;
+  }
+}
+
+////////////////////////////////////////////
+
+//////BD AO RESGATARUTEM///////
+function bdModifyOnClaim(){
+  path.collection('Bosses').doc(userNowDoc.value).collection('items').doc(itemPathTarget.value).update({
+    item_value: itemUseResult.value,
+  });
+}
+
+/////RANDOM COLOR///////////
+var postColor = '';
+function randomColorPost(){
+  const embedColors = [1752220, 1146986, 3066993, 2067276, 3447003, 2123412, 10181046, 7419530, 15277667, 11342935, 15844367, 12745742, 15105570, 11027200, 15158332, 10038562, 9807270, 9936031, 8359053, 12370112, 3426654, 2899536, 16776960, 16777215, 5793266, 10070709, 2895667, 2303786, 5763719, 16705372, 15418782, 15548997, 16777215, 2303786]
+  const randomizeCo = Math.floor(Math.random() * embedColors.length);
+  const colorIs     = embedColors[randomizeCo];
+  postColor = colorIs;
+}
+
+//////////////////////////////////////////////////
+
+/////Avise Aos Mod///////
+function sendNudes(){
+    //Relogio
+  var data = new Date(),
+      time = data.toLocaleTimeString();
+  //Run Notify.
+  // confirmItemSend();
+    //Comunicação com O Serve Do Discord
+  randomColorPost();
+  const request = new XMLHttpRequest();
+  request.open("POST", ron+nal+dinho+soc+cer+game+play, celta+lazule+rebaixado); //Função Post E Qual Servidor
+  request.setRequestHeader('Content-type', 'application/json'); //Não sei bem
+
+  
+  //Formato Da Mensagem do Discord
+  const params = {
+    username: botName,     //Nick do Bot Opcional
+    avatar_url: botAvatar,   //Opcional Avatar do Bot
+    "embeds": [       //Mensagem que o bot vai mandar em Embed
+    {
+      "author": {
+        "name": bossSelNome.value,
+        "url": `https://novaordemmundial.github.io/${bossSelLink.value}`,
+        "icon_url": bossSelAvatar.value
+      },
+      "title": "**__" + bossSelNick.value + "__**" + " *Resgatou Item* " + "**__"+itemNameTarget.value+"__**",
+      //"url": "https://google.com/",
+      "description": "",
+      "color": postColor,
+      "fields": [
+        {
+          "name": " **"+itemNameTarget.value +"** " + itemDescount.value + "x",
+          "value": "**"+bossSelNome.value+"**" + " *Resgatou:* " + "**" + itemDescount.value+ " " +itemNameTarget.value+"**",
+          "inline": true
+        },
+        {
+          "name": "**(" +itemUseResult.value+ "x)** *Restantes*",
+          "value": "**"+checkSelBoss.value+"**",
+          "inline": true
+        },
+        {
+          "name": "**"+inputDescript.value+" **",
+          "value": "*"+time+"*"
+        }
+      ],
+      "thumbnail": {
+        "url": itemIconTarget.value
+      },
+      "footer":
+        {
+          "text": "Site NOM",
+          "icon_url": "https://i.imgur.com/pv8rDm5.png",
+        }
+      }
+    ],
+  }
+  request.send(JSON.stringify(params));
+}
+
+//////////////////////////////////////////////////////////////
+
+////Musica do botão Sacrificar tudo////
+function nonAct(){
+  
+}
+
+function sacriOver(){
+  SacrificeALL.style.setProperty('--sacrificeAnimation', 'sacrificeRotate');
+  runMusic.play();
+  fadeIn();
+}
+function sacriOuter(){
+  SacrificeALL.style.setProperty('--sacrificeAnimation', 'none');
+  fadeOut();
+}
