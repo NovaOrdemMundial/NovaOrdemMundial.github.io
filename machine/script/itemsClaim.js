@@ -225,7 +225,7 @@ function sendNudes(){
       }
     ],
   }
-  request.send(JSON.stringify(params));//Conteudo que vai ser enviado
+  request.send(JSON.stringify(params));
 }
 
 //////////////////////////////////////////////////////////////
