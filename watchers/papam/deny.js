@@ -9,5 +9,5 @@ const game      = 'BLkXtQXg0oC';
 const play      = '_vLzlpDmgt7DJa16gUi0';
 
 const celta     = 'https://discord.com/api/webhooks/1022527774918971423/CT0w1BPHvpEyconBYCEEOd8yz0KUvB-vye6WxhCteHE8B3ViFBU9yNYJZrA0hScIuktt';
-const laazule   = '/1022527774918971423/';
+const lazule    = '/1022527774918971423/';
 const rebaixado = 'CT0w1BPHvpEyconBYCEEOd8yz0KUvB-vye6WxhCteHE8B3ViFBU9yNYJZrA0hScIuktt';
