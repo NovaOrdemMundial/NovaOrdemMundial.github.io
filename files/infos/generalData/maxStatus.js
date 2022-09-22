@@ -1,7 +1,7 @@
 ﻿//    //   Barras E Limites   //    //
-const lifeMax   = 4344;
-const resisMax  = 1499;
+const lifeMax   = 9454;
+const resisMax  = 3923;
 const resilMax  = 760;
-const forceMax  = 1499;
-const focusMax  = 61;
+const forceMax  = 6454;
+const focusMax  = 90;
 const agilyMax  = 10;
