@@ -61,7 +61,7 @@ else if(Girls.includes(theLink.value)){
   bonusIs();
 }
 else if(Whitys.includes(theLink.value)){
-  bossIndx.value = 5;
+  bossIndx.value = 7;
   bonusIs();
 }
 else if(Paulus.includes(theLink.value)){
