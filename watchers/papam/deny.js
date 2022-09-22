@@ -1,1 +1,9 @@
-const _0x1497b0=_0x226b;function _0x4435(){const _0x2e2cb7=['34398vhhHMf','108WjvQbV','6182baefyt','5949546nNfEiU','8dBiENj','The\x20Eye\x20in\x20one\x20mind','https://i.imgur.com/9hv2wml.png','528976QDyWkE','20IeyQpt','.com/api','13260EQDXNz','2575840SCWjgU','_1nZPJ8cKniC22qZ','BLkXtQXg0oC','1459767hHllnw','_vLzlpDmgt7DJa16gUi0','35obwdbQ','787470gpqIBJ'];_0x4435=function(){return _0x2e2cb7;};return _0x4435();}(function(_0x25ea82,_0x2bb804){const _0x37f963=_0x226b,_0x4ced66=_0x25ea82();while(!![]){try{const _0x47b62c=parseInt(_0x37f963(0x166))/0x1*(-parseInt(_0x37f963(0x170))/0x2)+-parseInt(_0x37f963(0x16c))/0x3+parseInt(_0x37f963(0x162))/0x4*(parseInt(_0x37f963(0x169))/0x5)+parseInt(_0x37f963(0x173))/0x6+parseInt(_0x37f963(0x16e))/0x7*(-parseInt(_0x37f963(0x165))/0x8)+-parseInt(_0x37f963(0x171))/0x9*(parseInt(_0x37f963(0x16f))/0xa)+-parseInt(_0x37f963(0x172))/0xb*(-parseInt(_0x37f963(0x168))/0xc);if(_0x47b62c===_0x2bb804)break;else _0x4ced66['push'](_0x4ced66['shift']());}catch(_0x1ba949){_0x4ced66['push'](_0x4ced66['shift']());}}}(_0x4435,0x830da));function _0x226b(_0x340039,_0x3f8e61){const _0x4435ff=_0x4435();return _0x226b=function(_0x226b7d,_0x19b5bd){_0x226b7d=_0x226b7d-0x162;let _0x1d5794=_0x4435ff[_0x226b7d];return _0x1d5794;},_0x226b(_0x340039,_0x3f8e61);}const botName=_0x1497b0(0x163),botAvatar=_0x1497b0(0x164),ron='https://discord',nal=_0x1497b0(0x167),dinho='/webhooks',soc='/982912777792397332/Axv0bcjSqtTfY38Q4bHZu',cer=_0x1497b0(0x16a),game=_0x1497b0(0x16b),play=_0x1497b0(0x16d);
+const botName   = 'The Eye in one mind';
+const botAvatar = 'https://i.imgur.com/9hv2wml.png';
+const ron       = 'https://discord';
+const nal       = '.com/api';
+const dinho     = '/webhooks';
+const soc       = '/982912777792397332/Axv0bcjSqtTfY38Q4bHZu';
+const cer       = '_1nZPJ8cKniC22qZ';
+const game      = 'BLkXtQXg0oC';
+const play      = '_vLzlpDmgt7DJa16gUi0';
