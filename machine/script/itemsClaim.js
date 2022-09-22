@@ -171,17 +171,6 @@ function randomColorPost(){
 //////////////////////////////////////////////////
 
 /////Avise Aos Mod///////
-function sendNudes(){
-  randomColorPost();
-    //Relogio
-  var data = new Date(),
-      time = data.toLocaleTimeString();
-  //Run Notify.
-  // confirmItemSend();
-    //Comunicação com O Serve Do Discord
-  const request = new XMLHttpRequest();
-  request.open("POST", ron+nal+dinho+soc+cer+game+play); //Função Post E Qual Servidor
-  request.setRequestHeader('Content-type', 'application/json'); //Não sei bem
 
 //////////////////////////////////////////////////////////////
 
