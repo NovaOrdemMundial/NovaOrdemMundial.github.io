@@ -174,9 +174,9 @@ const bossInfos = [
     doc:        'whity_infos',
     boss_link:  '#Whity',
     twitch_link:'https://www.twitch.tv/WhityKun_',
-    avatar_url: 'https://i.imgur.com/TOYqQsZ.png',
+    avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/4841bc01-4b3b-4f33-993a-79307daa3585-profile_image-300x300.jpeg',
     boss_banner:'https://i.imgur.com/AjINP7o.png',
-    classe:     'greyLvl',
+    classe:     'roxoLvl',
     extra1: '',
     status: {
       vida:         8941,
