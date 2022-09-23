@@ -211,6 +211,21 @@ const GuiStory = [
 ]
 
 const EdneyStory = [
+  combat080 = {
+    player: 'WhityKun_',
+    action: '-2500HP+',
+    victim: 'edney_de_pijama'
+  },
+  combat081 = {
+    player: 'edney_de_pijama',
+    action: '-5000HP',
+    victim: 'WhityKun_'
+  },
+  combat082 = {
+    player: 'WhityKun_',
+    action: '-4200HP',
+    victim: 'edney_de_pijama'
+  },
   combat83 = {
     player: 'S1rKing_',
     action: '-8HP',
@@ -390,6 +405,16 @@ const GirlStory = [
 ]
 
 const WhityStory = [
+  combat096 = {
+    player: 'WhityKun_',
+    action: '-2500HP+',
+    victim: 'edney_de_pijama'
+  },
+  combat097 = {
+    player: 'edney_de_pijama',
+    action: '-5000HP',
+    victim: 'WhityKun_'
+  },
   combat098 = {
     player: 'WhityKun_',
     action: '-4200HP',
