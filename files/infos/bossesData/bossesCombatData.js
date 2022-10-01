@@ -1,6 +1,11 @@
 //////            //      Historico de boss      //          ////////////
 
 const FoolsStory = [
+  combat074 = {
+    player: 'ManoFools',
+    action: '-100HP',
+    victim: 'Little_BunBunny'
+  },
   combat075 = {
     player: 'ManoFools',
     action: '-21HP',
@@ -392,8 +397,13 @@ const MandraxStory = [
 ]
 
 const GirlStory = [
+  combat098 = {
+    player: 'ManoFools',
+    action: '-100HP',
+    victim: 'Little_BunBunny'
+  },
   combat099 = {
-    player: 'LittleBunBunny',
+    player: 'Little_BunBunny',
     action: '-8HP',
     victim: 'edney_de_pijama'
   },
@@ -405,6 +415,41 @@ const GirlStory = [
 ]
 
 const WhityStory = [
+  combat089 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'WhityKun_'
+  },
+  combat090 = {
+    player: 'Kinguinha',
+    action: '-35HP',
+    victim: 'WhityKun_'
+  },
+  combat091 = {
+    player: 'Kinguinha',
+    action: '-19HP',
+    victim: 'WhityKun_'
+  },
+  combat092 = {
+    player: 'Kinguinha',
+    action: '-20HP',
+    victim: 'WhityKun_'
+  },
+  combat093 = {
+    player: 'Kinguinha',
+    action: '-50HP',
+    victim: 'WhityKun_'
+  },
+  combat094 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'WhityKun_'
+  },
+  combat095 = {
+    player: 'WhityKun_',
+    action: '-100HP',
+    victim: 'RockeyDoggy'
+  },
   combat096 = {
     player: 'WhityKun_',
     action: '-2500HP+',
@@ -433,6 +478,46 @@ const WhityStory = [
 ]
 
 const KingaStory = [
+  combat087 = {
+    player: 'Little_BunBunny',
+    action: '-9HP',
+    victim: 'Kinguinha'
+  },
+  combat088 = {
+    player: 'Canuttotario',
+    action: '-9HP',
+    victim: 'Kinguinha'
+  },
+  combat089 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'WhityKun_'
+  },
+  combat090 = {
+    player: 'Kinguinha',
+    action: '-35HP',
+    victim: 'WhityKun_'
+  },
+  combat091 = {
+    player: 'Kinguinha',
+    action: '-19HP',
+    victim: 'WhityKun_'
+  },
+  combat092 = {
+    player: 'Kinguinha',
+    action: '-20HP',
+    victim: 'WhityKun_'
+  },
+  combat093 = {
+    player: 'Kinguinha',
+    action: '-50HP',
+    victim: 'WhityKun_'
+  },
+  combat094 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'WhityKun_'
+  },
   combat095 = {
     player: 'ManoFools',
     action: '-8HP',
