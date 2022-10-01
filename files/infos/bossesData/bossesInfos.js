@@ -13,7 +13,7 @@ const bossInfos = [
     id:         '19751j572p18010110',
     extra1:     '',
     status: {
-      vida:         4344,
+      vida:         4444,
       resistencia:  1000,
       resiliencia:  500,
       força:        1000,
