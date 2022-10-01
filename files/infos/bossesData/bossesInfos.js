@@ -156,7 +156,7 @@ const bossInfos = [
     extra1:     '',
     id:         '115u138x7845y21301',
     status: {
-      vida:         102,
+      vida:         228,
       resistencia:  20,
       resiliencia:  8,
       força:        57,
@@ -180,7 +180,7 @@ const bossInfos = [
     extra1: '',
     id:         '15w15j68k186545151',
     status: {
-      vida:         8941,
+      vida:         9041,
       resistencia:  3923,
       resiliencia:  0,
       força:        6454,
