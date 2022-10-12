@@ -191,6 +191,30 @@ const bossInfos = [
     papercut: 0,
     index: 7,
   },
+  springInfos = {
+    nome:       'Spring',
+    nick:       'ospring',
+    tipo:       'BOSS',
+    doc:        'spring_infos',
+    boss_link:  '#Spring',
+    twitch_link:'https://www.twitch.tv/ospring',
+    avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/c311e9d4-9c76-4296-98fa-ce64652bc397-profile_image-300x300.png',
+    boss_banner:'https://i.imgur.com/VGTUOe5.png',
+    classe:     'roxoLvl',
+    extra1: '',
+    id:         '1dx86482hj1535aa48',
+    status: {
+      vida:         4100,
+      resistencia:  1000,
+      resiliencia:  0,
+      força:        1000,
+      foco:         5,
+      agilidade:    1,
+    },
+    florais:  0,
+    papercut: 0,
+    index: 8,
+  },
 ]
 const extraBossInfos = [
   sbeekerInfos = {
