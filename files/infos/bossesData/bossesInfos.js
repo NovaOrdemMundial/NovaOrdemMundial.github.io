@@ -204,7 +204,7 @@ const bossInfos = [
     extra1: '',
     id:         '1dx86482hj1535aa48',
     status: {
-      vida:         4100,
+      vida:         4210,
       resistencia:  1000,
       resiliencia:  0,
       força:        1000,
