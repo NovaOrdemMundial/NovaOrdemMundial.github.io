@@ -557,3 +557,10 @@ const PauloStory = [
     victim: '524HP'
   },
 ]
+const SpringStory = [
+  combat100 = {
+    player: 'oSpring',
+    action: '-110HP',
+    victim: 'ManoFools'
+  },
+]
