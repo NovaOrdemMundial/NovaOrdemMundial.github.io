@@ -550,6 +550,14 @@ const KingaStory = [
   },
 ]
 
+const SnekerStory = [
+  combat100 = {
+    player: 'SnekerRoyal',
+    action: '-20HP',
+    victim: 'BanFive'
+  },
+]
+
 const PauloStory = [
   combat100 = {
     player: 'Top 3 Bits',
