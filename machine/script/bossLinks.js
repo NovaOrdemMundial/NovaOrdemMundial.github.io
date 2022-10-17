@@ -16,6 +16,7 @@ const Whitys = ['#Whity', '#whity', '#White', '#white'];
 const Paulus = ['#Paulo', '#paulo', '#PauloHenrique82', '#paulohenrique82', '#Filho02', '#filho02'];
 const Sbeeko = ['#Sbeeker', '#sbeeker', '#Sbekeer', '#sbekeer', '#Steve&Sneker', '#steve&sneker'];
 const spring = ['#oSpring', '#Spring', '#ospring', '#spring'];
+const snekos = ['#Sneker', '#sneker', '#snekerroyal', '#SnekerRoyal', '#Sneko', '#sneko'];
 
 if(Pandos.includes(theLink.value)){
   bossIndx.value = 3;
@@ -51,6 +52,10 @@ else if(Whitys.includes(theLink.value)){
 }
 else if(spring.includes(theLink.value)){
   bossIndx.value = 8;
+  bossIs();
+}
+else if(snekos.includes(theLink.value)){
+  bossIndx.value = 9;
   bossIs();
 }
 else if(Stove.includes(theLink.value)){
