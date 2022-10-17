@@ -215,6 +215,30 @@ const bossInfos = [
     papercut: 0,
     index: 8,
   },
+  snekerInfos = {
+    nome:       'Sneker',
+    nick:       'SnekerRoyal',
+    tipo:       'BOSS',
+    doc:        'sneker_infos',
+    boss_link:  '#Sneker',
+    twitch_link:'https://www.twitch.tv/snekerroyal',
+    avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/9e7914f9-2b0a-447d-a544-b8ef9584962f-profile_image-300x300.png',
+    boss_banner:'',
+    classe:     'roxoLvl',
+    extra1: '',
+    id:         '1dx86482hj1535aa48',
+    status: {
+      vida:         141,
+      resistencia:  10,
+      resiliencia:  0,
+      força:        20,
+      foco:         1,
+      agilidade:    1,
+    },
+    florais:  0,
+    papercut: 0,
+    index: 9,
+  },
 ]
 const extraBossInfos = [
   sbeekerInfos = {
