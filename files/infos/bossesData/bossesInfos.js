@@ -223,7 +223,7 @@ const bossInfos = [
     boss_link:  '#Sneker',
     twitch_link:'https://www.twitch.tv/snekerroyal',
     avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/9e7914f9-2b0a-447d-a544-b8ef9584962f-profile_image-300x300.png',
-    boss_banner:'',
+    boss_banner:'https://i.imgur.com/QdpClyp.png',
     classe:     'roxoLvl',
     extra1: '',
     id:         '1p8q90018368158122',
