@@ -15,7 +15,7 @@ const Girls  = ['#Girl', '#girl', '#little_bunbunny', '#Little_BunBunny', '#Girl
 const Whitys = ['#Whity', '#whity', '#White', '#white'];
 const Paulus = ['#Paulo', '#paulo', '#PauloHenrique82', '#paulohenrique82', '#Filho02', '#filho02'];
 const Sbeeko = ['#Sbeeker', '#sbeeker', '#Sbekeer', '#sbekeer', '#Steve&Sneker', '#steve&sneker'];
-const spring = ['#oSpring', '@spring', '#ospring', '#spring'];
+const spring = ['#oSpring', '#Spring', '#ospring', '#spring'];
 
 if(Pandos.includes(theLink.value)){
   bossIndx.value = 3;
@@ -45,8 +45,12 @@ else if(Kingas.includes(theLink.value)){
   bossIndx.value = 6;
   bossIs();
 }
-else if(spring.includes(theLink.value)){
+else if(Whitys.includes(theLink.value)){
   bossIndx.value = 7;
+  bossIs();
+}
+else if(spring.includes(theLink.value)){
+  bossIndx.value = 8;
   bossIs();
 }
 else if(Stove.includes(theLink.value)){
