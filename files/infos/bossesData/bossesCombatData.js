@@ -560,7 +560,7 @@ const PauloStory = [
 const SpringStory = [
   combat100 = {
     player: 'oSpring',
-    action: '-110HP',
+    action: '-200HP',
     victim: 'ManoFools'
   },
 ]
