@@ -127,7 +127,7 @@ const bossInfos = [
     boss_link:  '#Eddy',
     twitch_link:'https://www.twitch.tv/edney_de_pijama',
     avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/d42263cc-4f32-4af5-a352-a5d7bcb3c345-profile_image-300x300.png',
-    boss_banner:'https://i.imgur.com/nnOBkyU.png',
+    boss_banner:'https://i.imgur.com/lppTT5o.png',
     classe:     'roxoLvl',
     extra1: '',
     id:         '1128486t4120186e10',
