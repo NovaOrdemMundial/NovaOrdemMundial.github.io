@@ -16,7 +16,7 @@ const Whitys = ['#Whity', '#whity', '#White', '#white'];
 const Paulus = ['#Paulo', '#paulo', '#PauloHenrique82', '#paulohenrique82', '#Filho02', '#filho02'];
 const Sbeeko = ['#Sbeeker', '#sbeeker', '#Sbekeer', '#sbekeer', '#Steve&Sneker', '#steve&sneker'];
 const spring = ['#oSpring', '#Spring', '#ospring', '#spring'];
-const snekos = ['#Sneker', '#sneker', '#snekerroyal', '#SnekerRoyal', '#Sneko', '#sneko', '#sneko 1'];
+const snekos = ['#Sneker', '#sneker', '#snekerroyal', '#SnekerRoyal', '#Sneko', '#sneko', '#sneko%201'];
 
 if(Pandos.includes(theLink.value)){
   bossIndx.value = 3;
