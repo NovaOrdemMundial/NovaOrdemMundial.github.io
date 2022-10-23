@@ -1,6 +1,36 @@
 //////            //      Historico de boss      //          ////////////
 
 const FoolsStory = [
+  combat068 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'ManoFools'
+  },
+  combat069 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat070 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat071 = {
+    player: 'ManoFools',
+    action: '+10HP',
+    victim: 'Se Curou'
+  },
+  combat072 = {
+    player: 'JohnHrrMr',
+    action: '-9HP',
+    victim: 'ManoFools'
+  },
+  combat073 = {
+    player: 'oSpring',
+    action: '-5HP',
+    victim: 'ManoFools'
+  },
   combat074 = {
     player: 'ManoFools',
     action: '-100HP',
@@ -551,6 +581,16 @@ const KingaStory = [
 ]
 
 const SnekerStory = [
+  combat098 = {
+    player: 'ManoFools',
+    action: '-100HP',
+    victim: 'SnekerRoyal'
+  },
+  combat099 = {
+    player: 'ManoFools',
+    action: '-9HP',
+    victim: 'SnekerRoyal'
+  },
   combat100 = {
     player: 'SnekerRoyal',
     action: '-20HP',
