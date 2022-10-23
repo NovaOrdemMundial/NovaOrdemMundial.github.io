@@ -13,12 +13,12 @@ const bossInfos = [
     id:         '19751j572p18010110',
     extra1:     '',
     status: {
-      vida:         4444,
+      vida:         4534,
       resistencia:  1000,
       resiliencia:  500,
       força:        1000,
-      foco:         61,
-      agilidade:    4,
+      foco:         71,
+      agilidade:    5,
     },
     florais:  1,
     papercut: 1,
@@ -136,7 +136,7 @@ const bossInfos = [
       resistencia:  2481,
       resiliencia:  741,
       força:        5000,
-      foco:         90, //90
+      foco:         100, //100
       agilidade:    3,
     },
     florais:  0,
@@ -232,7 +232,7 @@ const bossInfos = [
       resistencia:  10,
       resiliencia:  0,
       força:        20,
-      foco:         1,
+      foco:         7,
       agilidade:    1,
     },
     florais:  0,
