@@ -508,6 +508,16 @@ const WhityStory = [
 ]
 
 const KingaStory = [
+  combat085 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'ManoFools'
+  },
+  combat086 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'oSpring'
+  },
   combat087 = {
     player: 'Little_BunBunny',
     action: '-9HP',
@@ -606,6 +616,40 @@ const PauloStory = [
   },
 ]
 const SpringStory = [
+  combat095 = {
+    player: 'Kinguinha',
+    action: '-1HP',
+    victim: 'oSpring'
+  },
+  combat095 = {
+    player: 'ManoFools',
+    action: '-69HP',
+    victim: 'oSpring'
+  },
+  combat096 = {
+    player: 'ManoFools',
+    action: '-1HP',
+    victim: 'oSpring'
+  },
+  combat097 = {
+    player: 'Draaxyzin',
+    action: '-9HP',
+    victim: 'oSpring'
+  },
+  combat098 = {
+    player: 'Draaxyzin',
+    action: '-9HP',
+    victim: 'oSpring'
+  },
+  combat099 = {
+    player: 'ManoFools',
+    action: '-9HP',
+    victim: 'oSpring'
+  },
+    player: 'oSpring',
+    action: '-10HP',
+    victim: 'oSpring'
+  },
   combat100 = {
     player: 'oSpring',
     action: '-200HP',
