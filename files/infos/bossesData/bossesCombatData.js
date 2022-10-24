@@ -616,19 +616,24 @@ const PauloStory = [
   },
 ]
 const SpringStory = [
-  combat095 = {
+  combat093 = {
     player: 'Kinguinha',
     action: '-1HP',
     victim: 'oSpring'
   },
-  combat095 = {
+  combat094 = {
     player: 'ManoFools',
     action: '-69HP',
     victim: 'oSpring'
   },
-  combat096 = {
+  combat095 = {
     player: 'ManoFools',
     action: '-1HP',
+    victim: 'oSpring'
+  },
+  combat096 = {
+    player: 'Draaxyzin',
+    action: '-9HP',
     victim: 'oSpring'
   },
   combat097 = {
@@ -637,15 +642,11 @@ const SpringStory = [
     victim: 'oSpring'
   },
   combat098 = {
-    player: 'Draaxyzin',
-    action: '-9HP',
-    victim: 'oSpring'
-  },
-  combat099 = {
     player: 'ManoFools',
     action: '-9HP',
     victim: 'oSpring'
   },
+  combat099 = {
     player: 'oSpring',
     action: '-10HP',
     victim: 'oSpring'
