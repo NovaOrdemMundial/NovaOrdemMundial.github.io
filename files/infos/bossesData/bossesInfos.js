@@ -250,7 +250,7 @@ const bossInfos = [
     boss_banner:'https://i.imgur.com/q3fuKKU.png',
     classe:     'roxoLvl',
     extra1: '',
-    id:         '1p8q90018368158122',
+    id:         '1x58486e485dd15a98',
     status: {
       vida:         445,
       resistencia:  300,
