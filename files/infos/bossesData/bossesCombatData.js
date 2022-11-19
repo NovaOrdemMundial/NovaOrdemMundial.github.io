@@ -1,6 +1,61 @@
 //////            //      Historico de boss      //          ////////////
 
 const FoolsStory = [
+  combat57 = {
+    player: 'GakkenEst',
+    action: '-400HP',
+    victim: 'ManoFools'
+  },
+  combat058 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat059 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat060 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat061 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat062 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat063 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat064 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat065 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat066 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
+  combat067 = {
+    player: 'ManoFools',
+    action: '+5HP',
+    victim: 'Se Curou'
+  },
   combat068 = {
     player: 'Kinguinha',
     action: '-1HP',
@@ -654,6 +709,13 @@ const SpringStory = [
   combat100 = {
     player: 'oSpring',
     action: '-200HP',
+    victim: 'ManoFools'
+  },
+]
+const GakkenStory = [
+  combat100 = {
+    player: 'GakkenEst',
+    action: '-400HP',
     victim: 'ManoFools'
   },
 ]
