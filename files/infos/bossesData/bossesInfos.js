@@ -239,6 +239,30 @@ const bossInfos = [
     papercut: 0,
     index: 9,
   },
+  gakkenInfos = {
+    nome:       'Gakken',
+    nick:       'GakkenEst',
+    tipo:       'BOSS',
+    doc:        'gakken_infos',
+    boss_link:  '#Gakken',
+    twitch_link:'https://www.twitch.tv/gakkenest',
+    avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/8e6d6b2a-33a8-4f9c-8293-559e5e8dc1aa-profile_image-300x300.png',
+    boss_banner:'',
+    classe:     'roxoLvl',
+    extra1: '',
+    id:         '1p8q90018368158122',
+    status: {
+      vida:         445,
+      resistencia:  300,
+      resiliencia:  0,
+      força:        400,
+      foco:         1,
+      agilidade:    1,
+    },
+    florais:  0,
+    papercut: 0,
+    index: 10,
+  },
 ]
 const extraBossInfos = [
   sbeekerInfos = {
