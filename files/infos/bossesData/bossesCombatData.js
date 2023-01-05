@@ -713,10 +713,15 @@ const SpringStory = [
   },
 ]
 const GakkenStory = [
-  combat99 = {
+  combat98 = {
     player: 'Amelia Watson',
     action: '-3336HP',
     victim: 'GakkenEst'
+  },
+  combat99 = {
+    player: 'GakkenEst',
+    action: '-568HP',
+    victim: 'Amelia Watson'
   },
   combat100 = {
     player: 'GakkenEst',
@@ -725,9 +730,14 @@ const GakkenStory = [
   },
 ]
 const AmeliaStory = [
-  combat100 = {
+  combat99 = {
     player: 'Amelia Watson',
     action: '-3336HP',
     victim: 'GakkenEst'
+  },
+  combat100 = {
+    player: 'GakkenEst',
+    action: '-568HP',
+    victim: 'Amelia Watson'
   },
 ]
