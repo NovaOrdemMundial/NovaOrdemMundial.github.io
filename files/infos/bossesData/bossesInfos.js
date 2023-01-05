@@ -264,7 +264,7 @@ const bossInfos = [
     index: 10,
   },
   ameliaInfos = {
-    nome:       'Amelia Watson',
+    nome:       'Amelia',
     nick:       'Amelia Watson',
     tipo:       'BOSS',
     doc:        'amelia_infos',
