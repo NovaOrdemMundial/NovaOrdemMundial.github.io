@@ -273,7 +273,7 @@ const bossInfos = [
     avatar_url: 'https://i.imgur.com/ameutD1.png',
     boss_banner:'https://i.imgur.com/wQJ6QFg.png',
     classe:     'roxoLvl',
-    extra1: '',
+    extra1: 'Familia Edney',
     id:         '115u138x7845y21301',
     status: {
       vida:         3336,
