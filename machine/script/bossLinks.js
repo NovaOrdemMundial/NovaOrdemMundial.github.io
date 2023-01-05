@@ -18,6 +18,7 @@ const Sbeeko = ['#Sbeeker', '#sbeeker', '#Sbekeer', '#sbekeer', '#Steve&Sneker',
 const spring = ['#oSpring', '#Spring', '#ospring', '#spring'];
 const snekos = ['#Sneker', '#sneker', '#snekerroyal', '#SnekerRoyal', '#Sneko', '#sneko', '#sneko%201'];
 const gakken = ['#Gakken', '#gakken', '#GakkenEst', '#gakkenest', '#Gakk', '#gakk', '#Gakke', '#gakke', '#Gak', '#gak'];
+const amelia = ['#Amelia', '#AmeliaWatson', '#amelia', '#ameliawatson', '#Edmelia'];
 
 if(Pandos.includes(theLink.value)){
   bossIndx.value = 3;
@@ -61,6 +62,10 @@ else if(snekos.includes(theLink.value)){
 }
 else if(gakken.includes(theLink.value)){
   bossIndx.value = 10;
+  bossIs();
+}
+else if(amelia.includes(theLink.value)){
+  bossIndx.value = 11;
   bossIs();
 }
 else if(Stove.includes(theLink.value)){
