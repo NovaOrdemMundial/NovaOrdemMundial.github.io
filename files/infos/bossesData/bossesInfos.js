@@ -276,10 +276,10 @@ const bossInfos = [
     extra1: 'Familia Edney',
     id:         '1128486t4120186e10',
     status: {
-      vida:         3336,
-      resistencia:  3336,
+      vida:         3640,
+      resistencia:  3640,
       resiliencia:  0,
-      força:        3336,
+      força:        3640,
       foco:         32,
       agilidade:    2,
     },
