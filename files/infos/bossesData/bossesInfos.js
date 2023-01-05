@@ -270,11 +270,11 @@ const bossInfos = [
     doc:        'amelia_infos',
     boss_link:  '#Amelia',
     twitch_link:'https://www.twitch.tv/watsonamelia_hololiveen',
-    avatar_url: 'https://i.imgur.com/ameutD1.png',
+    avatar_url: 'https://i.imgur.com/w1jRIy7.png',
     boss_banner:'https://i.imgur.com/UIGrVj9.png',
     classe:     'roxoLvl',
     extra1: 'Familia Edney',
-    id:         '115u138x7845y21301',
+    id:         '1128486t4120186e10',
     status: {
       vida:         3336,
       resistencia:  3336,
