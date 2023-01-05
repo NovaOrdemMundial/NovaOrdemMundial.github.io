@@ -271,7 +271,7 @@ const bossInfos = [
     boss_link:  '#Amelia',
     twitch_link:'https://www.twitch.tv/watsonamelia_hololiveen',
     avatar_url: 'https://i.imgur.com/ameutD1.png',
-    boss_banner:'https://i.imgur.com/wQJ6QFg.png',
+    boss_banner:'https://i.imgur.com/UIGrVj9.png',
     classe:     'roxoLvl',
     extra1: 'Familia Edney',
     id:         '115u138x7845y21301',
