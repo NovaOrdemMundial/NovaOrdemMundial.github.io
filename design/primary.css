@@ -356,6 +356,7 @@ body{
   border-top:var(--bossTabBorder);
   border-bottom:var(--bossTabBorder);
   background-clip:padding-box;
+  background-attachment: local;
   box-shadow:var(--bossTabBorderLight);
   overflow-y:scroll;
   overflow-x:hidden;
