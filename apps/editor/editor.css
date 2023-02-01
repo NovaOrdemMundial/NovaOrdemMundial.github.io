@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
   font-family:Dark Magic;
   src:url(https://rockeydoggy.github.io/cssfonts/Vintage%20Book/DarkMagic%20Free%20Trial.ttf);
 }
@@ -43,8 +43,8 @@
   src:url(https://rockeydoggy.github.io/cssfonts/Fools%20Writter%20Project/Default%20Fonts/Calibri.ttf);
 }
 @font-face{
-  font-family:;
-  src:url();
+  font-family:EnterCommand;
+  src:url(https://rockeydoggy.github.io/cssfonts/EnterCommand/EnterCommand.ttf);
 }
 
 :root{
