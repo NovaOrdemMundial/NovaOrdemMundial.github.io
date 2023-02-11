@@ -89,7 +89,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
 }
 
 #ListaDeProdutos input{
-  width:80%;
+  width:75%;
   padding-top:0.3vw;
   background:none;
   border:none;
@@ -246,7 +246,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   text-shadow:0.05vw 0.05vw 0.15vw #000, 0.05vw 0.05vw 0.1vw #000;
 }
 #AddNovoItem input:nth-child(2){
-  width:17%;
+  width:20%;
   border-left:solid 0.2vw #599;
   border-right:solid 0.2vw #599;
 }
