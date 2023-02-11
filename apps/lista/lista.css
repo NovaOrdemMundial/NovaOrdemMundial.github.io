@@ -617,7 +617,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   }
 
   #ListaDeProdutos div input:nth-child(2n+2){
-    width:22%;
+    width:21.2%;
     padding-left:0.8vw;
     font-size:3.8vw
   }
