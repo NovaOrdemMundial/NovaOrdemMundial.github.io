@@ -246,7 +246,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   text-shadow:0.05vw 0.05vw 0.15vw #000, 0.05vw 0.05vw 0.1vw #000;
 }
 #AddNovoItem input:nth-child(2){
-  width:15%;
+  width:16%;
   border-left:solid 0.2vw #599;
   border-right:solid 0.2vw #599;
 }
