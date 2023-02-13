@@ -48,7 +48,7 @@ function welcomeAnim(){
   const hiMSG  = document.querySelector('#WelcomeContent h3');
   salute.style.opacity    = '1';
   PoweredBy.style.opacity = '1';
-  document.documentElement.style.setProperty('--BemVindo', `"Olá ${quem.value}"`);
+  document.documentElement.style.setProperty('--BemVindo', `"Olá ${loggedHas}"`);
 }
 welcomeAnim();
 function mensagemAleatoria(){
