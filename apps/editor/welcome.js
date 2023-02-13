@@ -109,7 +109,7 @@ function closeStartScreen(){
     setTimeout(()=>{
       PoweredBy.style.opacity = '0';
       setTimeout(()=>{
-        // PoweredBy.style.display = 'none';
+        PoweredBy.style.display = 'none';
       }, 3000)
     },10000)
   });
