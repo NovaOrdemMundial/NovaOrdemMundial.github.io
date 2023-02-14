@@ -30,7 +30,7 @@ function onSee(){
     outFocus.style.opacity = '1';
   }, 5000);
   
-  //AutoEnd
+  //AutoEnd//
   setTimeout(()=>{
     closeStartScreen();
   }, 11000);
