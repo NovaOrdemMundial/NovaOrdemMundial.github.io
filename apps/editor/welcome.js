@@ -1,16 +1,16 @@
 
           ///Animação de Boas Vindas///
-var welcome       = document.createElement('video');
+var welcomes       = document.createElement('video');
 var closeWel      = document.createElement('video');
-welcome.src       = 'https://rockeydoggy.github.io/media/animated/Eye%20Open.webm'
+welcomes.src       = 'https://rockeydoggy.github.io/media/animated/Eye%20Open.webm'
 closeWel.src      = 'https://rockeydoggy.github.io/media/animated/Eye%20Closing.webm';
-welcome.controls  = false;
+welcomes.controls  = false;
 closeWel.controls = false;
-welcome.muted     = true;
+welcomes.muted     = true;
 closeWel.muted    = true;
 closeWel.style.opacity = '0';
-welcome.style.opacity = '0';
-welcomeEye.append(welcome, closeWel);
+welcomes.style.opacity = '0';
+welcomeEye.append(welcomes, closeWel);
 
 welcome.addEventListener('canplaythrough', onSee);
 mensagemAleatoria();
@@ -20,8 +20,8 @@ const corpos = document.querySelector('body');
 corpos.style.overflow = 'hidden';
 
 function onSee(){
-  welcome.style.opacity = '1';
-  welcome.play();
+  welcomes.style.opacity = '1';
+  welcomes.play();
   closeWel.play();
   backtest.style.background = '#656099';
   iris.style.opacity        = '1';
@@ -100,12 +100,12 @@ function closeStartScreen(){
   closeWel.addEventListener('ended', ()=>{
     setTimeout(()=>{
       welcomeEye.style.opacity = '0';
-      Welcome.style.opacity = '0';
+      welcomes.style.opacity = '0';
       welcome.removeEventListener('canplaythrough', onSee);
       window.removeEventListener('mousemove', olhaLa);
       setTimeout(()=>{
         welcomeEye.style.display = 'none';
-        Welcome.style.display = 'none';
+        welcomes.style.display = 'none';
         outFocus.style.display = 'none';
         corpos.style.overflow = 'auto';
       }, 500)
