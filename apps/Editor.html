@@ -1,7 +1,9 @@
-﻿<head>
+<head>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/polyfills.umd.js"></script>
+  
+  <link rel="stylesheet" href="https://rockeydoggy.github.io/cssfonts/animatedCss/editorAnimations.css">
   
   <title>Editor</title>
   <link rel="icon" href="https://i.imgur.com/pv8rDm5.png" type="image/png" sizes="16x16">
@@ -85,6 +87,7 @@
       <p>LINHA:</p>
       <button class="fontFamily lSize"  onclick="fontIs()">Dark Magic       </button>
       <button class="fontFamily mSize"  onclick="fontIs()">Modern M         </button>
+      <button class="fontFamily mSize"  onclick="fontIs()">EnterCommand     </button>
       <button class="fontFamily mSize"  onclick="fontIs()">Scriptorium      </button>
       <button class="fontFamily"        onclick="fontIs()">hkh glyphs short </button>
       <button class="fontFamily"        onclick="fontIs()">Steam Punk Flyer </button>
@@ -92,10 +95,13 @@
       <button class="fontFamily"        onclick="fontIs()">Arial            </button>
       <button class="fontFamily"        onclick="fontIs()">Calibri          </button>
       <button class="fontFamily"        onclick="fontIs()">Comic Sans MS    </button>
+      <button class="fontFamily"        onclick="fontIs()">Comfortaa        </button>
       <button class="fontFamily"        onclick="fontIs()">Courier New      </button>
       <button class="fontFamily"        onclick="fontIs()">Georgia          </button>
       <button class="fontFamily"        onclick="fontIs()">Impact           </button>
+      <button class="fontFamily"        onclick="fontIs()">LilitaOne        </button>
       <button class="fontFamily"        onclick="fontIs()">Palatino         </button>
+      <button class="fontFamily"        onclick="fontIs()">SansSerif        </button>
       <button class="fontFamily"        onclick="fontIs()">Symbol           </button>
       <button class="fontFamily"        onclick="fontIs()">Times New Roman  </button>
       <button class="fontFamily"        onclick="fontIs()">Trebuchet MS     </button>
@@ -373,5 +379,31 @@
   
 </div>
 
-<script src="editor/imp.js"></script>
+<div id="welcomeEye">
+  <div id="backtest"></div>
+  <div class="noBackLeak" id="nBg1"></div>
+  <div class="noBackLeak" id="nBg2"></div>
+  <div id="noBackLeakHorizon"></div>
+  <div id="iris"></div>
+</div>
+
+<div id="Welcome">
+  <div id="WelcomeContent">
+    <h2 id="WelcomeMessage"></h2>
+    <h3> </h3>
+  </div>
+</div>
+
+<div id="outFocus">
+    <h4>Aperte qualquer botão para skipar</h4>
+</div>
+
+<div id="PoweredBy">
+  <h1>Editor De Historias</h1>
+  <h2>POR: <b data-infos='Rockey'>ROCKEY</b></h2>
+</div>
+
+<script src="editor/tutoMode.js"></script>
+<script src="editor/welcome.js"></script>
+<script src="editor/yourDataBase.js"></script>
 <script src="editor/editor.js"></script>
