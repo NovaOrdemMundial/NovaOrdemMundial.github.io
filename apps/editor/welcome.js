@@ -16,8 +16,8 @@ welcome.addEventListener('canplaythrough', onSee);
 mensagemAleatoria();
 
 
-const corpo = document.querySelector('body');
-corpo.style.overflow = 'hidden';
+const corpos = document.querySelector('body');
+corpos.style.overflow = 'hidden';
 
 function onSee(){
   welcome.style.opacity = '1';
@@ -107,7 +107,7 @@ function closeStartScreen(){
         welcomeEye.style.display = 'none';
         Welcome.style.display = 'none';
         outFocus.style.display = 'none';
-        corpo.style.overflow = 'auto';
+        corpos.style.overflow = 'auto';
       }, 500)
     }, 500)
     setTimeout(()=>{
