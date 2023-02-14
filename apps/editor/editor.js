@@ -845,7 +845,6 @@ function loadPages(){
     PageListLocate.innerHTML = '';
     algoBid   = onShot.size;
     pagesHave = onShot.size;
-    console.log('Quantidade de paginas:', pagesHave);
     //Page List
     onShot.forEach((leituraDoc, index)=>{
       // PageListLocate.innerHTML = '';
@@ -874,7 +873,6 @@ function loadPages(){
     //Rotornar da ultima pagina
     window.lastPageRead = ()=>{
       const lastIs    = pageIndexing.value;
-      console.log('Pagina atual é ', lastIs);
       const LastPage  = onShot.docs[lastIs].data();
       const labelSel  = document.querySelectorAll(`#PageListLocate P`)[lastIs];
       const remLabel  = document.querySelectorAll(`#PageListLocate button#ldp`)[lastIs];
@@ -1027,7 +1025,6 @@ function pagesOrdery(pages, index){
   }else{
     markPage.classList.remove('MarcadoBtn');
   }
-  console.log(algoBid);
   PageListLocate.append(pagina, remover, markPage);
   if(pages.numero === 0){
     remover.classList.add('inct');
@@ -3062,6 +3059,5 @@ function updateGuideInfos(){
   }else{
     document.title   = `${bookTitle.value} - ${PageName.value} || (${bookAuthor.innerHTML}/${bookFileName.innerHTML}/${bookPagesPatch.innerHTML}/${bookPages.innerHTML})`;
   }
-  console.log(`Page Title Is: ${document.title}`)
 }
 updateGuideInfos();
