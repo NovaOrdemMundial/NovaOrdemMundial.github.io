@@ -12,7 +12,7 @@ closeWel.style.opacity = '0';
 welcomes.style.opacity = '0';
 welcomeEye.append(welcomes, closeWel);
 
-welcome.addEventListener('canplaythrough', onSee);
+welcomes.addEventListener('canplaythrough', onSee);
 mensagemAleatoria();
 
 
