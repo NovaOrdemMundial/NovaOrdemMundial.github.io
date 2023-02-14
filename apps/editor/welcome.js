@@ -93,14 +93,14 @@ function closeStartScreen(){
   closeWel.currentTime = 0;
   closeWel.style.opacity = '1';
   setTimeout(()=>{
-    welcome.style.opacity = '0';
+    welcomes.style.opacity = '0';
     closeWel.play();
   }, 100);
   closeWel.addEventListener('ended', ()=>{
     setTimeout(()=>{
       welcomeEye.style.opacity = '0';
       welcomes.style.opacity = '0';
-      welcome.removeEventListener('canplaythrough', onSee);
+      welcomes.removeEventListener('canplaythrough', onSee);
       window.removeEventListener('mousemove', olhaLa);
       setTimeout(()=>{
         welcomeEye.style.display = 'none';
