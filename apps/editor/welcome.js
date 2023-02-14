@@ -40,7 +40,6 @@ function olhaLa(e){
   const olharProsLados = -(window.innerWidth)  /15 + e.pageX / 7;
   const olharPraCima   = -(window.innerHeight) /15 + e.pageY / 7;
   iris.style.transform = `translateY(${olharPraCima}px) translateX(${olharProsLados}px)`;
-  console.log(e.pageY);
 }
 
 function welcomeAnim(){
