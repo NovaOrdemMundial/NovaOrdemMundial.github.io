@@ -75,8 +75,8 @@ function mensagemAleatoria(){
   messageLocale.style.opacity = '1';
 }
 
-const goToMe = document.querySelector('#PoweredBy h2 b');
-goToMe.addEventListener('click', ()=>{
+const goToMee = document.querySelector('#PoweredBy h2 b');
+goToMee.addEventListener('click', ()=>{
   window.open('https://twitch.tv/rockeydoggy', '_blank');
 });
 
