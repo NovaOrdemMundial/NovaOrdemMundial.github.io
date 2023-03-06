@@ -160,7 +160,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   color:#222;
 }
 #ListaDeProdutos div input:nth-of-type(2n+2){ /*Input dos preços*/
-  width:22.15%;
+  width:21.15%;
   font-weight:bold;
   padding-left:0.7vw;
   border-left:solid 0.2vw #559;
@@ -291,7 +291,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
 }
 
 #resultado{
-  width:17%;
+  width:19%;
   padding-top:0.4vw;
   padding-right:0.2vw;
   background:#111;
