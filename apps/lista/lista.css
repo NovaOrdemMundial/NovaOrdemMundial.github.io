@@ -929,7 +929,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   #ListaDeProdutos div button{
     position:relative;
     /*right:-14vw;*/
-    margin:0 0 0 -7.4vw;
+    margin:0 0 0 -7.5vw;
     padding:0.1vw 1.4vw;
     font-size:6vw;
   }
