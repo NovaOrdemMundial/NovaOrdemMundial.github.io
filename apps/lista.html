@@ -1,0 +1,85 @@
+﻿<head>
+  <title>Minha Lista De Compras</title>
+  <link rel="icon" href="https://i.imgur.com/pv8rDm5.png" type="image/png" sizes="16x16">
+  
+  <link rel="stylesheet" href="lista/lista.css">
+  
+  <meta property="og:title" content="Sua Lista De Compras">
+  <meta property="og:description" content="Um Lugar Particular Para Você Criar Suas Listas De Compras">
+  <meta name="twitter:image:src" content="https://i.imgur.com/ybCLoaj.png">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Um Lugar Particular Para Você Criar Suas Listas De Compras">
+  <meta name="twitter:site" content="Sua Lista De Compras">
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="480">
+  <meta name="theme-color" content="#222233">
+</head>
+
+<div id="principal">
+  <div id="conteudo">
+    <h1>Lista De Compras</h1>
+    <div id="separadores">
+      <input id="ProdutosTitulo" placeholder="Produto" class="prd" disabled>
+      <input id="PrecoTitulo" placeholder="Preço" class="prc" disabled>
+    </div>
+    
+    <div id="ListaDeProdutos">
+      
+    </div>
+    <!--Fim da lista de produtos-->
+    
+    <div id="AddNovoItem">
+      <input id="NomeDoProduto"   placeholder="Adicionar Novo Produto">
+      <input id="PrecoDoProduto" type="number" placeholder="Preço">
+      <button id="AddBotao" title="Adicionar Item">+</button>
+      <span id="resultado" title="Resultado">R$ 0</span>
+      <span id="quantidade" contentEditable title="Quantidade">1</span>
+    </div>
+    <button id="AdicionarAltern"  tabindex="60005">ADICIONAR ITEM</button>
+  
+  <div id="ListaFinal">
+    <h2>Resumo Final</h2>
+    
+    <div id="ResultadoFinal">
+      
+    </div>
+    
+    <div id="ValorFinal">
+      <div id="resumo">
+      </div>
+      <div id="ValorTotal">
+        
+      </div>
+    </div>
+    
+  </div>
+  </div>
+</div>
+
+<div id="Gerenciador">
+  <h2>Lista Atual</h2>
+  <input id="ListaAtual" placeholder="Nome Da Lista Atual"><button id="addNovaLista">+</button>
+  <div id="ListasExistentes">
+    
+  </div>
+</div>
+<div id="abrirGerenciador">
+  <button id="gerenciar"></button>
+</div>
+
+<div id="Arquivo">
+  <button id="salvar"></button>
+  <input id="abrir" type="file"> <label for="abrir"></label>
+</div>
+
+<div id="wideFile">
+  <button id="save"></button>
+  <button id="openAlt"></button>
+</div>
+
+<div id="ReforcoTela">
+</div>
+<div id="fecharReforco"></div>
+
+<script src="lista/lista.js"></script>
