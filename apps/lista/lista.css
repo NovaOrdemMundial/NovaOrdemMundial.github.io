@@ -912,7 +912,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   }
 
   #ListaDeProdutos div input:nth-of-type(2n+2){
-    width:24.6%;
+    width:24.5%;
     padding-left:0.8vw;
     font-size:5vw
   }
@@ -929,7 +929,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
   #ListaDeProdutos div button{
     position:relative;
     /*right:-14vw;*/
-    margin:0 0 0 -7.5vw;
+    margin:0 0 0 -7.6vw;
     padding:0.1vw 1.4vw;
     font-size:6vw;
   }
