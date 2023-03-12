@@ -1,0 +1,70 @@
+<head>
+  <link rel="stylesheet" href="apps/apps.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/root/fontsStyles.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/root/defaultsDesign.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/themes/purerDesign.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/files/animations.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/files/PassAnimation.css">
+  <link rel="stylesheet" href="https://novaordemmundial.github.io/design/Responsive/sizesAdaptative.css">
+  
+	<title>Apps da Live</title>
+	<link rel="icon" href="https://i.imgur.com/pv8rDm5.png" type="image/png" sizes="16x16">
+  
+</head>
+
+<!--      //   Menu De Seleção   //       -->
+<body>
+  <div id="menuGuide">
+    <div id="backArrows"></div>
+    <div id="menuButton" onMouseOver="censuredEye()" onMouseOut="openEye()" onClick="eyeDespawn()">
+      <video loop autoplay muted id="openLooped">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedCensured">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedReopen">
+        <source src="">
+      </video>
+      <video autoplay muted id="eyedDespawn">
+        <source src="">
+      </video>
+    </div>
+    <div id="menuMaps">
+      <div id="leftMenuButtons">
+        <ul id="liveBtn" class="activBtn mButton" tabindex="1">VOLTAR</ul>
+        <!--<ul id="scorBtn" class="deactBtn" tabindex="2">SCORE</ul>-->
+        <ul id="custBtn" class="deactBtn" tabindex="3" disabled>CUSTOMIZAÇÃO</ul>
+        <ul id="passBtn" class="deactBtn" tabindex="4" disabled>PASSWORD</ul>
+      </div>
+      <div id="rightMenuButtons">
+        <ul id="ytBtn" class="deactBtn" tabindex="5" disabled>YOUTUBE</ul>
+        <ul id="twBtn" class="deactBtn" tabindex="6" disabled>TWITTER</ul>
+        <ul id="dsBtn" class="deactBtn" tabindex="7" disabled>DISCORD</ul>
+        <ul id="abBtn" class="deactBtn" tabindex="8" disabled>SOBRE</ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="corpo2">
+    <div id="adBanner"></div>
+    <div id="contentGuide">
+<!--       <h1>Conteudos Para Lives</h1> -->
+    </div>
+    <div id="mobileGuide"></div>
+  </div>
+  
+</body>
+
+<!-- TAGS -->
+<script src="https://novaordemmundial.github.io/machine/tags/allTags.js"></script>
+<!-- NODES -->
+<script src="https://novaordemmundial.github.io/machine/sounds/soundmap.js"></script>
+<script src="https://novaordemmundial.github.io/machine/sounds/soundTags.js"></script>
+<!-- MACHANICS -->
+<script src="https://novaordemmundial.github.io/machine/script/readFirst.js"></script>
+<script src="https://novaordemmundial.github.io/machine/script/inicial.js"></script>
+
+<script src="https://novaordemmundial.github.io/machine/sounds/soundMachine.js"></script>
+<script src="apps/apps.js">
+<!-- <script src="https://novaordemmundial.github.io/machine/script/livePage.js"></script> -->
