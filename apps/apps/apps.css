@@ -474,7 +474,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*Live Ad*/
-#adBanner{
+#liveIs{
   width:63%;
 /*   height:13.5vw; */
   margin:5vw auto 0;
@@ -485,18 +485,18 @@ body::-webkit-scrollbar-thumb{
   transition:all ease-in-out 0.3s;
 }
 
-#adBanner video{
+#liveIs video{
   width:100%;
   pointer-events:none;
   filter:drop-shadow(0 0 5px #468);
   transition:all ease-in-out 0.3s;
   margin:0vw 0 -1.5vw;
 }
-#adBanner:hover{
+#liveIs:hover{
   background:#328;
   box-shadow:0 0 15px #53F, inset 0 0 15px #53F;
 }
-#adBanner:hover > video{
+#liveIs:hover > video{
   filter:drop-shadow(0 0 10px #F44);
 }
 
@@ -540,7 +540,7 @@ body::-webkit-scrollbar-thumb{
     display:initial;
   }
   
-  #adBanner{
+  #liveIs{
     width:95%;
   }
 }
