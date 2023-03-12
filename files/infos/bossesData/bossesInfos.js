@@ -246,7 +246,7 @@ const bossInfos = [
     doc:        'gakken_infos',
     boss_link:  '#Gakken',
     twitch_link:'https://www.twitch.tv/gakkenest',
-    avatar_url: 'https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png',
+    avatar_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/485c1d8f-3e6c-4d8f-a706-e8aa6b3120ca-profile_image-300x300.png',
     boss_banner:'https://i.imgur.com/KlkQ7mn.png',
     classe:     'roxoLvl',
     extra1: '',
