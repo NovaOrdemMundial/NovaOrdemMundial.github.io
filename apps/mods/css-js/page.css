@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
   font-family:EnterCommand;
   src:url(https://rockeydoggy.github.io/cssfonts/EnterCommand/EnterCommand.ttf);
 }
@@ -204,12 +204,33 @@ h4{
   margin:0.8vw 0vw;
   padding:0.5vw 1vw;
   background:#0005;
-  box-shadow:inset 1px 1px 5px #000;
-  opacity:0.7;
+  box-shadow: inset 3px 3px 5px #000;
+  opacity:0.9;
   cursor:not-allowed;
 }
 #LeftPanel div:nth-of-type(3) div h1{
   cursor:pointer;
+}
+#LeftPanel div:nth-of-type(3) div img{
+	filter:brightness(150%) saturate(30%) contrast(120%);
+}
+
+#LeftPanel div:nth-of-type(4) div{
+	border-bottom:groove 1px #333;
+	margin:8px 0;
+	padding:0;
+}
+#LeftPanel div:nth-of-type(4) div:last-child{
+	border-bottom:none;
+}
+#LeftPanel div:nth-of-type(4) div:last-child:after{
+	content:' ';
+	width:97%;
+	float:left;
+	margin:0;
+	background:linear-gradient(50deg, #333 30%, #FF0 40%, #FF0 50%, #333 60%);
+	background-size:7% 100%;
+	box-shadow:inset 3px 3px 5px #000;
 }
 #LeftPanel div:nth-of-type(4) div img{
   float:left;
@@ -267,24 +288,25 @@ h4{
 #LeftPanel div div button:nth-of-type(1){
   padding:0 0.3vw;
   margin:0.5vw 0 0;
-  background:#5F5;
+  background:#444;
   border:none;
   border-radius:0.2vw;
-  box-shadow:0 0 6px #0F0;
+  box-shadow:3px 3px 5px #000;
   font-family:calibri;
   font-size:clamp(14px, 1rem, 0.9vw);
   font-weight:bold;
-  color:#030;
+  text-shadow:0 0 10px #FFF;
+  color:#EEE;
   cursor:pointer;
 }
 #LeftPanel div div button:nth-of-type(1)::before{
-  content:'Baixar';
+  content:'Download';
 }
 #LeftPanel div div button:nth-of-type(1)::after{
   content:' ';
-  background:#85F;
+  background:#5F5;
   border-radius:0px 5px 5px 0;
-  box-shadow:0 0 10px #72F;
+  box-shadow:0 0 10px #0F0;
   padding:0 0.2vw;
   position:relative;
   left:0.4vw;
