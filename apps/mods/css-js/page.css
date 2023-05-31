@@ -394,3 +394,28 @@ h4{
 /*   border:dotted 1px #FF5; */
   z-index:-1;
 }
+
+#modpackStats{
+	position:fixed;
+	bottom:0.5vw;
+	right:30vw;
+	pointer-events:none;
+	user-select:none;
+}
+
+#modpackStats p{
+	margin:0;
+	font-family:Calibri;
+}
+#modpackStats p:nth-of-type(1){
+	color:#7F7;
+	text-shadow:0 0 9px #0F0;
+}
+#modpackStats p:nth-of-type(2){
+	color:#AAA;
+	text-shadow:1px 1px 5px #000;
+}
+#modpackStats p:nth-of-type(3){
+	color:#FF5;
+	text-shadow:0 0 8px #FF0;
+}
