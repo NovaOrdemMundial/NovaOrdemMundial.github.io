@@ -96,6 +96,7 @@ fieldset{
   width:60vw;
   min-height:50em;
   padding:0.6vw;
+	margin:3vw 0 0 0;
   background:var(--PageBGColor, #EEE);
 /*   background-image:var(--PageBG, none); */
   color:#222;
