@@ -27,9 +27,15 @@
   --VidaAtual:100%;
 }
 body{
-  background:none;
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
   display:flex;
   justify-content:center;
+  align-items:center;
+  background:none;
   color:#FFF;
 }
 #todo{
