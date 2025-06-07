@@ -1,0 +1,1441 @@
+@font-face {
+    font-family: icons;
+    src: url(https://rockeydoggy.github.io/cssfonts/icons/BossSite4/FormattingFont2.1.35.ttf);
+}
+@font-face {
+    font-family: 'Lambretta Script';
+    src: url(https://rockeydoggy.github.io/cssfonts/script/Lambretta%20Script%20Stamp.otf);
+}
+@font-face {
+    font-family: Consolas;
+    src: url(https://rockeydoggy.github.io/cssfonts/typewriter/CONSOLA.TTF);
+}
+@font-face {
+    font-family: Calibri;
+    src: url(https://rockeydoggy.github.io/cssfonts/typewriter/calibri-regular.ttf);
+}
+body{
+    --DocumentColor:#EEF;
+    --DocumentInversor:#080808;
+    --DefaultTexts: #322;
+    --Highlighted: #100;
+    --GhostedColor: #4338;
+    --PaperColor: #9FC;
+    --ConfirmImpress:#132;
+    --BackImpress:#211;
+    --LightRed:#922;
+    --Highlight:#FF5;
+    --SmoothTagBlue:#AEF;
+    --SmoothTagGrey:#BBB;
+    --SmoothTagYellow:#FFA;
+    --SmoothTagOrange:#F5B16A;
+    --SmoothTagLightGreen:#B8D5A6;
+    --SmoothTagGreen:#84A171;
+    --InvoiceBg:#FFD;
+    background-color: var(--DocumentColor);
+    color: #000;
+    *::selection{
+        background-color: var(--Highlight);
+        color: var(--Highlighted);
+    }
+}
+
+.Def-Bg{/*NOTA: Padrões Principais (Background > Content Area)*/
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    overflow: auto;
+
+    > div{
+        &:nth-of-type(1){
+            width: 20%;
+        }
+
+        &:nth-of-type(2){
+            width: 60%;
+            margin:0 3%;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+    
+    &::-webkit-scrollbar{
+        width: 0.2vw;
+        height: 0.3vw;
+        background-color: #FFF;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #000;
+    }
+}
+
+.Def-Lt{
+    overflow: auto;
+
+    > h1{/*ATTR: Titulo da Lista*/
+        margin: 0;
+        margin-top: 5%;
+        font-family: 'Lambretta Script';
+        font-weight: lighter;
+        font-size: 32px;
+        line-height: 26px;
+        color: var(--Highlighted);
+    }
+
+    > div{/*NOTA: Area de Anotação da Lista + Categorias*/
+        position: relative;
+
+        &:nth-of-type(1){/*> Lista De Compras*/
+            min-height: 35rem;
+
+            >div{
+                position: relative;
+
+                >div{/*NOTA: Caixa Dos Items Da Lista Principal*/
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: 'Courier New', Courier, monospace;
+
+                    > div{/*> Categorias da Zona de Edição da Lista*/
+                        min-height: 22px;
+                        padding: 5px 2px;
+                        border:solid var(--Highlighted);
+                        border-top: none;
+                        border-width: 2px;
+                        font-size: 22px;
+
+                        &:nth-of-type(1){/*> Quantidade do Produto/Item*/
+                            width: 6%;
+                            text-align: center;
+                            font-weight: bold;
+                            letter-spacing: -3px;
+                        }
+                        &:nth-of-type(2){/*> Nome do Produto/Item*/
+                            width: 76%;
+                            padding-left: 1%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            border-left: none;
+                            border-right: none;
+                            font-family: Calibri;
+                            font-weight: bold;
+                        }
+                        &:nth-of-type(3){/*> Preço Do Produto/Item*/
+                            width: 15%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            text-align: left;
+                            font-family: Calibri;
+                            font-weight: bold;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    &:last-of-type{
+                        > div{
+                            border-bottom: solid var(--Highlighted);
+                        }
+                    }
+                    &:first-of-type{
+                        >div{
+                            border-top: solid var(--Highlighted);
+                        }
+                    }
+                }
+                &:nth-of-type(1){/*NOTA: Classificações de Texto*/
+                    >div{
+                        font-weight: bold;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                        color: var(--GhostedColor);
+
+                        >div{
+                            background-color: #1112;
+                            border-bottom:none;
+                            font-family: 'Courier New', Courier, monospace;
+                            font-weight: bold;
+                        }
+                        &:nth-of-type(1){
+                            > div{
+                                &:nth-of-type(3){
+                                    text-align: center;
+                                    font-family: 'Courier New', Courier, monospace;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(2){/*NOTA: Lista De Items Valida*/
+                    >div{
+                        user-select: none;
+                        cursor: grab;
+                    }
+                }
+                &:nth-of-type(3){/*NOTA: Lista Falsa*/
+                    position: absolute;
+                    width: 100%;
+                    top: -1px;
+                    opacity:0.3;
+                    >div{
+                        color: #0000;
+
+                        > div{
+                            padding-bottom: 4.8px;
+                        }
+                    }
+                    pointer-events: none;
+                    user-select: none;
+                }
+                &:nth-of-type(4){
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    > button{
+                        &:nth-of-type(1){
+                            width: 78%;
+                            border-radius: 0vw 0vw 0.8vw 0.8vw;
+                            border: none;
+                            outline: 2px solid var(--DocumentInversor);
+                            font-size: 30px;
+                            font-family: 'Courier New', Courier, monospace;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                        }
+                    }
+                    > div{
+                        &:nth-of-type(1){
+                            width: 7%;
+                            font-size: 22px;
+                        }
+                        &:nth-of-type(2){
+                            width: 16%;
+                            padding-top: 4px;
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            text-align: center;
+                            background-color: #000;
+                            font-family: Calibri;
+                            color:var(--DocumentColor);
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2){/*> Nota Fiscal*/
+            padding: 2rem 1rem;
+            background-color: var(--InvoiceBg);
+            >div{/*> Caixa de item*/
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1ch;
+
+                >p{/*> Caixa De Categorias*/
+                    margin: 0;
+                    font-size: 18px;
+                    font-family: 'Courier New', Courier, monospace;
+                    letter-spacing: -0.5px;
+
+                    &:nth-of-type(1){/*> Quantidade*/
+                        width: 5%;
+                        text-align: right;
+                        white-space: nowrap;
+
+                        &::after{
+                            content: 'x';
+                        }
+                    }
+                    &:nth-of-type(2){/*NOTA: Area Do Nome Do Produto*/
+                        width: 80%;
+                        display: flex;
+                        padding-left: 1ch;
+                        white-space: nowrap;
+                        overflow: hidden;
+
+                        > span{
+                            &:nth-of-type(1){/*> Nome Do Produto*/
+                                min-width: 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                flex-shrink: 1;
+                                flex-grow: 0;
+                            }
+                            &:nth-of-type(2){/*> Pontilhado do espaço livre*/
+                                flex-grow: 1;
+                                border-bottom: dotted 1px var(--DefaultTexts);
+                            }
+                        }
+                    }
+                    &:nth-of-type(3){/*> Area do preço das unidades*/
+                        width: 15%;
+                    }
+                }
+
+                &:nth-of-type(1){/*NOTA: Formato Das Categorias*/
+                    margin-bottom: 1rem;
+                    >p{
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: Consolas;
+                        color: var(--GhostedColor);
+
+                        &:nth-of-type(1){
+                            text-align: center;
+
+                            &::after{
+                                content: none;
+                            }
+                        }
+                        &:nth-of-type(2){
+                            display: initial;
+                            text-align: center;
+
+                            &::after{
+                                content: none;
+                            }
+                        }
+                        &:nth-of-type(3){
+                            text-align: center;
+
+                            &::after{
+                                content: ' (Por Unidade)';
+                                display: block;
+                                line-height: 0.5ch;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type{/*NOTA: Formato do resumo final*/
+                    margin-top: 2rem;
+                    align-items: center;
+
+                    >div{/*> Divisões da Nota de Resumo*/
+                        font-family: Consolas;
+
+                        &:nth-of-type(1){
+                            width: 10%;
+                            font-size: 22px;
+                            text-align: right;
+                            color: var(--DefaultTexts);
+                        }
+                        &:nth-of-type(2){
+                            width: 60%;
+                            mask-image: linear-gradient(90deg, #0000 10%, #000 20%, #000 80%, #0000 90%);
+                            border:double 3px;
+                            border-left:none;
+                            border-right:none;
+                            border-radius: 5px;
+                            text-align: center;
+                            font-size: 32px;
+                            font-weight: bold;
+                            color: var(--DefaultTexts);
+                        }
+                        &:nth-of-type(3){
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &::-webkit-scrollbar{
+        width: 5px;
+        height: 5px;
+        background-color: var(--DocumentInversor);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--DocumentColor);
+    }
+}
+
+.mn-mn{
+    --PositiveColor:#ADF;
+    --ConfirmColor:#AFD;
+    --ConfirmHightlight:#031;
+    overflow: auto;
+    direction: rtl;
+
+    > button{/*NOTA: Botão "Criar Nova lista"*/
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        margin:20px auto 10px;
+        padding: 0px 6px;
+        border: none;
+        box-shadow: 0px 0px 5px #0009;
+        line-height: 30px;
+        background-color: var(--PositiveColor);
+        font-family: Consolas;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &::before{
+            content: '+';
+            width: 30px;
+            position: absolute;
+            left: -30px;
+            box-shadow: 0px 0px 5px #0009;
+            background-color:var(--ConfirmHightlight);
+            font-size: 25px;
+            font-family: Gumela;
+            color:#EEF;
+            font-weight: lighter;
+        }
+    }
+
+    >div{/*NOTA: Gerenciamento e Seleção de Lista*/
+        direction: ltr;
+        &:nth-of-type(1){ /*NOTA: Area de Gerenciamento de Listas*/
+            position:relative;
+            margin-top: 40px;
+            padding: 7px 5px;
+            background-color: #222;
+            text-align: right;
+
+            >button{
+                margin: 0 7px;
+                padding: 1px 4px;
+                border-radius: 3px;
+                border: none;
+                outline:double 4px var(--DocumentColor);
+                font-family: icons;
+                font-size: 22px;
+                cursor:pointer;
+
+                &:nth-of-type(1){
+                    color: #232;
+
+                    &:active{
+                        background-color: #232;
+                        color: var(--DocumentColor);
+                    }
+                }
+
+                &:nth-of-type(2){
+                    color:var(--DocumentColor);
+                    background-color: #500;
+
+                    &.act-md{
+                        outline:solid 0px #F99;
+                        background-color: #F99;
+                        box-shadow: inset 0 0 5px #F00, 0 0 20px #F00;
+                        color: #200;
+                        text-shadow: 0 0 10px #F00, 0 0 20px #F00, 0 0 5px #F00;
+                    }
+                }
+
+                &.m-bck{
+                    position: absolute;
+                    right: 0;
+                    top: -200%;
+                    width: 10vw;
+                    height: 10vw;
+                    line-height: 0;
+                    background-color: var(--Highlight);
+                    font-size: 7vw;
+                }
+            }
+            &::before{
+                content: 'Gerenciar';
+                position: absolute;
+                left: 0;
+                top: -23px;
+                padding: 0px 8px;
+                border-radius: 0 10px 0px 0;
+                border: solid 2px #222;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-family: Consolas;
+                font-weight: bold;
+            }
+        }
+
+        &:nth-of-type(2){/*NOTA: Listar todas as Listas*/
+
+            > div{
+                position: relative;
+                margin-bottom: -1px;
+                padding: 0px 0px 15px;
+                z-index: var(--LayerOrder);
+                cursor: pointer;
+                user-select: none;
+
+                >div{
+                    position: relative;
+                    z-index: 3;
+                    >h1{
+                        min-height: 25px;
+                        margin: 0;
+                        padding: 3px 5px 0;
+                        font-size: 20px;
+                        text-transform: capitalizes;
+                        overflow: hidden;
+                        background-color: #0002;
+                        backdrop-filter: contrast(0.9) saturate(1.3);
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color:var(--DefaultTexts);
+                        font-family: Trebuchet MS; /*BACK: Buscar uma fonte script*/
+                    }
+                    
+                    >h3{
+                        margin: 7px 0;
+                        padding: 2px 5px;
+                        text-align: left;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: lighter;
+                        font-family: 'Courier New', Courier, monospace;
+                        color:var(--DefaultTexts);
+
+                        >b{
+                            font-size: 19px;
+                            font-weight: bold;
+                        }
+
+                        &:nth-of-type(2){
+                            padding-left: 25px;
+                            text-align: left;
+                            font-size: 22px;
+                            font-weight: bold;
+                            letter-spacing: -1px;
+                        }
+                    }
+    
+                    >h4{
+                        margin: 0;
+                        padding: 0 5px;
+                        text-align: right;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 15px;
+                        font-weight: lighter;
+                        color:var(--DefaultTexts);
+                    }
+                }
+
+                > button{
+                    position: absolute;
+                    top: 35px;
+                    right: 3%;
+                    z-index: 10;
+                    padding: 3px 7px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: double 3px #300;
+                    background-color: #300;
+                    font-family: icons;
+                    font-size: 22px;
+                    color: var(--ListColor);
+                    cursor:pointer;
+                }
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 0 0 var(--RandomPos) 0;
+                    background:radial-gradient(#0000 70%, #0009), var(--ListColor);
+                    background-position:center bottom, left top;
+                    background-repeat:no-repeat,  repeat;
+                    background-size:150% 200%, 100% 100%;
+                    z-index: 2;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    top: 5%;
+                    right: 1%;
+                    transform: translate(0px, 2px);
+                    background-color: #000C;
+                    filter: blur(5px);
+                    z-index: 1;
+                }
+
+                &:nth-of-type(even){
+                    &::before{
+                        border-radius: 0 0 0 var(--RandomPos);
+                    }
+                }
+
+                &:nth-of-type(5n){
+                    &::before{
+                        border-radius: 0 0 var(--RandomPos2) var(--RandomPos);
+                    }
+                }
+                &:nth-of-type(3n){
+                    &::before{
+                        border-radius: 0 0 0 var(--RandomPos);
+                    }
+                }
+
+                &:nth-of-type(1){
+                    margin-top: 10px;
+                }
+
+                &:hover{
+                    >div{
+                        >h1{
+                            height: fit-content;
+                            overflow: visible;
+                            white-space: wrap;
+                        }
+                    }
+                }
+
+                &.in-ed{
+                    cursor: default;
+                }
+                &.pc-sel{/*NOTA: Ao estar selecionado*/
+                    &::before{
+                        content: var(--ListName);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 0;
+                        border: dashed 2px var(--ListColor);
+                        box-shadow: inset 0 0 30px #0003;
+                        background: none;
+                        background-color: #0001;
+                        color: var(--GhostedColor);
+                        font-size: 18px;
+                        font-family: Consolas;
+                        font-weight: bold;
+                    }
+                    &::after{
+                        content: '➥';
+                        inset: initial;
+                        bottom: 1ch;
+                        right: 1ch;
+                        z-index: 10;
+                        background: none;
+                        color: var(--ListColor);
+                        font-size: 22px;
+                        font-weight: bold;
+                        font-family: 'Courier New', Courier, monospace;
+                        filter:saturate(8) brightness(0.4);
+                        cursor: pointer;
+                    }
+                    >div *{
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                    >div{/*> Titulo Da Nota*/
+                        position: relative;
+                        &::before{
+                            content: 'Lista Atual';
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            padding-top: 5px;
+                            background-color: #AA9;
+                            mask-image: url(https://i.imgur.com/gMD42cV.png);
+                            mask-size: 102% auto;
+                            mask-position: center center;
+                            opacity: 0.8;
+                            text-align: center;
+                            font-family: Consolas;
+                            color: #0000;
+                            font-size: 22px;
+                            text-transform: uppercase;
+                        }
+                        &::after{
+                            content: 'Lista Atual';
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            padding-top: 5px;
+                            /* mask-image: url(https://i.imgur.com/gMD42cV.png); */
+                            mask-size: 100% auto;
+                            text-align: center;
+                            font-family: Consolas;
+                            /* color: var(--ListColor); */
+                            color: var(--GhostedColor);
+                            font-size: 22px;
+                            text-transform: uppercase;
+
+                        }
+                    }
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    &::-webkit-scrollbar{
+        width: 5px;
+        background-color:transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #111;
+        border-radius: 5px;
+    }
+
+    .m-bck{
+        display:none;
+    }
+}
+
+.add-local{/*NOTA: Janela Adicionar Nova Lista.*/
+    position: fixed;
+    inset: 0;
+    display:flex;
+    align-items: start;
+    justify-content: center;
+
+    > div{
+        &:nth-of-type(1){/*NOTA: Area De Conteudo Da Tab*/
+            width: 50vw;
+            position: relative;
+            z-index: 5;
+            background-color: var(--PaperColor);
+
+            >h1{
+                margin: 0 20px;
+                padding: 5px 20px; 
+                text-align: center;
+                color: var(--GhostedColor);
+                user-select: none;
+                text-transform: uppercase;
+                font-family: Consolas;
+                border-bottom: dashed 3px var(--GhostedColor);
+                /* font-weight: lighter; */
+            }
+
+            > div{
+                &:nth-of-type(1){/*> Area do Formulario*/
+                    padding: 5px 10px;
+
+                    >input{ /*> Nome Da Lista*/
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 3px 7px 0px;
+                        display: block;
+                        border: none;
+                        border-bottom: solid 1px var(--DefaultTexts);
+                        background: none;
+                        font-size: 24px;
+                        font-family: Consolas;
+                        font-weight: bold;
+
+                        &:focus{
+                            outline: none;
+                            border-bottom: solid 2px var(--Highlighted);
+                        }
+                        &::placeholder{
+                            font-style: italic;
+                        }
+                    }
+                    >p{/*> Nota De Descrição*/
+                        width: 50%;
+                        min-height: 4rem;
+                        position: relative;
+                        margin: 20px auto 0;
+                        padding: 3px;
+                        outline:dashed 1px var(--GhostedColor);
+                        background-color: var(--CustomColor);
+                        box-shadow: 1px 1px 5px #0008;
+                        color:var(--DefaultTexts);
+                        font-family: 'Courier New', Courier, monospace;
+                        letter-spacing: -1px;
+                        font-size: 16px;
+
+                        &::before{
+                            width: 100%;
+                            content:var(--Placeholder);
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(0%, -50%);
+                            pointer-events: none;
+                            opacity: 0.5;
+                            text-align: center;
+                            font-size: 24px;
+                            pointer-events: none;
+                        }
+
+                        &:focus{
+                            outline:dashed 3px var(--DefaultTexts);
+                        }
+                    }
+                }
+
+                &:nth-of-type(2){/*> Area das informações De Construção*/
+                    width: 90%;
+                    margin: 25px auto 0;
+                    text-align: right;
+                    color:var(--DefaultTexts);
+
+                    >input{/*BACK: Sinalizar que é possivel mudar de cor*/
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 25px;
+                        padding: 0px 0px;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        border: none;
+                        background:none;
+                        cursor: pointer;
+                        background-image: conic-gradient(#268, #F58, #85F, #F95, #F55, #9F5, #5F5, #268);
+                    }
+
+                    >p{
+                        margin: 0;
+                        font-family: consolas;
+                        font-size: 16px;
+                    }
+                }
+                &:nth-of-type(3){/*> Botões De Execução*/
+                    position: relative;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    /* padding: 5px 0; */
+                    border-top: double 3px var(--Highlighted);
+                    text-align: center;
+
+                    > button{/*> Botões Cancelar, Confirmar, Remover*/
+                        margin:0 4px;
+                        padding: 2px 7px;
+                        border: none;
+                        font-size: 20px;
+                        font-family: 'Courier New', Courier, monospace;
+                        text-transform: uppercase;
+                        color:var(--PaperColor);
+                        cursor:pointer;
+
+                        &:nth-of-type(1){
+                            background-color: #322;
+                        }
+                        &:nth-of-type(2){
+                            background-color: #232;
+                        }
+                        &:nth-of-type(3){
+                            position: absolute;
+                            right: 3%;
+                            background-color: #922;
+                            font-family: icons;
+                            font-size: 23px;
+                        }
+
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2){/*NOTA: Zona De Fechamento*/
+            position: absolute;
+            inset: 0;
+            background-color: #0009;
+            cursor:pointer;
+        }
+    }
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+.add-tb{
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div{/*NOTA: Tab da Janela*/
+        &:nth-of-type(1){/*NOTA: TAB DE AÇÂO*/
+            width: 50vw;
+            padding: 0 10px;
+            position: relative;
+            z-index: 2;
+            background-color: var(--DocumentColor);
+
+            &::before{
+                content: '';
+                position: absolute;
+                inset: 0;
+                z-index: 5;
+                opacity: var(--Visible, 0);
+                background-color: #000E;
+                backdrop-filter: blur(7px);
+                pointer-events: none;
+                transition: all ease-in-out 0.3s 0.1s;
+            }
+
+            &::after{
+                content:'';
+                position: absolute;
+                inset: 0;
+                top:0%;
+                right: 95%;
+                left: -0.5%;
+                /* opacity: 0.8; */
+                mask-image:linear-gradient(90deg, #000 15%, #0000 15%), url(https://i.imgur.com/6KJnTHo.png);
+                mask-size:100% 100%, 180% auto;
+                mask-position: left bottom;
+                background-color: var(--DocumentInversor);
+            }
+
+            >h1{/*ATTR: Titulo Da Tab de Adição De itens*/
+                width: 95%;
+                margin: 0 auto;
+                padding: 5px 0 0;
+                text-align: center;
+                font-family: Consolas;
+                text-transform: uppercase;
+                color: var(--Highlighted);
+                border-bottom: solid 0.1vw var(--DocumentInversor);
+            }
+
+            >div{/*APPEND: Sub Setores (Formulario e Botões)*/
+                &:nth-of-type(1){/*VAR: Formulario*/
+                    display: flex;
+                    align-items: start;
+                    justify-content: end;
+                    flex-wrap: wrap;
+
+                    >div{/*NOTA: Balão De Informação*/
+                        width: 100%;
+                        position: relative;
+                        margin:0px 0;
+                        border-radius: 8px;
+                        filter: none;
+
+                        >h2{
+                            width: 80%;
+                            border-bottom: solid 1px var(--DocumentInversor);
+                            margin: 0 auto;
+                            font-family: Courier;
+                            font-size: 32px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: #333;
+                            display:none;
+                            cursor:help;
+                        }
+                        > input{
+                            width: 90%;
+                            display: block;
+                            margin: 0px auto;
+                            border: none;
+                            background: none;
+                            font-size:32px;
+                            font-family: Consolas;
+                            text-align: center;
+                            color: var(--DefaultTexts);
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        >div{/*APPEND: Div dos Botões Proximo, Voltar e Remover*/
+                            width: 100%;
+                            position: relative;
+                            margin: 0px 0;
+                            text-align: center;
+                            display: none;
+
+                            >button{/*NOTA: Botões de Proximo*/
+                                position: relative;
+                                padding: 3px 8px;
+                                border: none;
+                                mask-image: url(https://i.imgur.com/jL8WK0C.png);
+                                mask-size: 1500% auto;
+                                mask-mode: luminance;
+                                background-color: var(--ConfirmImpress);
+                                letter-spacing: -1px;
+                                font-family: 'Courier New', Courier, monospace;
+                                font-size: 22px;
+                                color: var(--DocumentColor);
+                                text-transform: uppercase;
+                                cursor: pointer;
+
+                                &:nth-of-type(1){/*> Botão Voltar*/
+                                    position: absolute;
+                                    left: 0px;
+                                    bottom: 0;
+                                    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 30%, 85% 0%);
+                                    border-radius: 0 0 0 8px;
+                                    background-color: var(--BackImpress);
+                                }
+                                &:nth-of-type(2){/*> Botão Proximo */
+                                    mask-position: bottom left;
+                                }
+
+                                &:nth-of-type(3){/*> Botão Remover*/
+                                    position: absolute;
+                                    right: 0;
+                                    padding: 5px 9px;
+                                    z-index: 7;
+                                    font-family: icons;
+                                    background-color: var(--LightRed);
+                                }
+                                &:nth-of-type(4){/*> Botão Salvar Direto*/
+                                    position: absolute;
+                                    left: 25%;
+                                    bottom: 0;
+                                    transform: translate(-25%, 0);
+                                    z-index: 7;
+                                }
+                            }
+                        }
+                        &:nth-of-type(1){
+                            margin: 5px 0 0;
+                            padding:20px 0 20px;
+
+                            > section{/*IMPORTANT: Caixa de Pesquisa de produtos ja adicionados*/
+                                position: absolute;
+                                width: 80%;
+                                max-height: 43vh;
+                                left:50%;
+                                top:70%;
+                                z-index: 50;
+                                padding: 1.5%;
+                                transform: translate(-50%, 0);
+                                overflow-y: auto;
+                                border-radius: 8px;
+                                box-shadow: 0 0 15px #0008;
+                                background-color: var(--DocumentColor);
+                                
+                                &::-webkit-scrollbar{
+                                    
+                                }
+
+                                >div{/*NOTA: Produtos ja Comprados*/
+                                    /* width: 95%; */
+                                    position: relative;
+                                    z-index: 5;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 0 auto;
+                                    margin-bottom: 2px;
+                                    border-radius: 8px;
+                                    box-shadow: 2px 2px 8px #0008;
+                                    background-color: var(--ItemCor);
+                                    cursor: pointer;
+
+                                    >div{ /*> Icone | Nome | Coparadores*/
+                                        &:nth-of-type(1){
+                                            width: 10%;
+                                        }
+                                        &:nth-of-type(2){/*> Nome Do Produto*/
+                                            width: 70%;
+                                            font-size: 20px;
+                                            font-family: Calibri;
+                                            color: var(--Highlighted);
+                                        }
+                                        &:nth-of-type(3){/*> Comparadores*/
+                                            width: fit-content;
+                                            
+                                            >div{/*> Cima e Baixo*/
+                                                display: flex;
+
+                                                >p{ /*> Formatação dos Comparadores*/
+                                                    margin: 0;
+                                                    font-family: Calibri;
+                                                    font-size: 16px;
+
+                                                    &:nth-of-type(1){
+                                                        width: 5ch;
+                                                        text-align: right;
+
+                                                        &::after{
+                                                            content:':';
+                                                            margin-right: 5px;
+                                                        }
+                                                    }
+
+                                                    &:nth-of-type(2){
+                                                        width: fit-content;
+                                                        padding-right: 1ch;
+                                                        text-align: left;
+
+                                                        &::before{
+                                                            content:'R$';
+                                                            margin-right: 0.5ch;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:hover{
+                                        z-index: 6;
+                                        outline: 2px dashed var(--Highlight);
+                                        /* box-shadow: 0 0 8px var(--Highlight), inset 0 0 8px var(--Highlight); */
+                                        background-color: var(--ConfirmImpress);
+                                        color: var(--DocumentColor);
+                                        transform: scale(1.03);
+
+                                        > div{
+                                            color: var(--DocumentColor);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(2){
+                            width: 10%;
+                            padding-top: 6px;
+
+                            > input{
+                                padding-top: 15px 0 5px;
+                                padding-right: 20px ;
+                                text-align: right;
+                                font-size: 32px;
+                            }
+                        }
+                        &:nth-of-type(3){
+                            width: 30%;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+
+                            &::before{
+                                content: var(--CurrencyNeed);
+                                position: relative;
+                                z-index: -1;
+                                margin-left: 10px;
+                                margin-right: -35px;
+                                font-size: 36px;
+                                font-family: Consolas;
+                                color: var(--DefaultTexts);
+                            }
+                            >input{
+                                padding-left: 40px;
+                                text-align: left;
+                                font-size: 36px;
+                            }
+                            >div{
+                                >section{
+                                    max-width: 40%;
+                                    position: absolute;
+                                    inset: 0;
+                                    left: initial;
+                                    right: -1px;
+                                    padding: 1px 7px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    font-family: 'Courier New', Courier, monospace;
+                                    background-color: var(--DocumentInversor);
+                                    color: var(--DocumentColor);
+                                    font-size: 24px;
+                                    cursor: help;
+
+                                    &:hover{
+                                        max-width: fit-content;
+                                        overflow: visible;
+                                    }
+
+                                    &.ed-md{
+                                        right:35px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.inFocus{/*NOTA: Ao Estar no modo de edição*/
+                            position: absolute;
+                            z-index: 10;
+                            width: 95%;
+                            left: 50%;
+                            top: 45%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: space-around;
+                            transform: translate(-50%, -50%);
+                            box-shadow: 2px 2px 10px #000;
+                            background-color: var(--DocumentColor);
+
+                            >h2{
+                                position: relative;
+                                display: initial;
+
+                                &::before{
+                                    position: absolute;
+                                    inset: 0;
+                                    top: 100%;
+                                    bottom:-100%;
+                                    z-index: -1;
+                                    transform: rotate(180deg);
+                                    mask-image: url(https://i.imgur.com/y8IlYcn.png);
+                                    mask-size: 100% auto;
+                                    mask-position: top center;
+                                    opacity: 0.5;
+                                    background-color: var(--DocumentInversor);
+                                    pointer-events: none;
+                                }
+                            }
+                            >input{
+                                padding: 5% 0;
+                            }
+                            >div{
+                                display: initial;
+    
+    
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    inset: 0;
+                                    top:85%;
+                                    bottom: -10px;
+                                    border-radius: 0 0 8px 8px;
+                                    z-index: 5;
+                                    background-color: var(--DocumentInversor);
+                                    pointer-events: none;
+                                }
+                            }
+                            &:nth-of-type(1){
+                                padding:15px 0 0px;
+
+                                >div{
+                                    &::before{
+                                        content: none;
+                                    }
+                                    &::after{
+                                        content: '';
+                                        position: absolute;
+                                        inset: 0;
+                                        left: 58%;
+                                        z-index: -1;
+                                        opacity:0.6;
+                                        mask-image: url(https://i.imgur.com/y8IlYcn.png);
+                                        mask-size: 150% auto;
+                                        mask-position: top center;
+                                        background-color: var(--DocumentInversor);
+                                    }
+                                }
+
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    inset: -1px;
+                                    bottom: 95%;
+                                    top: -1%;
+                                    border-radius: 7px 7px 0 0;
+                                    background-color: var(--DocumentInversor);
+                                }
+                            }
+                            &:nth-of-type(2){
+
+                                >h2{
+                                    &::before{
+                                        content: none;
+                                    }
+                                }
+                                >input{
+                                    text-align: center;
+                                }
+                            }
+                            &:nth-of-type(3){
+                                &::before{
+                                    content: none;
+                                }
+
+                                >input{
+                                    padding-top: 15px 0 5px;
+                                    text-align: center;
+                                }
+
+                                >h2{
+                                    margin-top: 2%;
+                                    &::before{
+                                        content: '';
+                                    }
+                                }
+
+                                >div{
+                                    &::before{
+                                        content:none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    >p{
+                        margin: 0;
+                        padding: 8px 0 0px;
+                        font-size: 26px;
+                        font-family: Consolas;
+                        line-height: 38px;
+                        pointer-events: none;
+                        user-select: none;
+                    }
+                }
+                &:nth-of-type(2){/*VAR: Botão Geral da Aba*/
+                    max-height: 40px;
+                    margin-top: 15px;
+                    text-align: center;
+
+                    > button{
+                        margin-left: 30px;
+                        padding: 5px 10px;
+                        border: none;
+                        border-radius: 9px 9px 0px 0;
+                        background: none;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-family: Consolas;
+                        cursor:pointer;
+                        color: var(--DocumentColor);
+                        mask-image: url(https://i.imgur.com/jL8WK0C.png);
+                        mask-size: 1500% auto;
+                        mask-position: center center;
+                        mask-mode: luminance;
+
+                        &:nth-of-type(1){
+                            background-color: var(--BackImpress);
+                        }
+                        &:nth-of-type(2){
+                            background-color: var(--ConfirmImpress);
+                            mask-position: left bottom;
+                        }
+                        &:nth-of-type(3){
+                            position: absolute;
+                            right: 5px;
+                            background-color: var(--LightRed);
+                        }
+                    }
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        top: 98%;
+                        background-color: var(--DocumentInversor);
+                    }
+                }
+            }
+        }
+        &:nth-of-type(2){/*NOTA: Click Trap*/
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-color: #000E;
+            backdrop-filter: blur(6px) contrast(1.8) brightness(0.4);
+            cursor: pointer;
+        }
+    }
+}
+
+.testers{
+    position: fixed;
+    inset: 0;
+    z-index: 8000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000A;
+    color: #FFF;
+    pointer-events: none;
+}
+
+.Config{/*CREATE: Guia De Configurações*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 100%;
+    z-index: 10;
+    transition:right 0.3s ease-in-out;
+
+    >div{/*APPEND: TAB e Click Trap*/
+        &:nth-of-type(1){/*> Clicktrap e false Background*/
+            position: absolute;
+            inset: 0;
+            background-color: #000C;
+            backdrop-filter: blur(5px);
+        }
+        &:nth-of-type(2){/*> Tab De Conteudo*/
+            position: absolute;
+            inset: 0;
+            z-index: 5;
+            background-color: var(--DocumentColor);
+
+            >h1{/*> Titulo da Tab*/
+                text-align: center;
+                margin:0;
+                padding-bottom:1vw;
+                border-bottom: groove 0.2vw #256;
+                font-size: 8vw;
+                font-family: Consolas;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: var(--GhostedColor);
+            }
+
+            > div{/*NOTA: Area de Listagem Dos Botões*/
+                width: 90%;
+                margin: 8vw auto 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: start;
+
+                >div{/*> Botões De Configurações*/
+                    width: 20vw;
+                    margin-bottom: 7vw;
+                    margin-right:4vw;
+                    border-radius: 7px;
+                    outline: solid 0.1vw var(--DocumentInversor);
+
+                    >div{
+                        width: 100%;
+                        height: 20vw;
+                    }
+
+                    >p{
+                        margin: 0;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 4vw;
+                        font-family: 'Consolas';
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    &.dect{
+                        opacity: 0.4;
+                    }
+
+                    &:last-of-type{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.opn{
+        right: 0%;
+    }
+}
+
+.m-btn{
+    display: none;
+}
